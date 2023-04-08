@@ -2,21 +2,45 @@
   "name": "portfolio-v2.0",
   "version": "0.1.0",
   "private": true,
+  "author": "Vidhanshu borade",
+  "description": "portfolio website version 2.0",
+  "homepage": "https://github.com/vidhanshu/portfolio-v2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vidhanshu/portfolio-v2.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts, tsx, scss, css}\""
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.61.0"
+  },
+  "devDependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
-    "next": "13.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.7",
     "typescript": "5.0.4"
-  }
+  },
+  "keywords": [
+    "vidhanshu",
+    "portfolio",
+    "website",
+    "resume",
+    "vidhanshuborade",
+    "portfolio website",
+    "description"
+  ]
 }
