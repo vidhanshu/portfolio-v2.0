@@ -1,6 +1,20 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.scss";
+
+import type { AppProps } from "next/app";
+import aos from "aos";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  useEffect(() => {
+    aos.init({
+      duration: 1000,
+      initClassName: "sb-initial-anim",
+      once: true,
+      mirror: true,
+      offset: 50,
+      debounceDelay: 100,
+      throttleDelay: 100,
+    });
+  }, []);
+  return <Component {...pageProps} />;
 }
