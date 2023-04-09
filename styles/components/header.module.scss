@@ -1,0 +1,23 @@
+.container {
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    font-size: var(--text-m);
+  }
+
+  .nav_items {
+    display: flex;
+    gap: var(--gap-r);
+
+    .nav_item a {
+      font-size: var(--text-r);
+
+      &:hover {
+        color: var(--secondary-l);
+      }
+    }
+  }
+}

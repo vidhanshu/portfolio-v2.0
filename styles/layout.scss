@@ -1,0 +1,14 @@
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.grid_container_for_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  grid-auto-rows: minmax(30rem, auto);
+  justify-items: center;
+  gap: var(--cards-gap);
+  width: fit-content;
+}

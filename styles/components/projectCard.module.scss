@@ -1,0 +1,57 @@
+.project_card {
+  background-color: var(--primary-l);
+  border-radius: var(--br-r);
+  max-width: 299px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  outline: 2px solid transparent;
+  transition: transform .2s ease-in-out, outline .2s ease-in-out !important;
+
+  &:hover {
+    transform: translateY(-0.5rem) scale(1.01) !important;
+    outline: 2px solid var(--secondary-text) !important;
+  }
+
+  .project_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .project_title {
+      font-size: var(--text-m);
+    }
+  }
+
+  .project_description {
+    font-size: var(--text-sm);
+    line-height: 2.3rem;
+  }
+
+  .project_tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .tag {
+      font-size: var(--text-xs);
+      color: var(--secondary-text);
+      cursor: pointer;
+    }
+  }
+
+  .project_links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    svg {
+      color: var(--primary-text);
+
+      &:hover {
+        color: var(--secondary-text);
+      }
+    }
+  }
+}

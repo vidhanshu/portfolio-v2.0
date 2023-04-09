@@ -3,17 +3,27 @@ export const MAX_HEADER_HEIGHT = 100; // the maximum height of the header
 
 export const HOME_URL_OR_TAG = "/#home"; // nothing more than the actual route
 export const ABOUT_ME_TAG = "/#aboutme"; // tag to move to different section in the page
-export const MY_BLOGS_TAG = "/#blogs"; // tag to move to different section in the page
-export const MY_EXPERIENCE_TAG = "/#experience"; // tag to move to different section in the page
-export const MY_PROJECTS_TAG = "/#projects"; // tag to move to different section in the page
+export const WHAT_I_DO_TAG = "/#whatido"; // tag to move to different section in the page
+export const BLOGS_TAG = "/#blogs"; // tag to move to different section in the page
+export const EXPERIENCE_TAG = "/#experience"; // tag to move to different section in the page
+export const PROJECTS_TAG = "/#projects"; // tag to move to different section in the page
 export const CONTACT_ME_TAG = "/#contactme"; // tag to move to different section in the page
+export const CERTIFICATIONS_TAG = "/#certifications"; // tag to move to different section in the page
+export const CODING_PROFILES_TAG = "/#codingprofiles"; // tag to move to different section in the page
+export const ACHIEVEMENTS_TAG = "/#achivements"; // tag to move to different section in the page
+export const SKILLS_TAG = "/#skills"; // tag to move to different section in the page
 
 export const HOME_URL_OR_STRING = "home"; // nothing more than the actual route
 export const ABOUT_ME_STRING = "aboutme"; // string for the same above
-export const MY_BLOGS_STRING = "blogs"; // string for the same above
-export const MY_EXPERIENCE_STRING = "experience"; // string for the same above
-export const MY_PROJECTS_STRING = "projects"; // string for the same above
+export const BLOGS_STRING = "blogs"; // string for the same above
+export const EXPERIENCE_STRING = "experience"; // string for the same above
+export const PROJECTS_STRING = "projects"; // string for the same above
 export const CONTACT_ME_STRING = "contactme"; // string for the same above
+export const CERTIFICATIONS_STRING = "certifications"; // tag to move to different section in the page
+export const CODING_PROFILES_STRING = "codingprofiles"; // tag to move to different section in the page
+export const WHAT_I_DO_STRING = "whatido"; // tag to move to different section in the page
+export const ACHIEVEMENTS_STRING = "achivements"; // tag to move to different section in the page
+export const SKILLS_STRING = "skills"; // tag to move to different section in the page
 
 export const MY_EMAIL_ID = "vidhanshu7218@gmail.com"; // this is my email id
 export const EMAIL_ID_REDIRECT_URL = "mailto:vidhanshu7218@gmail.com"; // link to my GitHub profile
@@ -31,3 +41,5 @@ export const EMAIL_REGEX =
 
 // relative link to the resume file
 export const RESUME_LOCAL_URL = "/files/vidhanshu_resume.pdf";
+
+export * from "./projects";

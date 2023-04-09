@@ -1,11 +1,14 @@
 import AboutMe from "./AboutMe";
 import Achievements from "./Achievements";
+import Certifications from "./Certifications";
+import CodingProfiles from "./CodingProfiles";
 import ContactMe from "./ContactMe";
 import Experience from "./Experience";
 import Intro from "./Intro";
 import MyBlogs from "./MyBlogs";
 import Projects from "./Projects";
-import Skills from "./Skills";
+import SkillsSection from "./Skills";
+import WhatIDo from "./WhatIDo";
 
 export {
   AboutMe,
@@ -14,6 +17,9 @@ export {
   Intro,
   MyBlogs,
   Projects,
-  Skills,
   Achievements,
+  WhatIDo,
+  Certifications,
+  CodingProfiles,
+  SkillsSection,
 };

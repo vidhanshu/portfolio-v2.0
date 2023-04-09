@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +15,112 @@
   text-decoration: none;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
+  font-family: Poppins, sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+:root {
+  //for btns, bgs, borders, gradients, etc
+  --primary-rgb: 14, 23, 36;
+  --primary: #0e1724;
+
+  --secondary-rgb: 144, 95, 211;
+  --secondary: #905fd3;
+
+  --tertiary-rgb: 25, 170, 201;
+  --tertiary: #19aac9;
+
+  --primary-l-rgb: 33, 44, 68;
+  --primary-l: #212c44;
+
+  --primary-d-rgb: 5, 7, 12;
+  --primary-d: #05070c;
+
+  --primary-xl-rgb: 44, 57, 81;
+  --primary-xl: #2c3951;
+
+  --primary-xxl-rgb: 62, 78, 107;
+  --primary-xxl: #3e4e6b;
+
+  --secondary-l-rgb: 153, 101, 226;
+  --secondary-l: #9965e2;
+
+  //for text
+  --primary-text-rgb: 255, 255, 255;
+  --primary-text: #fff;
+
+  --secondary-text-rgb: 127, 151, 178;
+  --secondary-text: #7f97b2;
+
+  --tertiary-text-rgb: 144, 95, 211;
+  --tertiary-text: #905fd3;
+
+  --golden-text-rgb: 255, 184, 0;
+  --golden-text: #ffb800;
+
+  //for borders
+  --primary-border-rgb: 144, 95, 211;
+  --primary-border: #905fd3;
+
+  --secondary-border-rgb: 255, 255, 255;
+  --secondary-border: #fff;
+
+  /*---- for text sizes ----*/
+
+  //for small sized texts like paragraphs, subheadings, etc
+  --text-xxs: 1rem; //for extra extra small text - 10px
+  --text-xs: 1.2rem; //for extra small text - 12px
+  --text-sm: 1.4rem; //for small text - 14px
+  --text-r: 1.6rem; //for regular text - 16px
+  --text-m: 2rem; //for medium text - 20px
+  --text-xm: 3.2rem; //for extra medium text - 32px
+
+  //for large sized texts like headings and titles
+  --text-l: 4rem; //for large text - 40px
+  --text-xl: 5rem; //for extra large text - 50px
+  --text-xxl: 6rem; //for extra large text - 60px
+
+  //border radius
+  --br-r: 3px; //for regular border radius
+
+  //border-width
+  --bw-r: 2px; //for regular border width
+
+  //for paddings
+
+  //for flex & grid gaps
+  --cards-gap: 4rem; //gaps between the cards
+  --gap-l: 4rem; //for regular gap
+  --gap-m: 3rem; //for regular gap
+  --gap-r: 2rem; //for regular gap
+  --gap-sm: 1rem; //for regular gap
+  --gap-xs: 0.5rem; //for regular gap
+}
+
+body {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+a {
+  color: var(--primary-text);
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 0; // to remove the horizontal scroll bar
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--primary-xl-rgb), 0.6);
+  border-radius: 30px;
+
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
 }

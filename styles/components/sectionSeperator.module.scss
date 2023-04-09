@@ -1,0 +1,21 @@
+.section_seperator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-r);
+
+  .line {
+    height: 2px;
+    min-width: 250px;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--tertiary)
+    );
+  }
+
+  .section_title {
+    font-size: var(--text-xm);
+    color: var(--tertiary-text);
+  }
+}

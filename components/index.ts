@@ -1,4 +1,21 @@
-import Footer from "./Footer";
-import Header from "./Header";
+import {
+  DevelopmentSkillsTree,
+  LanguageSkillsTree,
+  ToolSkillsTree,
+} from "./SkillTree";
 
-export { Footer, Header };
+import Button from "./Button";
+import Footer from "./Footer";
+import Header from "./Navbar";
+import SectionSeperator from "./SectionSeperator";
+import Tabs from "./Tabs";
+export {
+  Footer,
+  Header,
+  Button,
+  SectionSeperator,
+  Tabs,
+  DevelopmentSkillsTree,
+  LanguageSkillsTree,
+  ToolSkillsTree,
+};
