@@ -1,0 +1,48 @@
+.container {
+  .tabs {
+    display: flex;
+    gap: var(--gap-m);
+    align-items: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+
+    .tab {
+      button {
+        font-size: var(--text-m);
+        background: transparent;
+        color: var(--primary-text);
+        cursor: pointer;
+
+        &:hover {
+          color: var(--tertiary-text);
+        }
+      }
+    }
+    .active {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        width: 100%;
+        height: 5px;
+        border-radius: var(--br-r);
+        background-image: linear-gradient(
+          to right,
+          var(--secondary),
+          var(--tertiary)
+        );
+        animation: grow 0.5s ease-in-out;
+      }
+    }
+  }
+}
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

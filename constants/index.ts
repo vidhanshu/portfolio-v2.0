@@ -43,3 +43,6 @@ export const EMAIL_REGEX =
 export const RESUME_LOCAL_URL = "/files/vidhanshu_resume.pdf";
 
 export * from "./projects";
+export * from "./experiences";
+export * from "./achivements";
+export * from "./blogs";

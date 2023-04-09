@@ -16,7 +16,7 @@ export const PROJECTS: ProjectType[] = [
     title: "Project 1",
     description:
       "Project 1Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description  description Project 1 description Project 1 description Project 1 description Project 1Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description  description Project 1 description Project 1 description Project 1 description ",
-    project_type: "web",
+    project_type: "android",
     tags: ["tag1", "tag2"],
     project_github_url: "https://github.com",
     project_live_url: "https://github.com",
@@ -26,7 +26,7 @@ export const PROJECTS: ProjectType[] = [
     title: "Project 1",
     description:
       "Project 1Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description Project 1 description  description Project 1 description Project 1 description Project 1 description ",
-    project_type: "web",
+    project_type: "UI/UX",
     tags: ["tag1", "tag2"],
     project_github_url: "https://github.com",
     project_live_url: "https://github.com",

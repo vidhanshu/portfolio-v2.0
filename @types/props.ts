@@ -27,3 +27,8 @@ export interface StatsCardProps {
   count: string;
   description: string;
 }
+
+export interface TabsProps {
+  tabs: string[];
+  data: ProjectCardProps[];
+}

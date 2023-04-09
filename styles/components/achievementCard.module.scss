@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  gap: var(--gap-m);
+  margin-bottom: 2rem;
+
+  .right_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .right_content_top {
+      display: flex;
+      justify-content: space-between;
+
+      .rank {
+        font-family: "fira code", monospace;
+        font-size: var(--text-r);
+      }
+      .title {
+        font-size: var(--text-m);
+        font-weight: 500;
+      }
+      .date {
+        color: var(--secondary-text);
+        font-size: var(--text-sm);
+      }
+    }
+    .description {
+      font-size: var(--text-r);
+    }
+    .skill_title {
+      color: var(--tertiary-text);
+      font-size: var(--text-m);
+    }
+    .skills {
+      display: flex;
+      gap: var(--gap-r);
+      flex-wrap: wrap;
+
+      .skill {
+        font-size: var(--text-sm);
+      }
+    }
+    .right_content_bottom {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-r);
+    }
+  }
+}

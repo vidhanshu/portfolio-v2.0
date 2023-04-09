@@ -1,0 +1,6 @@
+.container {
+  padding: var(--cards-gap) 0px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--cards-gap);
+}

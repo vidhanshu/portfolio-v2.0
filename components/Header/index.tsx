@@ -35,13 +35,13 @@ function Header() {
           <a href={PROJECTS_TAG}>Projects /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a href={BLOGS_TAG}>Blogs /&gt;</a>
+          <a href={EXPERIENCE_TAG}>Experience /&gt;</a>
         </li>
         <li className={styles.nav_item}>
           <a href={ACHIEVEMENTS_TAG}>Achievements /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a href={EXPERIENCE_TAG}>Experience /&gt;</a>
+          <a href={BLOGS_TAG}>Blogs /&gt;</a>
         </li>
         <li className={styles.nav_item}>
           <a href={CONTACT_ME_TAG}>Contact /&gt;</a>
