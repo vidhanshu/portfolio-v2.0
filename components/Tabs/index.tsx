@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import styles from "../../styles/components/tabs.module.scss"
+import styles from "@/styles/components/tabs.module.scss"
 
 function Tabs() {
   return <div>Tabs</div>;

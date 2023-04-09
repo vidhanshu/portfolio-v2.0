@@ -1,7 +1,7 @@
 import { PROJECTS } from "@/constants";
 import ProjectCard from "@/components/ProjectCard";
 import React from "react";
-import styles from "../../styles/containers/projects.module.scss";
+import styles from "@/styles/containers/projects.module.scss";
 
 function Projects() {
   return (

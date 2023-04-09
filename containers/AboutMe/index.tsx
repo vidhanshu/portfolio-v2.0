@@ -3,7 +3,7 @@ import "aos/dist/aos.css"
 import { Button } from "@/components";
 import Image from "next/image";
 import React from "react";
-import styles from "../../styles/containers/aboutme.module.scss";
+import styles from "@/styles/containers/aboutme.module.scss";
 
 function AboutMe() {
   return (

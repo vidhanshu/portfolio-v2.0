@@ -6,12 +6,13 @@ import {
 
 import Button from "./Button";
 import Footer from "./Footer";
-import Header from "./Navbar";
+import Navbar from "./Header";
 import SectionSeperator from "./SectionSeperator";
 import Tabs from "./Tabs";
+
 export {
   Footer,
-  Header,
+  Navbar,
   Button,
   SectionSeperator,
   Tabs,

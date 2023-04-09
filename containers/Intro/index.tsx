@@ -3,7 +3,7 @@ import { Button } from "@/components";
 import Image from "next/image";
 import React from "react";
 import { StatsCardProps } from "@/@types";
-import styles from "../../styles/containers/intro.module.scss";
+import styles from "@/styles/containers/intro.module.scss";
 
 function Intro() {
   return (

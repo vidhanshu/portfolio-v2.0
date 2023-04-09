@@ -1,9 +1,7 @@
 import { Button } from "@/components";
-import Image from "next/image";
 import React from "react";
-import { WHAT_I_DO_STRING } from "@/constants";
 import WhatIDoSvg from "@/public/assets/WhatIDoSvg";
-import styles from "../../styles/containers/whatIDo.module.scss";
+import styles from "@/styles/containers/whatIDo.module.scss";
 
 function WhatIDo() {
   return (

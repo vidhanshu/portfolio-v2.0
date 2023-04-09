@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import styles from "../../styles/components/blogCard.module.scss";
+import styles from "@/styles/components/blogCard.module.scss";
 
 function BlogCard() {
   return <div>BlogCard</div>;

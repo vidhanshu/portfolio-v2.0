@@ -10,8 +10,7 @@ import { FaFigma } from "react-icons/fa";
 import { ProjectCardProps } from "@/@types/props";
 import React from "react";
 import { RxExternalLink } from "react-icons/rx";
-import { SlScreenSmartphone } from "react-icons/sl";
-import styles from "../../styles/components/projectCard.module.scss";
+import styles from "@/styles/components/projectCard.module.scss";
 
 function ProjectCard({
   description,

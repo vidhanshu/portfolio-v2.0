@@ -8,18 +8,17 @@ import {
   BLOGS_TAG,
   CONTACT_ME_TAG,
   EXPERIENCE_TAG,
-  HOME_URL_OR_TAG,
   PROJECTS_TAG,
   SKILLS_TAG,
   WHAT_I_DO_TAG,
 } from "@/constants";
 
 import React from "react";
-import styles from "../../styles/components/header.module.scss";
+import styles from "@/styles/components/nav.module.scss";
 
-function Navbar() {
+function Header() {
   return (
-    <div className={styles.container}>
+    <div className={styles.nav_bar}>
       <h4 className={styles.logo}>© Vidhanshu Borade</h4>
 
       <ul className={styles.nav_items}>
@@ -52,4 +51,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;

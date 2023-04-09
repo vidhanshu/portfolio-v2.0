@@ -2,10 +2,10 @@ import {
   DevelopmentSkillsTree,
   LanguageSkillsTree,
   ToolSkillsTree,
-} from "../../components";
+} from "@/components";
 
 import React from "react";
-import styles from "../../styles/containers/skills.module.scss";
+import styles from "@/styles/containers/skills.module.scss";
 
 export default function SkillsSection() {
   return (

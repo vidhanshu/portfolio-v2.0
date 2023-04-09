@@ -25,10 +25,10 @@ import {
   SkillsSection,
   WhatIDo,
 } from "@/containers";
+import { Footer, Navbar, SectionSeperator } from "@/components";
 
 import Head from "next/head";
 import React from "react";
-import { SectionSeperator } from "@/components";
 
 function index() {
   return (
@@ -40,6 +40,8 @@ function index() {
         </title>
         <meta name="theme-color" content={"#000"} />
       </Head>
+
+      <Navbar />
 
       <Intro />
 
@@ -82,6 +84,8 @@ function index() {
       <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
 
       <ContactMe />
+
+      <Footer />
     </>
   );
 }

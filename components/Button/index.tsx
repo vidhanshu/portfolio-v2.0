@@ -3,9 +3,9 @@
  * size @default 'medium' => 'small' | 'medium' | 'large'
  */
 
-import { ButtonProps } from "@/@types/props";
+import { ButtonProps } from "@/@types"
 import React from "react";
-import styles from "../../styles/components/button.module.scss";
+import styles from "@/styles/components/button.module.scss";
 
 function Button({ variant, size, children, ...props }: ButtonProps) {
   const variantClass = styles[variant || "primary"];

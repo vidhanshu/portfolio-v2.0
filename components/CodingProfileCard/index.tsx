@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import styles from "../../styles/components/codingProfileCard.module.scss"
+import styles from "@/styles/components/codingProfileCard.module.scss"
 
 function CodingProfileCard() {
   return (
