@@ -1,0 +1,147 @@
+.wrapper{
+  min-height: fit-content !important;
+
+  .container {
+    display: flex;
+    align-items: center;
+  
+    .left {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-r);
+  
+      .title {
+        font-size: var(--text-l);
+        font-weight: bold;
+      }
+  
+      .description {
+        font-size: var(--text-m);
+  
+        .seperator {
+          font-size: var(--text-m);
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+  
+      .contact_info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-r);
+        margin-top: 2rem;
+  
+        .info {
+          display: flex;
+          align-items: center;
+          gap: var(--gap-r);
+  
+          .info_text {
+            font-size: var(--text-r);
+          }
+        }
+  
+        .bullet {
+          background: var(--primary-l);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: var(--br-r);
+          width: 4rem;
+          height: 4rem;
+  
+          svg {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 60%;
+  
+      svg {
+        max-width: 600px;
+      }
+  
+      .form_container {
+        position: relative;
+        height: fit-content;
+  
+        svg {
+          height: fit-content;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: var(--gap-r);
+          border-radius: 3rem;
+  
+          position: absolute;
+          top: 10rem;
+          left: 9.9rem;
+          margin: auto;
+          padding: 3rem;
+          background: rgba(var(--primary-text-rgb), 0.13);
+  
+          max-width: 500px;
+          width: 70%;
+          height: 55%;
+  
+          input,
+          textarea {
+            resize: none;
+  
+            padding: 1.5rem 1rem;
+            width: 100%;
+            background: rgba(var(--primary-text-rgb), 0.3);
+            border-radius: 0.5rem;
+            outline: 2px solid transparent;
+            z-index: 1;
+  
+            color: var(--primary-text);
+            font-size: var(--text-r);
+  
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  
+            &::placeholder {
+              color: rgba(var(--primary-text-rgb), 0.6);
+            }
+  
+            &:focus {
+              outline: 2px solid #fff;
+            }
+          }
+  
+          button {
+            min-width: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--gap-sm);
+  
+            span {
+              font-family: "fira code", monospace;
+              font-size: var(--text-r);
+            }
+  
+            &:hover{
+              span {
+                transform: translateX(0.5rem);
+              }
+            }
+          }
+  
+          textarea {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

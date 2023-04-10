@@ -28,7 +28,9 @@ function Intro() {
             <StatsCard count="10" description="Projects Completed" />
             <StatsCard count="3" description="Years of Experience" />
           </div>
-          <Button size="large">Download Resume</Button>
+          <a href="/files/vidhanshu_resume.pdf">
+            <Button size="large">Download Resume</Button>
+          </a>
         </div>
         <div>
           <Image

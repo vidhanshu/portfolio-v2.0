@@ -7,13 +7,6 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  outline: 2px solid transparent;
-  transition: transform .2s ease-in-out, outline .2s ease-in-out !important;
-
-  &:hover {
-    transform: translateY(-0.5rem) scale(1.01) !important;
-    outline: 2px solid var(--secondary-text) !important;
-  }
 
   .project_card_header {
     display: flex;

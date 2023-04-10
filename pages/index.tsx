@@ -25,7 +25,7 @@ import {
   SkillsSection,
   WhatIDo,
 } from "@/containers";
-import { Footer, Navbar, SectionSeperator } from "@/components";
+import { FixedSocials, Footer, Navbar, SectionSeperator } from "@/components";
 
 import Head from "next/head";
 import React from "react";
@@ -86,6 +86,8 @@ function index() {
       <ContactMe />
 
       <Footer />
+
+      <FixedSocials/>
     </>
   );
 }

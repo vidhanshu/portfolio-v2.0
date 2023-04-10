@@ -1,0 +1,29 @@
+.container {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 2rem;
+  background-color: var(--primary-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--br-r);
+
+  img {
+      max-width: 100px;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: var(--text-m);
+      font-weight: 500;
+    }
+
+  }
+
+  .description {
+    font-size: var(--text-r);
+  }
+}

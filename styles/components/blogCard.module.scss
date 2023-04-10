@@ -1,21 +1,14 @@
 .container {
   display: flex;
   gap: var(--cards-gap);
-  padding: 2rem;
-  outline: 0px solid transparent;
+  padding: 1rem;
   border-radius: var(--br-r);
   cursor: pointer;
-
-  &:hover {
-    outline: 1px solid var(--secondary-text);
-    transform: translateY(-0.5rem) scale(1.01);
-  }
 
   .blog_left {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 
     .blog_left_top {
       .subtitle {
@@ -40,18 +33,22 @@
     color: var(--tertiary-text);
   }
 
-  .tags{
+  .tags {
     display: flex;
     gap: var(--gap-sm);
     flex-wrap: wrap;
 
-    .tag{
-        font-size: var(--text-sm);
+    .tag {
+      font-size: var(--text-sm);
     }
   }
 
-  .btn_grp{
+  .btn_grp {
     display: flex;
     gap: var(--gap-m);
+
+    svg:hover {
+      color: var(--tertiary-text);
+    }
   }
 }

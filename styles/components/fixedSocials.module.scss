@@ -1,0 +1,33 @@
+.container {
+  position: fixed;
+  left: 5rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-r);
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-r);
+
+    svg {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--secondary-l);
+      }
+    }
+  }
+
+  .line {
+    width: 2px;
+    min-height: 250px;
+    background-color: transparent;
+    height: 0% !important;
+  }
+  .active {
+    background-color: #fff;
+  }
+}

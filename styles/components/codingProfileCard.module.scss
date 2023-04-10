@@ -1,0 +1,62 @@
+.container {
+  max-width: 299px;
+  background: var(--primary-l);
+  padding: 2rem;
+  border-radius: var(--br-r);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  max-height: 35rem;
+
+  .title {
+    font-size: var(--text-xm);
+    font-weight: 500;
+  }
+
+  .description {
+    font-size: var(--text-sm);
+  }
+
+  .key_val {
+    display: flex;
+    gap: var(--gap-xs);
+  }
+
+  .key {
+    color: var(--tertiary-text);
+    font-size: var(--text-xs);
+  }
+
+  .val {
+    color: var(--golden-text);
+    font-family: "fira code", monospace;
+    font-weight: 500;
+    font-size: var(--text-xs);
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-r);
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+
+    .langs_used {
+      display: flex;
+      gap: var(--gap-xs);
+    }
+  }
+}

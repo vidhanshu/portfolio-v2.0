@@ -12,7 +12,6 @@ import styles from "@/styles/components/achievementCard.module.scss";
 function AchievementCard({
   date,
   description,
-  id,
   image,
   rank,
   skills,
@@ -21,7 +20,7 @@ function AchievementCard({
   news,
 }: AchievementType) {
   return (
-    <div className={styles.container} data-aos="fade-up">
+    <div className={`${styles.container} card_hover_effect`}  data-aos="fade-up">
       <Image
         width={483.51}
         height={322}

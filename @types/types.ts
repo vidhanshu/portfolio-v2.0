@@ -43,3 +43,38 @@ export interface BlogType {
   image: string;
   link: string;
 }
+
+export interface CodingProfileType {
+  id: string;
+  title: string;
+  description: string;
+  link: string;
+  logo: string;
+  icon: string;
+  languages_used: string[];
+  //cp specific
+  rating?: number;
+  stars?: number;
+  problem_solved?: number;
+  //github specific
+  forks?: number;
+  contributions?: number;
+}
+
+export interface CertificationType {
+  id: string;
+  title: string;
+  description: string;
+  logo: string;
+  certificate?: string;
+  project?: string;
+  image: string;
+  date: string;
+  icon: string;
+}
+
+export interface FormDataType {
+  name: string;
+  email: string;
+  message: string;
+}

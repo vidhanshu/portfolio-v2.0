@@ -5,6 +5,7 @@ import {
 } from "./SkillTree";
 
 import Button from "./Button";
+import FixedSocials from "./FixedSocials";
 import Footer from "./Footer";
 import Navbar from "./Header";
 import SectionSeperator from "./SectionSeperator";
@@ -19,4 +20,5 @@ export {
   DevelopmentSkillsTree,
   LanguageSkillsTree,
   ToolSkillsTree,
+  FixedSocials,
 };

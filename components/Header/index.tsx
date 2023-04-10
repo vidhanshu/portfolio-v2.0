@@ -6,6 +6,8 @@ import {
   ABOUT_ME_TAG,
   ACHIEVEMENTS_TAG,
   BLOGS_TAG,
+  CERTIFICATIONS_TAG,
+  CODING_PROFILES_TAG,
   CONTACT_ME_TAG,
   EXPERIENCE_TAG,
   PROJECTS_TAG,
@@ -42,6 +44,12 @@ function Header() {
         </li>
         <li className={styles.nav_item}>
           <a href={BLOGS_TAG}>Blogs /&gt;</a>
+        </li>
+        <li className={styles.nav_item}>
+          <a href={CODING_PROFILES_TAG}>Coding profiles /&gt;</a>
+        </li>
+        <li className={styles.nav_item}>
+          <a href={CERTIFICATIONS_TAG}>Certifications /&gt;</a>
         </li>
         <li className={styles.nav_item}>
           <a href={CONTACT_ME_TAG}>Contact /&gt;</a>

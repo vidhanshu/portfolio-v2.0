@@ -16,6 +16,8 @@ function Tabs({ data, tabs }: TabsProps) {
         {/* other tabs */}
         {tabs.map((tab, index) => (
           <div
+            data-aos="fade-right"
+            data-aos-delay={index * 100}
             key={index}
             className={`${styles.tab} ${
               active === index ? styles.active : null

@@ -13,21 +13,12 @@ function Experience() {
       <div className={styles.timeline}>
         {EXPERIENCE.map(
           (
-            {
-              company,
-              description,
-              from,
-              id,
-              link,
-              logo,
-              title,
-              to,
-              certificate,
-            },
+            { company, description, from, id, link, title, to, certificate },
             index
           ) => {
             return (
               <div
+                data-aos="fade-up"
                 key={id}
                 className={`${styles.container} ${
                   index & 1 ? styles.left_container : styles.right_container
@@ -58,9 +49,13 @@ function Experience() {
                     {stringShortner(description, 240)}
                   </p>
                   <div className={styles.btn_grp}>
-                    <Button variant="secondary" size="small">
-                      Certificate
-                    </Button>
+                    {certificate && (
+                      <a href={certificate}>
+                        <Button variant="secondary" size="small">
+                          Certificate
+                        </Button>
+                      </a>
+                    )}
                     <a href={link} target="_blank" title="visit the website">
                       <RxExternalLink
                         className={styles.redirect_icon}
