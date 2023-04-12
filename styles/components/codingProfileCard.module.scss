@@ -1,5 +1,4 @@
 .container {
-  max-width: 299px;
   background: var(--primary-l);
   padding: 2rem;
   border-radius: var(--br-r);
@@ -10,6 +9,7 @@
   justify-content: space-between;
   gap: 1rem;
   max-height: 35rem;
+  width: 100%;
 
   .title {
     font-size: var(--text-xm);

@@ -81,6 +81,7 @@ function ContactMe() {
                 }
               />
               <textarea
+                rows={10}
                 value={formData.message}
                 placeholder="Message"
                 onChange={({

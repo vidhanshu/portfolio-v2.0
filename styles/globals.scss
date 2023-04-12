@@ -14,14 +14,15 @@
   list-style-type: none;
   text-decoration: none;
 
-  font-weight: 400;
-  font-size: 10px;
-  font-family: Poppins, sans-serif;
-
   scroll-behavior: smooth;
 }
 
 :root {
+  //font size
+  font-weight: 400;
+  font-size: 62.5%;
+  font-family: Poppins, sans-serif;
+
   //for btns, bgs, borders, gradients, etc
   --primary-rgb: 14, 23, 36;
   --primary: #0e1724;
@@ -99,6 +100,10 @@
   --gap-xs: 0.5rem; //for regular gap
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--primary);
   color: var(--primary-text);
@@ -106,6 +111,7 @@ body {
 
 a {
   color: var(--primary-text);
+  max-width: fit-content;
 }
 
 ::-webkit-scrollbar {
@@ -129,9 +135,20 @@ a {
 .card_hover_effect {
   outline: 2px solid transparent;
   transition: transform 0.2s ease-in-out, outline 0.2s ease-in-out !important;
-  
+
   &:hover {
     transform: translateY(-0.5rem) scale(1.01) !important;
     outline: 2px solid var(--secondary-text) !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  :root {
+    font-size: 58%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  :root {
+    font-size: 50%;
   }
 }

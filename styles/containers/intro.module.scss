@@ -92,3 +92,78 @@
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    .container {
+      .left {
+        .greeting {
+          font-size: var(--text-r);
+        }
+        .name {
+          font-size: var(--text-xl);
+        }
+        .subtitle {
+          font-size: var(--text-xm);
+        }
+        .description {
+          margin-top: var(--gap-sm);
+          font-size: var(--text-r);
+        }
+      }
+      .right {
+        img {
+          display: none;
+        }
+      }
+      .stats {
+        .statsCard {
+          h1 {
+            font-size: var(--text-l);
+          }
+
+          p {
+            font-size: var(--text-xs);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    .container {
+      .left {
+        .greeting {
+          font-size: var(--text-sm);
+        }
+        .name {
+          font-size: var(--text-l);
+        }
+        .subtitle {
+          font-size: var(--text-m);
+        }
+        .description {
+          margin-top: var(--gap-xs);
+          font-size: var(--text-sm);
+        }
+      }
+      .stats {
+        .mouse {
+          display: none;
+        }
+
+        .statsCard {
+          h1 {
+            -webkit-text-stroke-width: 2px;
+            font-size: var(--text-xm);
+          }
+
+          p {
+            font-size: var(--text-xxs);
+          }
+        }
+      }
+    }
+  }
+}

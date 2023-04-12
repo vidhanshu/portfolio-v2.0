@@ -1,4 +1,5 @@
 .wrapper {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,10 +50,17 @@
     .right {
       position: relative;
 
+      @media screen and (max-width: 1000px) {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
       &::before {
         content: "";
         position: absolute;
-        top: .7rem;
+        top: 0.7rem;
         left: -1rem;
         width: 100%;
         height: 100%;
@@ -62,6 +70,31 @@
           var(--tertiary)
         );
         z-index: -1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .left {
+      .btn_grp {
+        flex-direction: column;
+
+        button {
+          min-width: 220px;
+        }
+      }
+    }
+
+    .right {
+      img {
+        width: 100%;
       }
     }
   }

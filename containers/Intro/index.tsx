@@ -23,7 +23,7 @@ function Intro() {
             </p>
           </div>
           <div className={styles.stats}>
-            <BsMouse color="var(--tertiary-text)" size={40} />
+            <BsMouse className={styles.mouse} color="var(--tertiary-text)" size={40} />
             <StatsCard count="2" description="Happy Clients" />
             <StatsCard count="10" description="Projects Completed" />
             <StatsCard count="3" description="Years of Experience" />
@@ -32,7 +32,7 @@ function Intro() {
             <Button size="large">Download Resume</Button>
           </a>
         </div>
-        <div>
+        <div className={styles.right}>
           <Image
             alt="header image"
             src={"/assets/header.png"}
