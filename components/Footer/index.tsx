@@ -90,14 +90,14 @@ function Footer() {
           </li>
         </ul>
 
-        <h4
+        <button
           className={styles.btt}
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
           Back to top
-        </h4>
+        </button>
       </div>
 
       <div className={styles.seperator}></div>
