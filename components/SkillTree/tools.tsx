@@ -37,6 +37,7 @@ export default function ToolSkillsTree() {
         <TreeLeaf title="Vercel" />
         <TreeLeaf title="GPages" />
         <TreeLeaf title="Netlify" />
+        <TreeLeaf title="Render" />
       </TreeBranch>
     </ul>
   );

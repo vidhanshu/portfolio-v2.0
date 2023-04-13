@@ -1,52 +1,85 @@
-.container {
-  display: flex;
-  gap: var(--gap-m);
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: var(--br-r);
-
-  .right_content {
+.wrapper {
+  padding: 2rem;
+  .container {
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: var(--gap-m);
+    margin-bottom: 2rem;
+    border-radius: var(--br-r);
 
-    .right_content_top {
+    .right_content {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
 
-      .rank {
-        font-family: "fira code", monospace;
+      .right_content_top {
+        display: flex;
+        justify-content: space-between;
+
+        .rank {
+          font-family: "fira code", monospace;
+          font-size: var(--text-r);
+        }
+        .title {
+          font-size: var(--text-m);
+          font-weight: 500;
+        }
+        .date {
+          color: var(--secondary-text);
+          font-size: var(--text-sm);
+        }
+      }
+      .description {
         font-size: var(--text-r);
       }
-      .title {
+      .skill_title {
+        color: var(--tertiary-text);
         font-size: var(--text-m);
-        font-weight: 500;
       }
-      .date {
-        color: var(--secondary-text);
-        font-size: var(--text-sm);
-      }
-    }
-    .description {
-      font-size: var(--text-r);
-    }
-    .skill_title {
-      color: var(--tertiary-text);
-      font-size: var(--text-m);
-    }
-    .skills {
-      display: flex;
-      gap: var(--gap-r);
-      flex-wrap: wrap;
+      .skills {
+        display: flex;
+        gap: var(--gap-r);
+        flex-wrap: wrap;
 
-      .skill {
-        font-size: var(--text-sm);
+        .skill {
+          font-size: var(--text-sm);
+        }
+      }
+      .right_content_bottom {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-r);
       }
     }
-    .right_content_bottom {
-      display: flex;
-      align-items: center;
-      gap: var(--gap-r);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    .image {
+      width: 300px;
+      height: 240px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .image {
+      width: 100%;
+    }
+
+    .right_content {
+      .skill_title {
+        margin-top: 1rem;
+      }
+      .right_content_bottom {
+        margin-top: 2rem;
+      }
     }
   }
 }

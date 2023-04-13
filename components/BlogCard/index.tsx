@@ -62,12 +62,14 @@ function BlogCard({
       </div>
 
       {/* right image */}
-      <Image
-        src={`/assets/${image}`}
-        width={541}
-        height={304}
-        alt="blog image"
-      />
+      <div className={styles.blog_right}>
+        <Image
+          src={`/assets/${image}`}
+          width={541}
+          height={304}
+          alt="blog image"
+        />
+      </div>
     </div>
   );
 }

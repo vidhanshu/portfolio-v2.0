@@ -9,7 +9,7 @@ import styles from "@/styles/containers/skills.module.scss";
 
 export default function SkillsSection() {
   return (
-    <div className={styles.skillsContainer}>
+    <div className={`${styles.skillsContainer} container`}>
       <div className={styles.skillsWrapper}>
 
         <div className={styles.skillsContent} data-aos="fade-up">

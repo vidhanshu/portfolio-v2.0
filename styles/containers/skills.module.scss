@@ -174,10 +174,10 @@
 @media screen and (max-width: 1200px) {
   .skillsContainer {
     .skillsWrapper {
-      // width: 900px;
+      margin-top: 4rem !important;
       .skillsHeader {
         .skillsHeading {
-          font-size: 30px;
+          font-size: var(--text-m);
         }
 
         .line {
@@ -203,9 +203,8 @@
 @media screen and (max-width: 1000px) {
   .skillsContainer {
     .skillsWrapper {
-      // width: 600px;
       .skillsHeading {
-        font-size: 28px;
+        font-size: var(--text-r);
       }
 
       .line {
@@ -251,7 +250,7 @@
     .skillsWrapper {
       .skillsHeader {
         .skillsHeading {
-          font-size: 26px;
+          font-size: var(--text-r);
         }
 
         .line {
@@ -275,7 +274,7 @@
         width: 380px;
 
         .skillsHeading {
-          font-size: 24px;
+          font-size: var(--text-r);
         }
 
         .line {
@@ -297,7 +296,7 @@
     .skillsWrapper {
       .skillsHeader {
         .skillsHeading {
-          font-size: 24px;
+          font-size: var(--text-r);
         }
       }
 

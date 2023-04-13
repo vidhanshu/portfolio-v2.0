@@ -1,9 +1,9 @@
 .container {
   max-width: 1200px;
-  min-height: 100vh;
   margin: 0 auto;
   padding: 2rem 0;
   width: 100%;
+  overflow-x: scroll;
 
   @media screen and (max-width: 1400px) {
     max-width: 1000px;

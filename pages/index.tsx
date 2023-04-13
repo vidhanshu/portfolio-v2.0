@@ -67,11 +67,11 @@ function index() {
 
       <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
 
-      {/* <Achievements /> */}
+      <Achievements />
 
       <SectionSeperator id={BLOGS_STRING} title="Blogs" />
 
-      {/* <MyBlogs /> */}
+      <MyBlogs />
 
       <SectionSeperator id={CODING_PROFILES_STRING} title="Coding Profiles" />
 

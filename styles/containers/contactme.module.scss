@@ -188,6 +188,7 @@
       display: flex;
       align-items: center;
       flex-basis: 100%;
+      overflow: hidden;
 
       svg {
         width: 100%;
@@ -202,7 +203,7 @@
         form {
           max-width: auto;
           width: 100% !important;
-          height: 55%;
+          height: 75% !important;
           left: 0px !important;
 
           input,
