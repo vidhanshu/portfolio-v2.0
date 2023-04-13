@@ -32,104 +32,34 @@ function Header() {
       {/* for desktop */}
       <ul className={styles.nav_items}>
         <li className={styles.nav_item}>
-          <a
-            href={ABOUT_ME_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            About /&gt;
-          </a>
+          <a href={ABOUT_ME_TAG}>About /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={WHAT_I_DO_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            What i do /&gt;
-          </a>
+          <a href={WHAT_I_DO_TAG}>What i do /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={SKILLS_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Skills /&gt;
-          </a>
+          <a href={SKILLS_TAG}>Skills /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={PROJECTS_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Projects /&gt;
-          </a>
+          <a href={PROJECTS_TAG}>Projects /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={EXPERIENCE_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Experience /&gt;
-          </a>
+          <a href={EXPERIENCE_TAG}>Experience /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={ACHIEVEMENTS_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Achievements /&gt;
-          </a>
+          <a href={ACHIEVEMENTS_TAG}>Achievements /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={BLOGS_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Blogs /&gt;
-          </a>
+          <a href={BLOGS_TAG}>Blogs /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={CODING_PROFILES_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Coding profiles /&gt;
-          </a>
+          <a href={CODING_PROFILES_TAG}>Coding profiles /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={CERTIFICATIONS_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Certifications /&gt;
-          </a>
+          <a href={CERTIFICATIONS_TAG}>Certifications /&gt;</a>
         </li>
         <li className={styles.nav_item}>
-          <a
-            href={CONTACT_ME_TAG}
-            onClick={() => {
-              setActive(false);
-            }}
-          >
-            Contact /&gt;
-          </a>
+          <a href={CONTACT_ME_TAG}>Contact /&gt;</a>
         </li>
       </ul>
 
@@ -151,7 +81,7 @@ function Header() {
         <ul className={`${styles.mobile_menu}`}>
           <li className={styles.close_btn_container}>
             <span
-              className={styles.close_btn}
+              className={`${styles.close_btn} card_hover_effect`}
               onClick={() => {
                 setActive((i) => {
                   if (i) {
