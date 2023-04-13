@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ul li {
+    list-style: circle !important;
+    margin-left: 2rem;
+  }
   
   .timeline {
     position: relative;
