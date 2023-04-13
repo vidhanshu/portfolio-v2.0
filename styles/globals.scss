@@ -107,11 +107,18 @@ html {
 body {
   background: var(--primary);
   color: var(--primary-text);
+  width: 100vw;
+  overflow-y: hidden;
 }
 
 a {
   color: var(--primary-text);
   max-width: fit-content;
+  user-select: none;
+}
+
+button {
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -133,7 +140,7 @@ a {
 
 // global styles
 .card_hover_effect {
-  outline: 1px solid rgba(var(--secondary-text-rgb), .3);
+  outline: 1px solid rgba(var(--secondary-text-rgb), 0.3);
   transition: outline 0.2s ease-in-out !important;
 
   &:hover {

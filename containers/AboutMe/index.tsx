@@ -1,6 +1,6 @@
 import "aos/dist/aos.css";
 
-import { RESUME_LOCAL_URL, WHATS_APP_LINK } from "@/constants";
+import { EMAIL_ID_REDIRECT_URL, RESUME_LOCAL_URL } from "@/constants";
 
 import { Button } from "@/components";
 import Image from "next/image";
@@ -33,13 +33,13 @@ function AboutMe() {
             </ul>
           </div>
           <div className={styles.btn_grp} data-aos="fade-up">
-            <a href={WHATS_APP_LINK}>
+            <a href={EMAIL_ID_REDIRECT_URL} target="_blank">
               <Button variant="secondary" size="large">
                 Hire me
               </Button>
             </a>
 
-            <a href={RESUME_LOCAL_URL}>
+            <a href={RESUME_LOCAL_URL} target="_blank">
               <Button size="large">Download Resume</Button>
             </a>
           </div>

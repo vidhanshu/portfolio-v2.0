@@ -1,6 +1,6 @@
 import { Button } from "@/components";
+import { EMAIL_ID_REDIRECT_URL } from "@/constants";
 import React from "react";
-import { WHATS_APP_LINK } from "@/constants";
 import WhatIDoSvg from "@/public/assets/WhatIDoSvg";
 import styles from "@/styles/containers/whatIDo.module.scss";
 
@@ -22,7 +22,7 @@ function WhatIDo() {
             have experience of building web apps of more than 2 yrs, building
             android apps more 1 yr, and creating UI/UX also more than 1yr.
           </p>
-          <a href={WHATS_APP_LINK}>
+          <a href={EMAIL_ID_REDIRECT_URL} target="_blank">
             <Button data-aos="fade-up" size="large" variant="secondary">
               Hire Me
             </Button>

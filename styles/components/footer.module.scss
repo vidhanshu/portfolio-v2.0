@@ -67,6 +67,7 @@
     .btt {
       font-size: var(--text-r);
       cursor: pointer;
+      user-select: none;
 
       &:hover {
         color: var(--secondary-l);

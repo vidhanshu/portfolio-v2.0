@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 
   width: 100%;
   height: 100%;
@@ -39,7 +40,7 @@
       .skillsTree {
         * {
           font-family: "Fira code", monospace;
-          font-size: 15px;
+          font-size: var(--text-sm);
           transition: all 0.5s ease;
 
           &::-webkit-scrollbar {
@@ -61,7 +62,6 @@
         justify-content: flex-start;
         align-items: center;
 
-        margin: -50px 0 0 0;
         padding: 0;
 
         overflow-x: auto;
@@ -174,7 +174,7 @@
 @media screen and (max-width: 1200px) {
   .skillsContainer {
     .skillsWrapper {
-      margin-top: 4rem !important;
+      // margin-top: 4rem !important;
       .skillsHeader {
         .skillsHeading {
           font-size: var(--text-m);
@@ -182,6 +182,14 @@
 
         .line {
           width: 150px;
+        }
+      }
+
+      .skillsContent {
+        .skillsTree {
+          * {
+            font-size: var(--text-xs);
+          }
         }
       }
     }

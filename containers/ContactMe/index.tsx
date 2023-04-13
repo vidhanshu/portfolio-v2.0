@@ -58,11 +58,14 @@ function ContactMe() {
             </div>
 
             <form
+              action={`https://formsubmit.co/${MY_EMAIL_ID}`}
+              method="POST"
               className={styles.form}
               data-aos="fade-up"
               data-aos-offset="300"
             >
               <input
+                name="name"
                 value={formData.name}
                 placeholder="Name"
                 onChange={({
@@ -72,6 +75,7 @@ function ContactMe() {
                 }
               />
               <input
+                name="email"
                 value={formData.email}
                 placeholder="Email"
                 onChange={({
@@ -81,6 +85,7 @@ function ContactMe() {
                 }
               />
               <textarea
+                name="message"
                 rows={10}
                 value={formData.message}
                 placeholder="Message"
@@ -90,6 +95,8 @@ function ContactMe() {
                   setFormData({ ...formData, message })
                 }
               />
+              {/* tells the template type as table to formsubmit */}
+              <input type="hidden" name="_template" value="table" />
               <Button size="large" variant="tertiary">
                 Send <span>-&gt;</span>
               </Button>
