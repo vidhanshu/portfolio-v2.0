@@ -104,8 +104,6 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
-}
 @media screen and (max-width: 550px) {
   .nav_bar {
     padding-left: 2rem;
@@ -117,26 +115,18 @@
         max-width: auto;
         min-width: 100%;
 
-        .btn {
-          margin-top: 2rem;
-        }
-
         .title {
-          font-size: var(--text-m);
           font-weight: bold;
         }
-
-        .nav_item a {
-          font-size: var(--text-sm);
-
-          &:hover {
-            color: var(--secondary-l);
-          }
-        }
       }
-      @media screen and (min-width: 1400px) {
-        display: none;
-      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .nav_bar {
+    .mobile_nav_container {
+      display: none;
     }
   }
 }

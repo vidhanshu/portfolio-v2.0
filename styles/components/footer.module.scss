@@ -86,4 +86,22 @@
       color: red;
     }
   }
+
+  .desktop {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+    }
+  }
 }

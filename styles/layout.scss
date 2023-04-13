@@ -24,4 +24,8 @@
   grid-auto-rows: minmax(30rem, auto);
   justify-items: center;
   gap: var(--cards-gap);
+
+  @media screen and (max-width: 600px) {
+    gap: var(--gap-r);
+  }
 }

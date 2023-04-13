@@ -40,6 +40,7 @@
 
     .tag {
       font-size: var(--text-sm);
+      color: rgba(var(--primary-text-rgb), 0.5);
     }
   }
 
@@ -73,50 +74,25 @@
         width: 100%;
       }
     }
-    .blog_left {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-
-      .blog_left_top {
-        .subtitle {
-          font-size: var(--text-r);
-          font-family: "fira code", monospace;
-        }
-        .title {
-          font-size: var(--text-m);
-          font-weight: 500;
-        }
-        .date {
-          color: var(--secondary-text);
-          font-size: var(--text-sm);
-        }
-      }
-    }
     .description {
       font-size: var(--text-sm);
+      margin: 2rem 0px;
     }
-    .time_to_read {
-      font-size: var(--text-xs);
-      color: var(--tertiary-text);
-    }
-
     .tags {
-      display: flex;
-      gap: var(--gap-sm);
-      flex-wrap: wrap;
-
-      .tag {
-        font-size: var(--text-sm);
-      }
+      margin: 2rem 0px;
     }
-
-    .btn_grp {
-      display: flex;
-      gap: var(--gap-m);
-
-      svg:hover {
-        color: var(--tertiary-text);
+    .blog_left_top {
+      .subtitle {
+        font-size: var(--text-r);
+        font-family: "fira code", monospace;
+      }
+      .title {
+        font-size: var(--text-m);
+        font-weight: 500;
+      }
+      .date {
+        color: var(--secondary-text);
+        font-size: var(--text-sm);
       }
     }
   }

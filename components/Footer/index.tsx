@@ -102,8 +102,12 @@ function Footer() {
 
       <div className={styles.seperator}></div>
 
-      <p className={styles.bottom}>
+      <p className={`${styles.bottom} ${styles.desktop}`}>
         © Vidhanshu Borade | Designed and Developed with{" "}
+        <AiFillHeart size={15} /> Vidhanshu Borade
+      </p>
+      <p className={`${styles.bottom} ${styles.mobile}`}>
+        © Vidhanshu Borade | D&D with{" "}
         <AiFillHeart size={15} /> Vidhanshu Borade
       </p>
     </div>

@@ -54,6 +54,10 @@
     flex-direction: column;
     gap: var(--gap-xs);
 
+    @media screen and (max-height: 900px) {
+      margin: 1rem 0px;
+    }
+
     .langs_used {
       display: flex;
       gap: var(--gap-xs);
