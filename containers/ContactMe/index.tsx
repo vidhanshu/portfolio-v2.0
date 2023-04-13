@@ -53,7 +53,7 @@ function ContactMe() {
 
         <div className={styles.right}>
           <div className={styles.form_container}>
-            <div data-aos="fade-left" data-aos-offset="300">
+            <div data-aos="fade-left">
               <ContactFormSvg />
             </div>
 
@@ -62,7 +62,6 @@ function ContactMe() {
               method="POST"
               className={styles.form}
               data-aos="fade-up"
-              data-aos-offset="300"
             >
               <input
                 name="name"

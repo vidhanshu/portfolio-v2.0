@@ -35,7 +35,7 @@
     display: flex;
     justify-content: flex-end;
     right: -100%;
-    
+
     .overlay {
       width: 100%;
       height: 100%;
@@ -55,9 +55,9 @@
       padding: 2rem;
 
       .seperator {
-        height: 2px;
+        height: 0px;
         width: 100%;
-        border: 0.5px solid var(--primary-l);
+        border-bottom: 0.5px solid var(--primary-l);
       }
 
       .btn {
@@ -79,6 +79,7 @@
           position: fixed;
           right: 2rem;
           top: 2rem;
+          cursor: pointer;
         }
       }
 
@@ -93,9 +94,6 @@
           color: var(--secondary-l);
         }
       }
-    }
-    @media screen and (min-width: 1400px) {
-      display: none;
     }
   }
 
@@ -119,14 +117,6 @@
           font-weight: bold;
         }
       }
-    }
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .nav_bar {
-    .mobile_nav_container {
-      display: none;
     }
   }
 }

@@ -10,30 +10,49 @@ import {
   CODING_PROFILES_TAG,
   CONTACT_ME_TAG,
   EXPERIENCE_TAG,
+  HEADER_HEIGHT,
   PROJECTS_TAG,
   SKILLS_TAG,
   WHAT_I_DO_TAG,
 } from "@/constants";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import { HiBars2 } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
 import styles from "@/styles/components/nav.module.scss";
+import { useMediaQuery } from "react-responsive";
 
 function Header() {
   const [active, setActive] = useState<boolean>(false);
 
-  const toggleNav = useCallback(() => {
+  const [scrolled, setScrolled] = useState<boolean>(false);
+
+  const toggleNav = () => {
     setActive((i) => {
       if (i) {
-        document.body.style.overflowY = "auto";
         return false;
       } else {
-        document.body.style.overflowY = "hidden";
         return true;
       }
     });
+  };
+
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > HEADER_HEIGHT) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
   }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
+
+  const isDeskopNavHidden = useMediaQuery({ query: "(max-width: 1399px)" });
 
   return (
     <div className={styles.nav_bar}>
@@ -87,11 +106,21 @@ function Header() {
             <span
               className={`${styles.close_btn} card_hover_effect`}
               onClick={toggleNav}
+              style={{
+                transform:
+                  scrolled || isDeskopNavHidden || active
+                    ? "scale(1)"
+                    : "scale(0)",
+              }}
             >
               {active ? <TfiClose size={30} /> : <HiBars2 size={30} />}
             </span>
           </li>
-          <li className={styles.title}>© Vidhanshu Borade</li>
+          <li className={styles.title}>
+            <a href="#" onClick={toggleNav}>
+              © Vidhanshu Borade
+            </a>
+          </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
             <a href={ABOUT_ME_TAG} onClick={toggleNav}>

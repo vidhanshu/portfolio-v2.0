@@ -26,7 +26,6 @@ function CodingProfileCard({
   return (
     <div
       className={`${styles.container} card_hover_effect`}
-      data-aos="fade-up"
       style={{
         backgroundImage: `url(/assets/${icon})`,
       }}
