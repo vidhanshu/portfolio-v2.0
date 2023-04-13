@@ -25,7 +25,13 @@ import {
   SkillsSection,
   WhatIDo,
 } from "@/containers";
-import { FixedSocials, Footer, Navbar, SectionSeperator } from "@/components";
+import {
+  FixedSocials,
+  Footer,
+  Navbar,
+  NoSSR,
+  SectionSeperator,
+} from "@/components";
 
 import Head from "next/head";
 import React from "react";
@@ -41,7 +47,9 @@ function index() {
         <meta name="theme-color" content={"#000"} />
       </Head>
 
-      <Navbar />
+      <NoSSR>
+        <Navbar />
+      </NoSSR>
 
       <Intro />
 

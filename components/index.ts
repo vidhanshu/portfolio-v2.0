@@ -8,10 +8,12 @@ import Button from "./Button";
 import FixedSocials from "./FixedSocials";
 import Footer from "./Footer";
 import Navbar from "./Header";
+import NoSSR from "./NoSSR";
 import SectionSeperator from "./SectionSeperator";
 import Tabs from "./Tabs";
 
 export {
+  NoSSR,
   Footer,
   Navbar,
   Button,

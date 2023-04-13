@@ -20,7 +20,7 @@ function AchievementCard({
   news,
 }: AchievementType) {
   return (
-    <div className={styles.wrapper} data-aos="fade-up">
+    <div className={styles.wrapper}>
       <div className={`${styles.container} card_hover_effect`}>
         <Image
           width={483.51}

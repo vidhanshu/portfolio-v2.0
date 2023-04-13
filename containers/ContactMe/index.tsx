@@ -53,7 +53,7 @@ function ContactMe() {
 
         <div className={styles.right}>
           <div className={styles.form_container}>
-            <div data-aos="fade-left" data-aos-offset="300">
+            <div data-aos="fade-left">
               <ContactFormSvg />
             </div>
 
@@ -62,12 +62,12 @@ function ContactMe() {
               method="POST"
               className={styles.form}
               data-aos="fade-up"
-              data-aos-offset="300"
             >
               <input
                 name="name"
                 value={formData.name}
                 placeholder="Name"
+                required
                 onChange={({
                   target: { value: name },
                 }: ChangeEvent<HTMLInputElement>) =>
@@ -77,6 +77,7 @@ function ContactMe() {
               <input
                 name="email"
                 value={formData.email}
+                required
                 placeholder="Email"
                 onChange={({
                   target: { value: email },
@@ -86,6 +87,7 @@ function ContactMe() {
               />
               <textarea
                 name="message"
+                required
                 rows={10}
                 value={formData.message}
                 placeholder="Message"
