@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  vidhanshu - v2.0
+</h1>
 
-## Getting Started
+<p align="center">
+  This is the 2nd version of my portfolio build with <a href="https://nextjs.org" target="_blank">Next.JS</a> and hosted in <a href='https://vercel.com' target="_blank">Vercel</a>.
+</p>
 
-First, run the development server:
+## Overview
+
+Hi There!
+
+This is the second instance of my Portfolio website (The 2nd version of my portfolio). This website is assembled successfully by grabbing inspiration from multiple elegant portfolio websites. Many components and animations of this website are built from inspired websites all around the internet like <a href="https://yasio.dev/" alt="yasio.dev">yasio.dev</a> and  <a href="https://sobhanbera.vercel.app" alt="sobhan">sobhanbera</a>.
+
+If you find the project useful just give it a star ⭐️.
+
+## Features
+
+The major features of this portfolio website are:
+
+1. beautiful dark color combination with gradients.
+2. Smooth animations and transitions.
+3. Responsive for small-sized devices.
+4. And many more to be implemented soon.
+
+## preview
+
+<img src="https://i.postimg.cc/VNWckyYy/desktop-portfolio.png" alt="preview of the website" width="100%"/>
+
+<img src="https://i.postimg.cc/fbtB8mr8/image.png" alt="preview of the website" width="100%"/>
+
+## Environment Setup
+
+1.  Install packages:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  Now it's time to spin up the live server.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+4. If you want to use this code as your portfolio website. Go on! But remember you have to change details in many places like `constants` and etc.,
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The live server is up and running at port `3000`. Here - [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deployment
 
-## Learn More
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
