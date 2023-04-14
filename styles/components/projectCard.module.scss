@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  height: 100%;
 
   .project_card_header {
     display: flex;
@@ -20,6 +21,11 @@
   .project_description {
     font-size: var(--text-sm);
     line-height: 2.3rem;
+
+    ul li {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
   }
 
   .project_tags {
@@ -42,7 +48,7 @@
       color: var(--primary-text);
 
       &:hover {
-        color: var(--secondary-text);
+        color: var(--tertiary-text);
       }
     }
   }

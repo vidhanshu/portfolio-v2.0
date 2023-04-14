@@ -54,7 +54,7 @@ export interface CodingProfileType {
   languages_used: string[];
   //cp specific
   rating?: number;
-  stars?: number;
+  stars?: string;
   problem_solved?: number;
   //github specific
   forks?: number;

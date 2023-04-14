@@ -18,8 +18,8 @@ function CertificationCard({
 }: CertificationType) {
   return (
     <div
-      className={`${styles.container} card_hover_effect`}
       data-aos="fade-up"
+      className={`${styles.container} card_hover_effect`}
       style={{
         backgroundImage: `url(/assets/${icon})`,
       }}
@@ -37,13 +37,13 @@ function CertificationCard({
       <p className={styles.description}>{description}</p>
 
       {certificate && (
-        <a href={certificate}>
+        <a href={certificate} target="_blank">
           <Button variant="secondary">Certificate</Button>
         </a>
       )}
 
       {project && (
-        <a href={project}>
+        <a href={project} target="_blank">
           <Button variant="secondary">Projects</Button>
         </a>
       )}

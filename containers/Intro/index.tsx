@@ -17,13 +17,17 @@ function Intro() {
               I build stuffs for web & android.
             </h3>
             <p className={styles.description}>
-              I&apos;m a MERN-stack developer. I build both for android devices
-              & for web. Currently, I&apos;m more concentrating on client &
-              personal projects. I love to guide and support others.
+              I&apos;m a MERN-stack developer. I build both for android & for
+              web. Currently, I&apos;m more concentrating on client & personal
+              projects along with placement prep. I love to guide and support others.
             </p>
           </div>
           <div className={styles.stats}>
-            <BsMouse className={styles.mouse} color="var(--tertiary-text)" size={40} />
+            <BsMouse
+              className={styles.mouse}
+              color="var(--tertiary-text)"
+              size={40}
+            />
             <StatsCard count="2" description="Happy Clients" />
             <StatsCard count="10" description="Projects Completed" />
             <StatsCard count="3" description="Years of Experience" />

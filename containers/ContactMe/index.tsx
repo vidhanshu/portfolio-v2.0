@@ -42,7 +42,11 @@ function ContactMe() {
               <span className={styles.bullet}>
                 <MdAlternateEmail size={25} />
               </span>
-              <a href={EMAIL_ID_REDIRECT_URL} className={styles.info_text}>
+              <a
+                href={EMAIL_ID_REDIRECT_URL}
+                target="_blank"
+                className={styles.info_text}
+              >
                 {MY_EMAIL_ID}
               </a>
             </div>

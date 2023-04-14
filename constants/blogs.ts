@@ -9,7 +9,7 @@ export const BLOGS: BlogType[] = [
     description:
       "Object-Oriented Programming as the name implies is a language that uses Objects in programming. You might be confused with what this Object is? Whose Object it is? No worries, I will be covering this later in the blog. Grab your Popcorn box and enjoy reading!....",
     image: "oop.png",
-    link: "https://medium.com",
+    link: "https://medium.com/dsc-ghrce/oops-its-oops-c9684437fc49",
     tags: [
       "C++",
       "oop",

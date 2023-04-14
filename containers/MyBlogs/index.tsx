@@ -5,10 +5,12 @@ import styles from "@/styles/containers/myblogs.module.scss";
 
 function MyBlogs() {
   return (
-    <div className={`container ${styles.container}`}>
-      {BLOGS.map((data, index) => (
-        <BlogCard key={data.id} {...data} />
-      ))}
+    <div className={`container`}>
+      <div className={`${styles.container}`}>
+        {BLOGS.map((data) => (
+          <BlogCard key={data.id} {...data} />
+        ))}
+      </div>
     </div>
   );
 }

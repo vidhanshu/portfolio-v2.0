@@ -45,6 +45,7 @@
         .text_box_top {
           display: flex;
           align-items: center;
+          justify-content: space-between;
           gap: var(--gap-r);
         }
 
@@ -52,6 +53,7 @@
           display: flex;
           gap: var(--gap-r);
           margin-top: 2rem;
+          align-items: center;
 
           .redirect_icon {
             transform: scale(1);
@@ -67,7 +69,7 @@
 
         .duration {
           color: var(--secondary-text);
-          font-size: var(--text-xxs);
+          font-size: var(--text-sm);
         }
 
         .description {

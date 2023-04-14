@@ -12,7 +12,7 @@
     padding: 4rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 350px) {
     padding: 2rem;
   }
 }
@@ -24,8 +24,9 @@
   grid-auto-rows: minmax(30rem, auto);
   justify-items: center;
   gap: var(--cards-gap);
+  width: 100% !important;
 
   @media screen and (max-width: 600px) {
-    gap: var(--gap-r);
+    gap: var(--gap-m);
   }
 }

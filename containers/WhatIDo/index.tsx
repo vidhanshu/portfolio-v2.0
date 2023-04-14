@@ -19,8 +19,8 @@ function WhatIDo() {
           </h1>
           <p className={styles.description} data-aos="fade-up">
             I can build beautiful user interfaces using my front end skills. I
-            have experience of building web apps of more than 2 yrs, building
-            android apps more 1 yr, and creating UI/UX also more than 1yr.
+            have experience of building web apps of more than 2 yrs and building
+            android apps and UI/UX more than 1yr.
           </p>
           <a href={EMAIL_ID_REDIRECT_URL} target="_blank">
             <Button data-aos="fade-up" size="large" variant="secondary">

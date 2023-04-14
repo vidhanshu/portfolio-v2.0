@@ -9,16 +9,25 @@ import styles from "@/styles/containers/experience.module.scss";
 
 function Experience() {
   return (
-    <div className={`container ${styles.wrapper}`}>
+    <div className={`container ${styles.wrapper}`} data-aos="fade-up">
       <div className={styles.timeline}>
         {EXPERIENCE.map(
           (
-            { company, description, from, id, link, title, to, certificate },
+            {
+              company,
+              description,
+              from,
+              id,
+              link,
+              title,
+              to,
+              certificate,
+              logo,
+            },
             index
           ) => {
             return (
               <div
-                data-aos="fade-up"
                 key={id}
                 className={`${styles.container} ${
                   index & 1 ? styles.left_container : styles.right_container
@@ -36,10 +45,10 @@ function Experience() {
                       {title} @ {company}
                     </h1>
                     <Image
-                      src={`/assets/${"po.png"}`}
-                      width={40}
-                      height={40}
-                      alt="company logo"
+                      src={`/assets/${logo}`}
+                      width={45}
+                      height={38}
+                      alt={logo}
                     />
                   </div>
                   <small className={styles.duration}>
@@ -50,7 +59,7 @@ function Experience() {
                   </p>
                   <div className={styles.btn_grp}>
                     {certificate && (
-                      <a href={certificate}>
+                      <a href={certificate} target="_blank">
                         <Button variant="secondary" size="small">
                           Certificate
                         </Button>
@@ -59,7 +68,7 @@ function Experience() {
                     <a href={link} target="_blank" title="visit the website">
                       <RxExternalLink
                         className={styles.redirect_icon}
-                        size={30}
+                        size={25}
                       />
                     </a>
                   </div>
