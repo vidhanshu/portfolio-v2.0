@@ -18,6 +18,7 @@ function CertificationCard({
 }: CertificationType) {
   return (
     <div
+      data-aos="fade-up"
       className={`${styles.container} card_hover_effect`}
       style={{
         backgroundImage: `url(/assets/${icon})`,

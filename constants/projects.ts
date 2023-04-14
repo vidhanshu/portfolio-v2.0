@@ -50,7 +50,7 @@ export const PROJECTS: ProjectType[] = [
     title: "Vibe - Social media app",
     description: `
     <div>
-    <p>This is a social media application with lot's of features. It has very beatiful UI and it's like instagram.</p>
+    <p>This is a social media application with lot's of features.</p>
     <u style="text-decoration:underline;"><i>Has various features like</i></u>: 
     <ul>
       <li>CRUD post</li>

@@ -21,7 +21,7 @@ function BlogCard({
   title,
 }: BlogType) {
   return (
-    <div className={`${styles.container} card_hover_effect`}>
+    <div className={`${styles.container} card_hover_effect`} data-aos="fade-up">
       {/* blog's left content */}
       <div className={styles.blog_left}>
         <div className={styles.blog_left_top}>
