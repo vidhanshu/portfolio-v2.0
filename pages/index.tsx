@@ -67,7 +67,9 @@ function index() {
 
       <SectionSeperator id={PROJECTS_STRING} title="Projects" />
 
-      <Projects />
+      <NoSSR>
+        <Projects />
+      </NoSSR>
 
       <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
 

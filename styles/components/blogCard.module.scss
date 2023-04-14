@@ -3,7 +3,6 @@
   gap: var(--cards-gap);
   padding: 1rem;
   border-radius: var(--br-r);
-  cursor: pointer;
 
   .blog_left {
     display: flex;
@@ -17,7 +16,8 @@
       }
       .title {
         font-size: var(--text-m);
-        font-weight: 500;
+        font-weight: bold;
+        margin: .5rem 0px;
       }
       .date {
         color: var(--secondary-text);

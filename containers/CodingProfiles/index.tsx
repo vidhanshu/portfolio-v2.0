@@ -5,7 +5,7 @@ import styles from "@/styles/containers/codingProfiles.module.scss";
 
 function CodingProfiles() {
   return (
-    <div className={`container ${styles.container}`}>
+    <div className={`container ${styles.container}`} data-aos="fade-up">
       <div className="grid_container_for_cards ">
         {CODING_PROFILES.map((profile) => (
           <CodingProfileCard key={profile.id} {...profile} />

@@ -10,21 +10,22 @@
   width: 100%;
 
   img {
-      max-width: 100px;
+    max-width: 100px;
   }
 
   .top {
     display: flex;
     justify-content: space-between;
+    margin: 1rem 0px;
 
     .title {
       font-size: var(--text-m);
       font-weight: 500;
     }
-
   }
 
   .description {
     font-size: var(--text-r);
+    margin: 2rem 0px
   }
 }

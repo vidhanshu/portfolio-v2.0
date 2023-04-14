@@ -57,13 +57,13 @@ function AchievementCard({
 
           <div className={styles.right_content_bottom}>
             {certificate && (
-              <a href={certificate} title="see the certificate">
+              <a href={certificate} title="see the certificate" target="_blank">
                 <Button variant="secondary">Certificate</Button>
               </a>
             )}
             {news && (
-              <a href={news} title="see the news article">
-                <IoNewspaperOutline size={30} />
+              <a href={news} title="see the news article" target="_blank">
+                <IoNewspaperOutline size={25} />
               </a>
             )}
           </div>

@@ -12,7 +12,6 @@ import styles from "@/styles/components/codingProfileCard.module.scss";
 function CodingProfileCard({
   description,
   icon,
-  id,
   languages_used,
   link,
   logo,
@@ -37,7 +36,7 @@ function CodingProfileCard({
           <img src={`/assets/${logo}`} alt="codechef.png" />
         </div>
 
-        <p className={styles.description}>{stringShortner(description, 166)}</p>
+        <p className={styles.description}>{stringShortner(description, 320)}</p>
       </div>
 
       <div className={styles.middle}>
@@ -89,7 +88,7 @@ function CodingProfileCard({
         )}
       </div>
 
-      <a href={link} title="link to profile">
+      <a href={link} title="link to profile" target="_blank">
         <Button variant="secondary">Visit profile</Button>
       </a>
     </div>

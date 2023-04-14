@@ -22,10 +22,10 @@
   width: 100% !important;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-auto-rows: minmax(30rem, auto);
-  justify-items: center;
   gap: var(--cards-gap);
+  width: 100% !important;
 
   @media screen and (max-width: 600px) {
-    gap: var(--gap-r);
+    gap: var(--gap-m);
   }
 }

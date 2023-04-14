@@ -33,22 +33,22 @@ function FixedSocials() {
   return (
     <div className={styles.container}>
       <div className={styles.socials}>
-        <a href={LEETCODE_URL}>
+        <a href={LEETCODE_URL} target="_blank">
           <SiLeetcode size={20} />
         </a>
-        <a href={GITHUB_URL}>
+        <a href={GITHUB_URL} target="_blank">
           <FiGithub size={20} />
         </a>
-        <a href={EMAIL_ID_REDIRECT_URL}>
+        <a href={EMAIL_ID_REDIRECT_URL} target="_blank">
           <MdOutlineAlternateEmail size={20} />
         </a>
-        <a href={LINKEDIN_URL}>
+        <a href={LINKEDIN_URL} target="_blank">
           <FiLinkedin size={20} />
         </a>
-        <a href={INSTAGRAM_URL}>
+        <a href={INSTAGRAM_URL} target="_blank">
           <FiInstagram size={20} />
         </a>
-        <a href={FB_URL}>
+        <a href={FB_URL} target="_blank">
           <FiFacebook size={20} />
         </a>
       </div>

@@ -18,9 +18,10 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   tags: string[];
-  project_type: "web" | "android" | "UI/UX";
+  project_type: "web" | "android" | "UI/UX" | "CLI";
   project_live_url?: string;
   project_github_url?: string;
+  is_private?: boolean;
 }
 
 export interface StatsCardProps {
