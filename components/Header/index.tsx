@@ -120,7 +120,7 @@ function Header() {
             </span>
           </li>
           <li className={styles.title}>
-            <Link href="#" onClick={toggleNav}>
+            <Link href="/" onClick={toggleNav}>
               © Vidhanshu Borade
             </Link>
           </li>
