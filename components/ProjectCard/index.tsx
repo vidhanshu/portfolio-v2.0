@@ -30,7 +30,7 @@ function ProjectCard({
   };
 
   return (
-    <div className={`${styles.project_card} card_hover_effect`} data-aos="fade-up">
+    <div className={`${styles.project_card} card_hover_effect`}>
       <div className={styles.project_card_header}>
         <h4 className={styles.project_title}>{title}</h4>
         {IconByProjectType[project_type]}

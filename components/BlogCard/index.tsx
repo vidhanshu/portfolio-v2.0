@@ -22,7 +22,7 @@ function BlogCard({
   title,
 }: BlogType) {
   return (
-    <div className={`${styles.container} card_hover_effect`} data-aos="fade-up">
+    <div className={`${styles.container} card_hover_effect`}>
       {/* blog's left content */}
       <div className={styles.blog_left}>
         <Link href={`/blogs/${id}`}>
