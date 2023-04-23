@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: var(--gap-r);
   margin: auto;
+  width: 100%;
 
   @media screen and (max-width: 1000px) {
     display: grid;
