@@ -1,6 +1,5 @@
 import { CODING_PROFILES } from "@/constants/codingProfiles";
 import CodingProfileCard from "@/components/CodingProfileCard";
-import React from "react";
 import styles from "@/styles/containers/codingProfiles.module.scss";
 
 function CodingProfiles() {

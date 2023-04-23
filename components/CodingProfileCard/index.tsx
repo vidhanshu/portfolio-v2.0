@@ -6,7 +6,6 @@ import { arrayShortner, stringShortner } from "@/utils";
 
 import Button from "../Button";
 import { CodingProfileType } from "@/@types";
-import React from "react";
 import styles from "@/styles/components/codingProfileCard.module.scss";
 
 function CodingProfileCard({
@@ -24,7 +23,6 @@ function CodingProfileCard({
 }: CodingProfileType) {
   return (
     <div
-      data-aos="fade-up"
       className={`${styles.container} card_hover_effect`}
       style={{
         backgroundImage: `url(/assets/${icon})`,

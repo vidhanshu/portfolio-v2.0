@@ -5,17 +5,16 @@ import {
   INSTAGRAM_URL,
   LEETCODE_URL,
   LINKEDIN_URL,
-  MY_EMAIL_ID,
 } from "@/constants";
 import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
 import styles from "@/styles/components/fixedSocials.module.scss";
 
 function FixedSocials() {
-  const [isCloseToFooter, setIsCloseToFooter] = React.useState(false);
+  const [isCloseToFooter, setIsCloseToFooter] = useState(false);
 
   useEffect(() => {
     function checkIfCloseToFooter() {

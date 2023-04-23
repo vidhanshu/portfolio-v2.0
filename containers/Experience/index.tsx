@@ -2,7 +2,6 @@ import Bullet from "@/public/assets/Bullet";
 import { Button } from "@/components";
 import { EXPERIENCE } from "@/constants";
 import Image from "next/image";
-import React from "react";
 import { RxExternalLink } from "react-icons/rx";
 import { stringShortner } from "@/utils";
 import styles from "@/styles/containers/experience.module.scss";

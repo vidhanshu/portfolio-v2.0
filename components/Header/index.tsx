@@ -15,9 +15,10 @@ import {
   SKILLS_TAG,
   WHAT_I_DO_TAG,
 } from "@/constants";
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { HiBars2 } from "react-icons/hi2";
+import Link from "next/link";
 import { TfiClose } from "react-icons/tfi";
 import styles from "@/styles/components/nav.module.scss";
 import { useMediaQuery } from "react-responsive";
@@ -56,39 +57,41 @@ function Header() {
 
   return (
     <div className={styles.nav_bar}>
-      <h4 className={styles.logo}>© Vidhanshu Borade</h4>
+      <Link href="/">
+        <h4 className={styles.logo}>© Vidhanshu Borade</h4>
+      </Link>
 
       {/* for desktop */}
       <ul className={styles.nav_items}>
         <li className={styles.nav_item}>
-          <a href={ABOUT_ME_TAG}>About /&gt;</a>
+          <Link href={ABOUT_ME_TAG}>About /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={WHAT_I_DO_TAG}>What i do /&gt;</a>
+          <Link href={WHAT_I_DO_TAG}>What i do /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={SKILLS_TAG}>Skills /&gt;</a>
+          <Link href={SKILLS_TAG}>Skills /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={PROJECTS_TAG}>Projects /&gt;</a>
+          <Link href={PROJECTS_TAG}>Projects /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={EXPERIENCE_TAG}>Experience /&gt;</a>
+          <Link href={EXPERIENCE_TAG}>Experience /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={ACHIEVEMENTS_TAG}>Achievements /&gt;</a>
+          <Link href={ACHIEVEMENTS_TAG}>Achievements /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={BLOGS_TAG}>Blogs /&gt;</a>
+          <Link href={BLOGS_TAG}>Blogs /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={CODING_PROFILES_TAG}>Coding profiles /&gt;</a>
+          <Link href={CODING_PROFILES_TAG}>Coding profiles /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={CERTIFICATIONS_TAG}>Certifications /&gt;</a>
+          <Link href={CERTIFICATIONS_TAG}>Certifications /&gt;</Link>
         </li>
         <li className={styles.nav_item}>
-          <a href={CONTACT_ME_TAG}>Contact /&gt;</a>
+          <Link href={CONTACT_ME_TAG}>Contact /&gt;</Link>
         </li>
       </ul>
 
@@ -117,69 +120,69 @@ function Header() {
             </span>
           </li>
           <li className={styles.title}>
-            <a href="#" onClick={toggleNav}>
+            <Link href="#" onClick={toggleNav}>
               © Vidhanshu Borade
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={ABOUT_ME_TAG} onClick={toggleNav}>
+            <Link href={ABOUT_ME_TAG} onClick={toggleNav}>
               About /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={WHAT_I_DO_TAG} onClick={toggleNav}>
+            <Link href={WHAT_I_DO_TAG} onClick={toggleNav}>
               What i do /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={SKILLS_TAG} onClick={toggleNav}>
+            <Link href={SKILLS_TAG} onClick={toggleNav}>
               Skills /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={PROJECTS_TAG} onClick={toggleNav}>
+            <Link href={PROJECTS_TAG} onClick={toggleNav}>
               Projects /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={EXPERIENCE_TAG} onClick={toggleNav}>
+            <Link href={EXPERIENCE_TAG} onClick={toggleNav}>
               Experience /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={ACHIEVEMENTS_TAG} onClick={toggleNav}>
+            <Link href={ACHIEVEMENTS_TAG} onClick={toggleNav}>
               Achievements /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={BLOGS_TAG} onClick={toggleNav}>
+            <Link href={BLOGS_TAG} onClick={toggleNav}>
               Blogs /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={CODING_PROFILES_TAG} onClick={toggleNav}>
+            <Link href={CODING_PROFILES_TAG} onClick={toggleNav}>
               Coding profiles /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={CERTIFICATIONS_TAG} onClick={toggleNav}>
+            <Link href={CERTIFICATIONS_TAG} onClick={toggleNav}>
               Certifications /&gt;
-            </a>
+            </Link>
           </li>
           <div className={styles.seperator}></div>
           <li className={styles.nav_item}>
-            <a href={CONTACT_ME_TAG} onClick={toggleNav}>
+            <Link href={CONTACT_ME_TAG} onClick={toggleNav}>
               Contact /&gt;
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

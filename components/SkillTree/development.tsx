@@ -3,7 +3,6 @@
  * @author @sobhanbera
  */
 
-import React from "react";
 import TreeBranch from "./TreeBranch";
 import TreeLeaf from "./TreeLeaf";
 

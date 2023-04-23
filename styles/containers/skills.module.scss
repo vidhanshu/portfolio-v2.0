@@ -108,7 +108,7 @@
         }
 
         span {
-          color: var(--secondary-text);
+          color: rgba(var(--primary-text-rgb), .7);
           border: 0.1em solid var(--primary-xl);
           border-radius: 0.2em;
 

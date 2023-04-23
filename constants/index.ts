@@ -36,9 +36,6 @@ export const WHATS_APP_LINK = "https://wa.link/gn88ir";
 export const COPYRIGHT_TEXT = "© 2022 Vidhanshu Borade";
 export const LEETCODE_URL = "https://leetcode.com/vidhanshu/";
 export const FB_URL = "https://www.facebook.com/vidhanshu.borade.18/";
-// regex constants
-export const EMAIL_REGEX =
-  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 // relative link to the resume file
 export const RESUME_LOCAL_URL = "/files/vidhanshu_resume.pdf";

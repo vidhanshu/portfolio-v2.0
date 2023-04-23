@@ -1,6 +1,5 @@
 import { Button } from "@/components";
 import { EMAIL_ID_REDIRECT_URL } from "@/constants";
-import React from "react";
 import WhatIDoSvg from "@/public/assets/WhatIDoSvg";
 import styles from "@/styles/containers/whatIDo.module.scss";
 

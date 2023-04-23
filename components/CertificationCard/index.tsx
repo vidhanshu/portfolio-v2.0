@@ -4,7 +4,6 @@
 
 import Button from "../Button";
 import { CertificationType } from "@/@types";
-import React from "react";
 import styles from "@/styles/components/certificationCard.module.scss";
 
 function CertificationCard({
@@ -18,7 +17,6 @@ function CertificationCard({
 }: CertificationType) {
   return (
     <div
-      data-aos="fade-up"
       className={`${styles.container} card_hover_effect`}
       style={{
         backgroundImage: `url(/assets/${icon})`,

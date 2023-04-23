@@ -1,6 +1,5 @@
 import { CERIFICATIONS } from "@/constants/certifications";
 import CertificationCard from "@/components/CertificationCard";
-import React from "react";
 import styles from "@/styles/containers/certifications.module.scss";
 
 function Certifications() {

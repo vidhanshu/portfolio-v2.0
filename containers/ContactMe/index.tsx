@@ -1,6 +1,6 @@
+import { ChangeEvent, useState } from "react";
 import { EMAIL_ID_REDIRECT_URL, MY_EMAIL_ID } from "@/constants";
 import { MdAlternateEmail, MdLocationOn } from "react-icons/md";
-import React, { ChangeEvent, useState } from "react";
 
 import { Button } from "@/components";
 import ContactFormSvg from "@/public/assets/ContactFormSvg";
@@ -82,6 +82,7 @@ function ContactMe() {
                 name="email"
                 value={formData.email}
                 required
+                type="email"
                 placeholder="Email"
                 onChange={({
                   target: { value: email },

@@ -3,8 +3,6 @@
  * @author @sobhanbera
  */
 
-import React from "react";
-
 /**
  * this component renders the single node or leaf
  * of the tree

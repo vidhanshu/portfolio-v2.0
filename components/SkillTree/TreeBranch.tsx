@@ -3,7 +3,6 @@
  * @author @sobhanbera
  */
 
-import React from "react";
 
 /**
  * this component render the sub-tree or the branch of trees sub furthure more

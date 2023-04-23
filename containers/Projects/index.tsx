@@ -1,7 +1,6 @@
 import { Button, Tabs } from "@/components";
 import { GITHUB_URL, PROJECTS } from "@/constants";
 
-import React from "react";
 import styles from "@/styles/containers/projects.module.scss";
 
 function Projects() {

@@ -41,7 +41,13 @@ export interface BlogType {
   time_to_read: string;
   tags: string[];
   image: string;
-  link: string;
+  link?: string;
+}
+
+export interface BlogRawType {
+  id: string;
+  name: string;
+  markdown: string;
 }
 
 export interface CodingProfileType {

@@ -4,7 +4,6 @@ import { EMAIL_ID_REDIRECT_URL, RESUME_LOCAL_URL } from "@/constants";
 
 import { Button } from "@/components";
 import Image from "next/image";
-import React from "react";
 import styles from "@/styles/containers/aboutme.module.scss";
 
 function AboutMe() {

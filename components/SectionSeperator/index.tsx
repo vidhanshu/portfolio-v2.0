@@ -4,7 +4,6 @@
 
 import "aos/dist/aos.css"
 
-import React from "react";
 import { sectionSeperatorProps } from "@/@types/props";
 import styles from "@/styles/components/sectionSeperator.module.scss";
 

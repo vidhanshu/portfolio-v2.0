@@ -1,4 +1,4 @@
-import { BlogType } from "@/@types";
+import { BlogRawType, BlogType } from "@/@types";
 
 export const BLOGS: BlogType[] = [
   {
@@ -19,5 +19,396 @@ export const BLOGS: BlogType[] = [
       "Learn to code",
     ],
     time_to_read: "7 min read",
+  },
+  {
+    id: "2",
+    subtitle: "interview blog 1",
+    title: "Dphi React.js SDE Intern Interview experience - I",
+    date: "Sat Apr 22, 2023",
+    description:
+      "As an aspiring artificial intelligence (AI) enthusiast, I decided to apply for an internship at AI Planet (formerly DPhi). AI Planet is a global ecosystem that aims to educate and empower individuals and organizations to build and utilize AI. In this blog, I want to share my interview experience at AI Planet in detail...",
+    image: "raju-rastogi-interview.png",
+    tags: ["Interview", "JS", "HTML", "CSS", "TS", "React.js"],
+    time_to_read: "8 min read",
+  },
+  {
+    id: "3",
+    subtitle: "interview blog 2",
+    title: "Dphi React.js SDE Intern Interview experience - II",
+    date: "Sat Apr 22, 2023",
+    description:
+      "As an aspiring artificial intelligence (AI) enthusiast, I decided to apply for an internship at AI Planet (formerly DPhi). AI Planet is a global ecosystem that aims to educate and empower individuals and organizations to build and utilize AI. In this blog, I want to share my interview experience at AI Planet in detail...",
+    image: "interview-2.jpeg",
+    tags: ["Interview", "HR", "JS", "HTML", "CSS", "TS", "React.js"],
+    time_to_read: "5 min read",
+  },
+];
+
+export const BLOGS_DETAILED: BlogRawType[] = [
+  {
+    id: "1",
+    name: "OOPS! It's OOPs.",
+    markdown: `
+![](https://miro.medium.com/v2/resize:fit:700/1*bx-_rIdgjCe0kEyNPwYJVw.png)
+
+**What do you mean by object-oriented programming?**
+
+Some of you might have coded in the C programming language, in which you first include header files in the program and then create the main function. It is a must in C++ object-oriented programming language as well, then you construct the program inside main, where you create variables and outside main you create some functions which can manipulate those variables. This type of programming approach is called procedural programming.
+
+We Also have a new programming method called Object-Oriented Programming, abbreviated as OOPs. In this method, we use a user-defined data type called **Class.**
+
+Object-Oriented Programming as the name implies is a language that uses Objects in programming. You might be confused with what this Object is? Whose Object it is? No worries, I will be covering this later in the blog. Grab your Popcorn box and enjoy reading!
+
+The main aim of OOPs is to bind the data and the methods which can manipulate those data together so that data would only be accessible to those methods only and no other part of the program could manipulate it. OOPs help us to implement real-world entities like inheritance, polymorphism, data abstraction, encapsulation, etc. in programming which we will learn about further in the blog. OOPs, work on the principle of DRY.
+
+**What do you mean by dry?**
+
+![](https://miro.medium.com/v2/resize:fit:289/1*NvF00v3j3bIEwkxJp1LLAw.png)
+
+DRY means **Don’t Repeat Yourself**. Simply, instead of writing the same code many times, just write it in one place and use it many times.
+
+What is a Class and an Object?
+------------------------------
+
+Class is nothing but a data type like int, float, etc. But, it is a user-defined data type, we can define it according to our needs. The class helps us to bind variables and functions, that can manipulate the variables. And an Object is the instance of the Class. Didn’t understand what an object is? Let’s understand with a live example, let’s consider fruits to be a class then apple is an object of the class fruit. So eventually object is nothing but a variable of the data type class, for which it is created.
+
+Using class, you can implement the real-world entity, let’s suppose you are building a system to manage the employee details like employee id, employee address, employee mobile number, etc. So far that you are not going to create all these variables separately as follows (I’m using c++ here)
+
+Example:
+
+\`\`\`cpp
+string employeeName;
+int employeeId;
+string employeeAddress;
+int employeeMobileNumber;
+\`\`\`
+
+since all these data have different data types you can’t use an array. Alternatively, you can create a template using a class like follow:
+
+\`\`\`cpp
+class employee {    
+public:        
+      string employeeName;        
+      int employeeId;        
+      string employeeAddress;        
+      int employeeMobileNumber;
+};
+\`\`\`
+
+The above template is a Class. Which helps us to bind variables having different data types in a single place. Now you might have a doubt. What about functions?
+
+You can create a function inside the class that can be used to manipulate or change the values of the variables or simply use those variables.
+
+Example:
+
+\`\`\`cpp
+class employee{
+public:       
+      string employeeName;       
+      int employeeId;       
+      string employeeAddress;       
+      int employeeMobileNumber;       
+      void getName() //function to get employee name from user 
+      {
+            cout << " Enter employee name:";
+            cin >> employeeName;        
+      }       
+      void printName() //function print the employee name        
+      {              
+            cout << " The employee name is " << employeeName;        
+      }
+};
+\`\`\`
+
+The above class has a function getName() and printName() which can be used to get the name of the employee as user input and print the name of the employee respectively. Now with the above class, you can create your variables called objects, which can be used to access data and functions inside the class.
+
+(**Note**: using objects you can only access public data outside the class, private and protected data cannot be accessed).
+
+Now for the above class, we can create object as follows:
+
+\`\`\`cpp
+employee obj1; //creating object
+obj1.getName(); //calling getName function
+obj1.printName(); //calling the printName function
+\`\`\`
+
+The above code will simply take the employee name as input from the user and print the name entered by the user. If you have coded in C programming language and used **structure** in C language you can relate structure with class.
+
+Simple, right? Now let’s move on…
+
+**What makes oops so important in programming?**
+------------------------------------------------
+
+Most of you might be wondering as to why take so much interest in learning Objects and Classes. The simple reason is that OOPs enable users to create modules that remain as it is even if we include more data types in the program. It also provides features like inheritance, data abstraction, encapsulation, and polymorphism which make the four pillars of OOPs.
+
+OOPs allows software engineers to break down large software into various modules which can be easy to understand and create the software with ease.
+
+**Four pillars of Object-Oriented Programming:**
+------------------------------------------------
+
+![](https://miro.medium.com/v2/resize:fit:700/1*IpYnumcs1umAC1n7myBxag.png)
+
+1) **Encapsulation**: In OOPs, Data encapsulation means to bind the data and the functions/methods which are made to manipulate data, together.
+
+![](https://miro.medium.com/v2/resize:fit:700/1*jufOdSTOhT0ikUIFAzfSPQ.png)
+
+2) **Abstraction**: Abstraction means showing only essential data and hiding the nonessential data from the outside world of that class. For example, When you buy a car, you know how to drive it, you can see the steering wheel, accelerator, etc. but you are not told how this accelerator works, or how the engine works.
+
+![](https://miro.medium.com/v2/resize:fit:607/1*_fvu4G8ZmaZCH1KvgqCCrA.jpeg)
+
+3) **Inheritance**: Inheritance is one of the core concepts of object-oriented programming. Inheritance means to derive attributes and methods from one class to another class. The class from which the attributes and methods are getting derived is called the parent class, and the class in which these attributes and methods are getting derived is called a derived class. Inheritance work on the principle of code reusability.
+
+![](https://seleniumautomationtester.files.wordpress.com/2017/03/inheritance-1.gif)
+
+4) **Polymorphism**: When you break the word into two parts, “poly” means “many” and “morphism” means “forms” giving it a complete meaning of “many forms”. A real-time example of polymorphism is, a person can be a father, son, and husband at the same time, so here a person has many forms depending upon the situation.
+
+![](https://miro.medium.com/v2/resize:fit:400/1*XDdk1xk2SyqnGpkjj41_gw.png)
+
+**What are the uses of these four pillars in oops?**
+
+1.\ Using OOPs it is easy to model real-world problems as each object can be viewed as a real-world entity having some attributes and methods.
+
+2.\ Using inheritance, we can reuse the existing class to derive a new class such that unnecessary code is eliminated and the use of the existing class is extended. This helps to save time and costs for the program.
+
+3.\ In OOP, data can be made private to a class so that only member functions of the class can access the data. This principle of data hiding helps to hide the data to the outside of a class so that it won’t get mistakenly changed by the programmer.
+
+4.\ Using polymorphism, the same function or same operator can be used for different purposes. This helps to manage the complexity of software easily.
+
+5.\ Large problems can be reduced into smaller modules and more manageable problems. It is easy to divide the work into a project based on objects.
+
+**Let’s see some real-life examples of OOPs:**
+
+*   It is used to create various Real-Time Systems like real-time operating systems.
+
+*   It is used in software development
+
+*   It is used to create user interface designs such as windows, menus.
+
+*   It is also used in the fields of Simulation and Modelling
+
+*   It is used to create object-oriented databases
+
+*   It is used to create AI and Expert Systems
+
+*   It is used to create Neural Networks and parallel programming
+
+*   It is also used in creating office automation systems etc.
+
+Your Learnings:
+===============
+
+- What is OOPs?
+
+- Why use OOPs and what is its importance in the software field?
+
+- What are the real-life examples of OOPs?
+
+The motive of this article is to introduce you to object-oriented programming and to tell you how important it is to study object-oriented programming while creating software as well as projects. I hope this article has helped you to better understand the concept of object-oriented programming and its need in the software field.
+
+Thank you for reading 😊
+
+### Find me here:
+
+Email: <a href="mailto:vidhanshu7218@gmail.com" target="_blank"><i>vidhanshu7218@gmail.com</i></a>
+
+Github: <a href="https://github.com/vidhanshu" target="_blank"><i>@github.com/vidhanshu</i></a>
+
+Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.vercel.app</i></a>
+
+
+> <a href="https://medium.com/dsc-ghrce/oops-its-oops-c9684437fc49" target="_blank"><i>OOPs it's OOps</i></a>  was originally published in <a target="_blank" href="https://medium.com/dsc-ghrce"><i>GDSC GHRCE</i></a> on Medium, where people are continuing the conversation by highlighting and responding to this story. 
+> 
+    `.toString(),
+  },
+  {
+    id: "2",
+    name: "My Interview Experience at AI Planet",
+    markdown: `
+![](https://i.postimg.cc/yNMKW9MC/image.png)
+As an aspiring artificial intelligence (AI) enthusiast, I decided to apply for an internship at **AI Planet (formerly DPhi)**. AI Planet is a global ecosystem that aims to educate and empower individuals and organizations to build and utilize AI. In this blog, I want to share my interview experience at AI Planet in detail.
+
+Application Process
+---
+I applied for an internship from **Wellfound (formerly AngelList)** on around 14th March and got a response back with an email mentioned below on 22nd March at 10pm:
+
+![email image](https://i.postimg.cc/wvZxdZVH/diphi-first-mail.png)
+
+As stated in the email, you can see I was provided with an assignment that should be completed on or before 27th March. I was curious about the assignment, so I started working on it right away after receiving the email at around 10 pm on 22nd March. I decided to use *React.js, Typescript*, and *MUI* as my tech stack as it was allowed to use any kind of library like *React-Bootstrap* or *MUI*, and one more reason behind using *MUI* was the UI they provided, which was clearly looking like it was created using *MUI*. I worked throughout the night on the assignment, and it was easy but time-consuming, as I wanted to create the UI as it was. I bunked the college on the next day, which was Thursday, and was working on the assignment itself till evening 5 pm and completed everything. Then I submitted the assignment at 5 pm on 23rd March.
+
+Here is the assignment link for you to take a closer look at what type of assignment it was:  <a href="https://docs.google.com/document/d/1qoQWFa5fzKsol3an9MavzCXRvy0UjU1TzHOWr9tkKbw/edit?usp=sharing" target="_blank">Assignment</a>
+The link to the assignment I built  <a href="https://hackshow.vercel.app" >My assignment</a>
+
+I got a response back from AI Planet on 28th March, which is as follows:
+
+![email png](https://i.postimg.cc/sxWWFp56/image.png)
+
+
+As mentioned in the above message, you can see that it had two issues like spacing issues, and the date was not showing up on the card. I made the necessary changes and resolved those two issues, along with making the entire website responsive, and reverted them back.
+
+Then on 2nd April, I got a response back from AI Planet, saying I got shortlisted for the Technical interview round.
+
+![](https://i.postimg.cc/d3Fs1dzS/image.png)
+
+As mentioned in the above mail, you can see that I got shortlisted for the interview and was provided with the opportunity to choose the slot as per my convenience. In the recruitment process of AI Planet, I liked that they provide shortlisted candidates to choose the preferred day and time for the interview, unlike one of the companies I applied to on AngelList.
+
+I scheduled my interview on 7th April at 3pm. On 7th of April, I joined the Google Meet before 5 minutes and was waiting for the interviewer. The interviewer came after 5-10 minutes, and we started interacting with each other with greetings. Then the interviewer asked me to give my introduction. I was a bit nervous and was not prepared, so I gave my introduction in a little bit of an incomplete way, Name, College(not mentioned that I'm in 3rd year), Skills. So make sure that whenever you start your introduction, it could be in the following order:
+1) Greetings
+2) Name, place you live
+3) Academic details (degree, year, semester), College name, place of college
+4) Skills and areas of interest (technical and non-technical)
+5) Experience (can have previous internship experience)
+6) Achievements (hackathons won, competitions won, etc.)
+
+This way, you would be giving your complete introduction without leaving anything for the interviewer to ask you back. Because in my case, I missed saying that "I'm in 3rd year," and the interviewer asked me about it.
+
+Round 1: Questions on assignment
+---
+After the introduction, we moved to the technical questions round, where the first round was *"Questions on the Assignment."* The interviewer asked me to share my screen and open the assignment I built. I had previously set up my assignment, so it saved time. The interviewer asked me to add a hackathon by clicking the *"Add hackathon"* button. I completed the task successfully, and the interviewer then asked me to visit different pages and mark the hackathon as a favorite, checking whether it worked as expected or not. Everything was working fine. Then, the interviewer asked me to go to the *"Update hackathon"* page and check the validations in the input fields there. I completed this task successfully, except I forgot to add the validation for the date (i.e., the start date should be less than or equal to the end date). The interviewer caught this issue and asked me to solve it later.
+
+Round 2: Questions on HTML
+----
+During the interview process, we progressed to the next round, which was focused on *HTML* fundamentals. The interviewer began by posing a basic question, *"Why do we use <!DOCTYPE Html> at the top of each HTML page?"* I replied that, *"it is used to indicate to the browser that the file is an HTML page, and not another type of file like JSON or XML. Additionally, I mentioned that it could aid in SEO (although I was uncertain of the exact reason)"*. The interviewer acknowledged that my response was partially correct but added that the primary reason for using *\<\!DOCTYPE Html\>* is to inform the browser of the specific version of *HTML* being used.
+
+The interviewer went on to pose several more straightforward HTML-related questions, which I was able to answer accurately. These questions included defining a tag and attribute, describing how a form operates, explaining what multipart form data means, and discussing the purpose of the action and method attributes in a form.
+
+Round 3: Questions on CSS
+---
+In the next round of the interview, the interviewer assessed my knowledge of *CSS*, or cascading style sheets. The questions asked were relatively easy, and I answered them all correctly. The questions were as follows:
+
+1. What is the difference between **flex-box** and **grid**?
+2. What are the different position properties in *CSS*, and can you explain each with an example?
+3. What are the different types of selectors in *CSS*?
+
+Round 4: Questions on JS
+---
+Moving on to the *JavaScript* round, I faced some difficulty since I had not prepared for any *JavaScript* topic. The interviewer began with some simple questions, such as:
+
+1. What are the different data types in *JavaScript*?
+2. What is the difference between **\=\=** and **\=\=\=**?
+3. What is **hoisting**?
+
+I was able to answer all of these correctly. However, the interviewer then asked some more challenging questions, such as:
+
+1. How does the browser execute *JavaScript* on a website?
+2. How does an event loop work?
+3. What is *JavaScript* closure?
+4. What is asynchronous programming?
+5. What is type coercion?
+6. What are promises?
+
+Although I was able to answer most of these questions correctly, I struggled with questions 3 and 5 due to not revising them. I provided partial answers instead of giving a complete response.
+
+Round 5: Questions on React.js
+---
+After the lengthy *JavaScript* round, we progressed to the *React.js* round, which was undoubtedly my favorite. The interviewer asked me the following questions:
+1) What is *React*, and why do we use it?
+2) What is a hook, and why were they introduced?
+3) What are the different types of hooks in *React*?
+4) Can you show me how to make an API call using Axios or Fetch API?
+
+Round 6: Practical Round
+---
+We then moved on to the final round of the interview, the *"Practical round"* where the interviewer aimed to evaluate my practical skills in *React.js*. He requested that I create an asynchronous counter with two buttons:
+1) Start - to start the counter
+2) End - to stop and reset the counter
+He asked me to open **CodeSandbox** and begin constructing it.
+
+It was straightforward for me to implement, and the code that I created is below:
+
+\`\`\`js
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  const [count, setCount] = useState(0);
+  const [id, setId] = useState(null);
+
+  const startCounter = () => {
+    setId(
+      setInterval(() => {
+        setCount((i) => i + 1);
+      }, 1000)
+    );
+  };
+
+  const stopCounter = () => {
+    clearInterval(id);
+    setId(null);
+    setCount(0);
+  };
+
+  return (
+    <div className="App">
+      <h1>{count}</h1>
+      <button onClick={startCounter}>start</button>
+      <button onClick={stopCounter}>end</button>
+    </div>
+  );
+}
+\`\`\`
+
+The interviewer then asked me to implement the counter using the useEffect hook, which was also straightforward for me, and I implemented the following code:
+
+\`\`\`js
+import "./styles.css";
+import { useEffect, useState } from "react";
+
+export default function App() {
+  const [count, setCount] = useState(0);
+  const [start, setStart] = useState(false);
+
+  useEffect(() => {
+    let id = null;
+    if (start) {
+      id = setInterval(() => {
+        setCount((i) => i + 1);
+      }, 1000);
+    } else {
+      clearInterval(id);
+      setCount(0);
+    }
+
+    return () => clearInterval(id);
+  }, [start]);
+
+  return (
+    <div className="App">
+      <h1>{count}</h1>
+      <button onClick={() => setStart(true)}>start</button>
+      <button onClick={() => setStart(false)}>end</button>
+    </div>
+  );
+}
+\`\`\`
+
+In conclusion, the technical interview process can be challenging, but it is an opportunity to showcase your skills and knowledge. From my experience, I learned that preparation is key to success, and it is important to revise all the fundamental concepts before going for an interview. In this blog, I shared my experience of the technical interview process, which included *HTML*, *CSS*, *JavaScript*, and *React.js* rounds. The next round of the interview, which was the final round, is described in another blog. Which was with **Founder and CEO of AI planet, Chanukya Patnaik**, where I will share how I tackled the behavioral questions . Remember, the more you practice, the better you will become, and always stay curious to learn and grow in your career.
+
+Your learnings
+---
+-   How to introduce yourself.
+-   How to prepare for the frontend interview.
+-   Before interview always brush-up your practical as well as theoretical concepts.
+-  Todo and not-todo while interview.
+
+The link to the assignment I built  [My assignment](https://hackshow.vercel.app)
+
+I hope this experience helps you, Thanks for reading 😇!
+
+### Find me here:
+
+Email: <a href="mailto:vidhanshu7218@gmail.com" target="_blank"><i>vidhanshu7218@gmail.com</i></a>
+
+Github: <a href="https://github.com/vidhanshu" target="_blank"><i>@github.com/vidhanshu</i></a>
+
+Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.vercel.app</i></a>
+`.toString(),
+  },
+  {
+    id: "3",
+    name: "My Interview Experience at AI Planet",
+    markdown: `
+# Will be added soon... 
+![](https://media.tenor.com/13VnwKt5qS0AAAAd/waiting.gif)  
+    `.toString(),
   },
 ];

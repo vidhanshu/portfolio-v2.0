@@ -1,0 +1,15 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--cards-gap);
+    height: 70vh;
+  
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+  }
+  

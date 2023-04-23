@@ -6,7 +6,6 @@ import { AchievementType } from "@/@types";
 import Button from "../Button";
 import Image from "next/image";
 import { IoNewspaperOutline } from "react-icons/io5";
-import React from "react";
 import styles from "@/styles/components/achievementCard.module.scss";
 
 function AchievementCard({
@@ -20,7 +19,7 @@ function AchievementCard({
   news,
 }: AchievementType) {
   return (
-    <div className={styles.wrapper} data-aos="fade-up">
+    <div className={styles.wrapper}>
       <div className={`${styles.container} card_hover_effect`}>
         <Image
           width={483.51}

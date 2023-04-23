@@ -10,7 +10,7 @@
 
 Hi There!
 
-This is the second instance of my Portfolio website (The 2nd version of my portfolio). This website is assembled successfully by grabbing inspiration from multiple elegant portfolio websites. Many components and animations of this website are built from inspired websites all around the internet like <a href="https://yasio.dev/" alt="yasio.dev">yasio.dev</a> and  <a href="https://sobhanbera.vercel.app" alt="sobhan">sobhanbera</a>.
+This is the second instance of my Portfolio website (The 2nd version of my portfolio). This website is assembled successfully by grabbing inspiration from multiple elegant portfolio websites. Some components and animations of this website are built from inspired websites all around the internet like <a href="https://yasio.dev/" alt="yasio.dev">yasio.dev</a> and  <a href="https://sobhanbera.vercel.app" alt="sobhan">sobhanbera</a>.
 
 If you find the project useful just give it a star ⭐️.
 
@@ -22,12 +22,15 @@ The major features of this portfolio website are:
 2. Smooth animations and transitions.
 3. Responsive for small-sized devices.
 4. And many more to be implemented soon.
+5. Dedicated blog reading page
 
 ## preview
 
 <img src="https://i.postimg.cc/VNWckyYy/desktop-portfolio.png" alt="preview of the website" width="100%"/>
 
 <img src="https://i.postimg.cc/fbtB8mr8/image.png" alt="preview of the website" width="100%"/>
+
+<img src="https://i.postimg.cc/VvdRBjnf/image.png" alt="preview of the website" width="100%"/>
 
 ## Environment Setup
 

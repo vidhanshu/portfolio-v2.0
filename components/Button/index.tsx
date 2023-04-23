@@ -3,8 +3,7 @@
  * size @default 'medium' => 'small' | 'medium' | 'large'
  */
 
-import { ButtonProps } from "@/@types"
-import React from "react";
+import { ButtonProps } from "@/@types";
 import styles from "@/styles/components/button.module.scss";
 
 function Button({ variant, size, children, ...props }: ButtonProps) {

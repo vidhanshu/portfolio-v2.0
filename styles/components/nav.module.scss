@@ -69,6 +69,7 @@
         justify-content: flex-end;
 
         .close_btn {
+          z-index: 1000;
           background: var(--primary-l);
           display: flex;
           justify-content: center;

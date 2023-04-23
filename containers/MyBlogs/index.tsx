@@ -1,6 +1,5 @@
 import { BLOGS } from "@/constants";
 import BlogCard from "@/components/BlogCard";
-import React from "react";
 import styles from "@/styles/containers/myblogs.module.scss";
 
 function MyBlogs() {

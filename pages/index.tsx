@@ -26,15 +26,15 @@ import {
   WhatIDo,
 } from "@/containers";
 import {
+  Button,
   FixedSocials,
-  Footer,
-  Navbar,
+  Layout,
   NoSSR,
   SectionSeperator,
 } from "@/components";
 
 import Head from "next/head";
-import React from "react";
+import Link from "next/link";
 
 function index() {
   return (
@@ -91,55 +91,69 @@ function index() {
         />
       </Head>
 
-      <NoSSR>
-        <Navbar />
-      </NoSSR>
+      <Layout>
+        <Intro />
 
-      <Intro />
+        <SectionSeperator id={ABOUT_ME_STRING} title="About me" />
 
-      <SectionSeperator id={ABOUT_ME_STRING} title="About me" />
+        <AboutMe />
 
-      <AboutMe />
+        <SectionSeperator id={WHAT_I_DO_STRING} title="What i do" />
 
-      <SectionSeperator id={WHAT_I_DO_STRING} title="What i do" />
+        <WhatIDo />
 
-      <WhatIDo />
+        <SectionSeperator id={SKILLS_STRING} title="Skills" />
 
-      <SectionSeperator id={SKILLS_STRING} title="Skills" />
+        <SkillsSection />
 
-      <SkillsSection />
+        <SectionSeperator id={PROJECTS_STRING} title="Projects" />
 
-      <SectionSeperator id={PROJECTS_STRING} title="Projects" />
+        <NoSSR>
+          <Projects />
+        </NoSSR>
 
-      <NoSSR>
-        <Projects />
-      </NoSSR>
+        <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
 
-      <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
+        <Experience />
 
-      <Experience />
+        <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
 
-      <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
+        <Achievements />
 
-      <Achievements />
+        <SectionSeperator id={BLOGS_STRING} title="Blogs" />
 
-      <SectionSeperator id={BLOGS_STRING} title="Blogs" />
+        <NoSSR>
+          <MyBlogs />
 
-      <MyBlogs />
+          {/* more blogs button */}
+          <div
+            className={`container`}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Link href="/blogs">
+              <Button variant="secondary" size="large">
+                More blogs
+              </Button>
+            </Link>
+          </div>
+        </NoSSR>
 
-      <SectionSeperator id={CODING_PROFILES_STRING} title="Coding Profiles" />
+        <SectionSeperator id={CODING_PROFILES_STRING} title="Coding Profiles" />
 
-      <CodingProfiles />
+        <CodingProfiles />
 
-      <SectionSeperator id={CERTIFICATIONS_STRING} title="Certifications" />
+        <SectionSeperator id={CERTIFICATIONS_STRING} title="Certifications" />
 
-      <Certifications />
+        <Certifications />
 
-      <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
+        <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
 
-      <ContactMe />
-
-      <Footer />
+        <ContactMe />
+      </Layout>
 
       <FixedSocials />
     </>

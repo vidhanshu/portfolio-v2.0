@@ -9,7 +9,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsTerminal } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
 import { ProjectCardProps } from "@/@types/props";
-import React from "react";
 import { RxExternalLink } from "react-icons/rx";
 import styles from "@/styles/components/projectCard.module.scss";
 

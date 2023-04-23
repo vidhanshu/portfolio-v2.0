@@ -4,7 +4,6 @@ import {
   ToolSkillsTree,
 } from "@/components";
 
-import React from "react";
 import styles from "@/styles/containers/skills.module.scss";
 
 export default function SkillsSection() {

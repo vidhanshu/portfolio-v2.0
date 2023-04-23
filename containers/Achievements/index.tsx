@@ -1,6 +1,5 @@
 import { ACHIEVEMENTS } from "@/constants";
 import AchievementCard from "@/components/AchievementCard";
-import React from "react";
 import styles from "@/styles/containers/achievements.module.scss";
 
 function Achievements() {

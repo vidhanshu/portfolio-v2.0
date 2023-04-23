@@ -28,7 +28,7 @@ export const EXPERIENCE: ExperienceType[] = [
   {
     id: "3",
     title: "Web developer intern",
-    company: "PlayerOrbi",
+    company: "PlayerOrbit",
     description:
       "I worked as a web developer @PlayerOrbit my job was to create API end points for the website, creating front end for the website and testing the website.",
     from: "june 22",
