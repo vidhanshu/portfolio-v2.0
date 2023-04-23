@@ -25,7 +25,7 @@ function BlogCard({
     <div className={`${styles.container} card_hover_effect`}>
       {/* blog's left content */}
       <div className={styles.blog_left}>
-        <Link href={`/blogs/${id}`}>
+        <Link className={styles.blog_link} href={`/blogs/${id}`}>
           <div className={styles.blog_left_top}>
             <p className={styles.subtitle}>{subtitle}</p>
             <h1 className={styles.title}>{title}</h1>

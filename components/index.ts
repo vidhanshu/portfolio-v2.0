@@ -7,6 +7,7 @@ import {
 import Button from "./Button";
 import FixedSocials from "./FixedSocials";
 import Footer from "./Footer";
+import HeadTagForSEO from "./HeadTagForSEO";
 import Layout from "./Layout";
 import Navbar from "./Header";
 import NoSSR from "./NoSSR";
@@ -25,4 +26,5 @@ export {
   ToolSkillsTree,
   FixedSocials,
   Layout,
+  HeadTagForSEO,
 };

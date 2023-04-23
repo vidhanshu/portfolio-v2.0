@@ -2,7 +2,7 @@
 
 import { BLOGS, BLOGS_DETAILED } from "@/constants";
 import { BlogRawType, BlogType } from "@/@types";
-import { Button, Layout } from "@/components";
+import { Button, HeadTagForSEO, Layout } from "@/components";
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
@@ -11,17 +11,16 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import rehypeRaw from "rehype-raw";
+import { stringShortner } from "@/utils";
 import styles from "@/styles/pages/blog.module.scss";
 import { useRouter } from "next/router";
 
 function Blog() {
-  //ON RELOAD GIVING ERROR
   const { asPath } = useRouter();
 
   const [BlogMeta, setBlogMeta] = useState<BlogType>({} as BlogType);
   const [BlogRaw, setBlogRaw] = useState<BlogRawType>({} as BlogRawType);
   const [BlogExists, setBlogExists] = useState<boolean>(true);
-  // const [Loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const id = asPath.split("/")[2];
@@ -33,7 +32,6 @@ function Blog() {
         setBlogMeta(blogMeta[0]);
         setBlogRaw(blogRaw[0]);
         setBlogExists(true);
-        // setLoading(false);
       } else {
         setBlogExists(false);
       }
@@ -43,6 +41,10 @@ function Blog() {
   if (!BlogExists) {
     return (
       <Layout>
+        <HeadTagForSEO
+          title="404 page not found"
+          description="404 page not found"
+        />
         <div className={`container ${styles.notFound}`}>
           <Image src={"/assets/404.jpg"} width={500} height={500} alt="" />
           <h1>404 Page not found !</h1>
@@ -53,20 +55,12 @@ function Blog() {
       </Layout>
     );
   } else {
-    /**We can add loading in future 
-  * else if (Loading) {
-  *   return (
-  *     <Layout>
-  *       <div className={`container ${styles.notFound}`}>
-  *         <Image src={"/assets/loading.gif"} width={500} height={500} alt="" />
-  *         <h1>Loading...</h1>
-  *       </div>
-  *     </Layout>
-  *   );
-  * }
-  We can add loading in future */
     return (
       <Layout>
+        <HeadTagForSEO
+          title={BlogMeta.title}
+          description={BlogMeta.description}
+        />
         <div className={`container ${styles.blog} blog-hai-yeh`}>
           <div className={styles.metaData}>
             <h1>{BlogMeta.title}</h1>

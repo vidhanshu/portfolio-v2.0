@@ -20,19 +20,30 @@ export const EXPERIENCE: ExperienceType[] = [
     company: "GDSC GHRCE",
     description:
       "I promoted to core team as a Technical team member where my task is to help lead in organising the events and guiding the community.",
-    from: "may 22",
+    from: "May 22",
     to: "current",
     link: "https://gdsc-ghrce.vercel.app",
     logo: "gdsc_logo.png",
   },
   {
     id: "3",
+    title: "Compose Camp Facilitator",
+    company: "GDSC GHRCE",
+    description:
+      "I was the facilitator of Compose Camps 2022, where i taught about jet pack compose to the students in various colleges.",
+    from: "Oct 22",
+    to: "current",
+    link: "https://www.youtube.com/watch?v=GXq0qQPxRoY&list=PLSAQ6W4AB36As9bKraf3MTn6quzpQ0kM-",
+    logo: "cc.png",
+  },
+  {
+    id: "4",
     title: "Web developer intern",
     company: "PlayerOrbit",
     description:
       "I worked as a web developer @PlayerOrbit my job was to create API end points for the website, creating front end for the website and testing the website.",
     from: "june 22",
-    to: "sept 22",
+    to: "Sept 22",
     link: "https://playerorbit.com",
     logo: "po.png",
     certificate:

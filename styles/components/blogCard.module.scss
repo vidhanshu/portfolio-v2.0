@@ -10,9 +10,13 @@
     justify-content: space-between;
     flex-direction: column;
 
+    .blog_link {
+      flex: 1;
+    }
+
     .blog_left_top {
       margin-bottom: 1rem;
-      
+
       .subtitle {
         font-size: var(--text-r);
         font-family: "fira code", monospace;
@@ -20,7 +24,7 @@
       .title {
         font-size: var(--text-m);
         font-weight: bold;
-        margin: .5rem 0px;
+        margin: 0.5rem 0px;
       }
       .date {
         color: var(--tertiary-text);

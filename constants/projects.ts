@@ -2,6 +2,33 @@ import { ProjectType } from "@/@types";
 
 export const PROJECTS: ProjectType[] = [
   {
+    id: "16",
+    title: "Google Forms- Clone",
+    description: `
+      <div>
+        <p>
+          This is a clone of google forms, vform is a form creator website. Here you can create forms and share with your friends to fill it.
+        </p>
+        <u style="text-decoration:underline;"><i>Has various features like:</i></u>
+        <ul>
+          <li>Beatiful UI</li>
+          <li>Easy to use</li>
+        </ul>
+      </div>
+      `,
+    project_type: "web",
+    tags: [
+      "Next.js",
+      "React-Beatiful-DND",
+      "MongoDB",
+      "Typescript",
+      "@Arcodesigns",
+    ],
+    project_github_url: "https://github.com/vidhanshu/vforms",
+    project_live_url: "https://vforms.vercel.app",
+    is_private: true,
+  },
+  {
     id: "13",
     title: "Cleanlane - Client website",
     description: `
@@ -20,8 +47,7 @@ export const PROJECTS: ProjectType[] = [
     project_type: "web",
     tags: ["Next.js", "Node.js", "HTML", "CSS", "JavaScript"],
     project_github_url: "https://github.com/vidhanshu/cleanlane",
-    project_live_url:
-      "https://www.mediafire.com/file/xwhlrmhgxbvorga/myApp-a2d05148f5f741ffb8d1634a4390c33e-signed_%25281%2529.apk/file",
+    project_live_url: "https://www.cleanlaneequipments.com",
     is_private: true,
   },
   {
@@ -62,8 +88,6 @@ export const PROJECTS: ProjectType[] = [
     project_type: "android",
     tags: ["React-native", "MySQL", "HTML", "CSS", "JavaScript"],
     project_github_url: "https://github.com/vidhanshu/instagram-rn-clone",
-    project_live_url:
-      "https://www.mediafire.com/file/xwhlrmhgxbvorga/myApp-a2d05148f5f741ffb8d1634a4390c33e-signed_%25281%2529.apk/file",
   },
   {
     id: "8",
@@ -81,8 +105,7 @@ export const PROJECTS: ProjectType[] = [
     project_type: "web",
     tags: ["React.js", "framer-motion", "HTML", "SCSS", "JavaScript"],
     project_github_url: "https://github.com/vidhanshu/instagram-rn-clone",
-    project_live_url:
-      "https://www.mediafire.com/file/xwhlrmhgxbvorga/myApp-a2d05148f5f741ffb8d1634a4390c33e-signed_%25281%2529.apk/file",
+    project_live_url: "https://aicte-website.vercel.app",
   },
   {
     id: "9",
@@ -170,7 +193,8 @@ export const PROJECTS: ProjectType[] = [
     </div>`,
     project_type: "web",
     tags: ["Html5", "CSS", "JavaScript", "Socket.io", "Node.js", "Express.js"],
-    project_github_url: "https://github.com/vidhanshu/MobuLeka",
+    project_github_url: "https://github.com/vidhanshu/node-chat-room",
+    project_live_url: "https://vchatroom.onrender.com/",
   },
   {
     id: "15",
@@ -187,7 +211,7 @@ export const PROJECTS: ProjectType[] = [
     </div>`,
     project_type: "web",
     tags: ["Html5", "CSS", "JavaScript", "Socket.io", "Node.js", "Express.js"],
-    project_github_url: "https://github.com/vidhanshu/MobuLeka",
+    project_github_url: "https://github.com/vidhanshu/vblog",
   },
   {
     id: "2",
