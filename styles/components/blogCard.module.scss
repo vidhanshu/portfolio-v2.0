@@ -3,6 +3,7 @@
   gap: var(--cards-gap);
   padding: 1rem;
   border-radius: var(--br-r);
+  width: 100%;
 
   .blog_left {
     display: flex;
@@ -56,7 +57,7 @@
 @media screen and (max-width: 1000px) {
   .container {
     .blog_right {
-      img {
+      .img {
         width: 400px;
         height: auto;
       }
@@ -69,7 +70,7 @@
     flex-direction: column-reverse;
 
     .blog_right {
-      img {
+      .img {
         width: 100%;
       }
     }

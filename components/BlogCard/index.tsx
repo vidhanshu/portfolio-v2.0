@@ -62,7 +62,7 @@ function BlogCard({
 
       {/* right image */}
       <div className={styles.blog_right}>
-        <Link href={`/blogs/${id}`}>
+        <Link className={styles.img} href={`/blogs/${id}`}>
           <Image
             src={`/assets/${image}`}
             width={541}
