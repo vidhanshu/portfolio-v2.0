@@ -23,8 +23,12 @@ The major features of this portfolio website are:
 3. Responsive for small-sized devices.
 4. And many more to be implemented soon.
 5. Dedicated blog reading page
+6. light/dark mode
+7. mailing system, notification system
 
 ## preview
+
+<img src="https://github.com/vidhanshu/portfolio-v2.0/assets/84308141/4b8a7df9-c981-42b2-ab2b-0b7953a13911" alt="preview of the website" width="100%"/>
 
 <img src="https://i.postimg.cc/VNWckyYy/desktop-portfolio.png" alt="preview of the website" width="100%"/>
 
