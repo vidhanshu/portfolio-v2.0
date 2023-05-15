@@ -28,7 +28,7 @@
     var(--secondary),
     var(--tertiary)
   );
-  color: var(--primary-text);
+  color: #fff;
   min-width: 10rem;
 
   &:hover {
@@ -45,17 +45,17 @@
   padding: 5px 20px;
   border-radius: var(--br-r);
   background: transparent;
-  color: var(--primary-text);
-  border: var(--bw-r) solid var(--secondary-border);
+  color: #fff;
+  border: var(--bw-r) solid #fff;
   min-width: 10rem;
 
   &:hover {
-    background: rgba(var(--primary-l-rgb), 0.1);
+    background: rgba(255, 255, 255, 0.1);
   }
 }
 
 .small {
-  font-size: var(--text-xxs);
+  font-size: var(--text-xs);
   width: fit-content;
 }
 

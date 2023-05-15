@@ -1,5 +1,7 @@
 import { Footer, Navbar, NoSSR } from ".";
 
+import React from "react";
+
 type LayoutProps = {
   children: React.ReactNode;
 };

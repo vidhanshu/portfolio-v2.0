@@ -42,6 +42,24 @@ export const BLOGS: BlogType[] = [
     tags: ["Interview", "HR", "JS", "HTML", "CSS", "TS", "React.js"],
     time_to_read: "5 min read",
   },
+  {
+    id: "4",
+    subtitle: "Leetcode blog 1",
+    title: "LeetCode 75: Sort Colors - Dutch National Flag Algorithm",
+    date: "Mon May 15, 2023",
+    description:
+      "Dutch national flag algorithm is imortant algorithm interview point of view, and is used to sort the array containing just 3 type of numbers for example, 0's, 1's, and 2's only. In this blog we will be discussing about all the appraoches to solve this problem...",
+    image: "dnf.png",
+    tags: [
+      "Interview",
+      "Technical",
+      "C++",
+      "DSA",
+      "LeetCode",
+      "dutch-national-flag",
+    ],
+    time_to_read: "5 min read",
+  },
 ];
 
 export const BLOGS_DETAILED: BlogRawType[] = [
@@ -227,8 +245,8 @@ Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.v
 ![](https://i.postimg.cc/yNMKW9MC/image.png)
 As an aspiring artificial intelligence (AI) enthusiast, I decided to apply for an internship at **AI Planet (formerly DPhi)**. AI Planet is a global ecosystem that aims to educate and empower individuals and organizations to build and utilize AI. In this blog, I want to share my interview experience at AI Planet in detail.
 
-Application Process
----
+### Application Process <hr/>
+
 I applied for an internship from **Wellfound (formerly AngelList)** on around 14th March and got a response back with an email mentioned below on 22nd March at 10pm:
 
 ![email image](https://i.postimg.cc/wvZxdZVH/diphi-first-mail.png)
@@ -261,26 +279,26 @@ I scheduled my interview on 7th April at 3pm. On 7th of April, I joined the Goog
 
 This way, you would be giving your complete introduction without leaving anything for the interviewer to ask you back. Because in my case, I missed saying that "I'm in 3rd year," and the interviewer asked me about it.
 
-Round 1: Questions on assignment
----
+### Round 1: Questions on assignment <hr/>
+
 After the introduction, we moved to the technical questions round, where the first round was *"Questions on the Assignment."* The interviewer asked me to share my screen and open the assignment I built. I had previously set up my assignment, so it saved time. The interviewer asked me to add a hackathon by clicking the *"Add hackathon"* button. I completed the task successfully, and the interviewer then asked me to visit different pages and mark the hackathon as a favorite, checking whether it worked as expected or not. Everything was working fine. Then, the interviewer asked me to go to the *"Update hackathon"* page and check the validations in the input fields there. I completed this task successfully, except I forgot to add the validation for the date (i.e., the start date should be less than or equal to the end date). The interviewer caught this issue and asked me to solve it later.
 
-Round 2: Questions on HTML
-----
+### Round 2: Questions on HTML <hr/>
+
 During the interview process, we progressed to the next round, which was focused on *HTML* fundamentals. The interviewer began by posing a basic question, *"Why do we use <!DOCTYPE Html> at the top of each HTML page?"* I replied that, *"it is used to indicate to the browser that the file is an HTML page, and not another type of file like JSON or XML. Additionally, I mentioned that it could aid in SEO (although I was uncertain of the exact reason)"*. The interviewer acknowledged that my response was partially correct but added that the primary reason for using *\<\!DOCTYPE Html\>* is to inform the browser of the specific version of *HTML* being used.
 
 The interviewer went on to pose several more straightforward HTML-related questions, which I was able to answer accurately. These questions included defining a tag and attribute, describing how a form operates, explaining what multipart form data means, and discussing the purpose of the action and method attributes in a form.
 
-Round 3: Questions on CSS
----
+### Round 3: Questions on CSS <hr/>
+
 In the next round of the interview, the interviewer assessed my knowledge of *CSS*, or cascading style sheets. The questions asked were relatively easy, and I answered them all correctly. The questions were as follows:
 
 1. What is the difference between **flex-box** and **grid**?
 2. What are the different position properties in *CSS*, and can you explain each with an example?
 3. What are the different types of selectors in *CSS*?
 
-Round 4: Questions on JS
----
+### Round 4: Questions on JS <hr/>
+
 Moving on to the *JavaScript* round, I faced some difficulty since I had not prepared for any *JavaScript* topic. The interviewer began with some simple questions, such as:
 
 1. What are the different data types in *JavaScript*?
@@ -298,16 +316,16 @@ I was able to answer all of these correctly. However, the interviewer then asked
 
 Although I was able to answer most of these questions correctly, I struggled with questions 3 and 5 due to not revising them. I provided partial answers instead of giving a complete response.
 
-Round 5: Questions on React.js
----
+### Round 5: Questions on React.js <hr/>
+
 After the lengthy *JavaScript* round, we progressed to the *React.js* round, which was undoubtedly my favorite. The interviewer asked me the following questions:
 1) What is *React*, and why do we use it?
 2) What is a hook, and why were they introduced?
 3) What are the different types of hooks in *React*?
 4) Can you show me how to make an API call using Axios or Fetch API?
 
-Round 6: Practical Round
----
+### Round 6: Practical Round <hr/>
+
 We then moved on to the final round of the interview, the *"Practical round"* where the interviewer aimed to evaluate my practical skills in *React.js*. He requested that I create an asynchronous counter with two buttons:
 1) Start - to start the counter
 2) End - to stop and reset the counter
@@ -383,8 +401,8 @@ export default function App() {
 
 In conclusion, the technical interview process can be challenging, but it is an opportunity to showcase your skills and knowledge. From my experience, I learned that preparation is key to success, and it is important to revise all the fundamental concepts before going for an interview. In this blog, I shared my experience of the technical interview process, which included *HTML*, *CSS*, *JavaScript*, and *React.js* rounds. The next round of the interview, which was the final round, is described in another blog. Which was with **Founder and CEO of AI planet, Chanukya Patnaik**, where I will share how I tackled the behavioral questions . Remember, the more you practice, the better you will become, and always stay curious to learn and grow in your career.
 
-Your learnings
----
+### Your learnings <hr/>
+
 -   How to introduce yourself.
 -   How to prepare for the frontend interview.
 -   Before interview always brush-up your practical as well as theoretical concepts.
@@ -409,6 +427,191 @@ Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.v
     markdown: `
 # Will be added soon... 
 ![](https://media.tenor.com/13VnwKt5qS0AAAAd/waiting.gif)  
+    `.toString(),
+  },
+  {
+    id: "4",
+    name: "LeetCode 75: Sort Colors - Dutch National Flag Algorithm",
+    markdown: `
+Dutch national flag algorithm is an algorithm technic to sort the array containing only 3 values i.e. 0, 1, and 2 that too in just O(n) time complexity with no extra space. in this blog we will be learning about **Dutch national flag algorithm** with an example:
+
+Q. Given an array  \`nums\`  with  \`n\`  objects colored red, white, or blue, sort them  **[in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+We will use the integers  \`0\`,  \`1\`, and  \`2\`  to represent the color red, white, and blue, respectively.
+
+Note: *You must solve this problem without using the library's sort function.*
+
+**Example 1:**
+
+**Input:** nums = [2,0,2,1,1,0]
+**Output:** [0,0,1,1,2,2]
+
+**Example 2:**
+
+**Input:** nums = [2,0,1]
+**Output:** [0,1,2]
+
+**Constraints:**
+
+ n == nums.length
+ 1 <= n <= 300
+ nums[i]  is either  0,  1, or  2.
+
+**Follow up:** Could you come up with a one-pass algorithm using only constant extra space?
+
+**Solutions:**
+## Approach 1 <hr/>
+So, just after reading this question the *brute-force* approach comes into our mind is, using the **sort** function provided in the library in almost every programming language. but the time complexity of using that function will be \`(nlogn)\` and we have to do it in \`O(n)\`.
+\`\`\`js
+class Solution {
+public:
+	void  sortColors(vector<int>&  nums) {
+		sort(nums.begin(), nums.end());
+	}
+};
+\`\`\`
+
+**Complexity:**
+Time complexity: \`O(nlogn)\`
+Space complexity: \`O(1)\`
+
+## Approach 2 <hr/>
+The second approach that comes into mind is, since there are just 3 values in the array i.e. \`o's\`, \`1's\` and \`2's\` we can keep track of there counts in three different variables:
+- \`ct_0\`: count of number of 0's
+- \`ct_1\`: count of number of 1's
+- \`ct_2\`: count of number of 2's
+
+now, in the given array itself, we can replace all the values from index 
+
+- \`0 to ct_0 - 1\` by 0,
+- \`ct_0 to ct_0 + ct_1 - 1\` by 1
+- \`ct_0 + ct_1 to n - 1\` by 2, where n is length of the array.
+
+thus, eventually we will get the array sorted in *O(2n)* time complexity. But can we optimize it further? So the answer is yes, This is where *Dutch national flag algorithm* comes into picture which helps us to sort the array of \`0's\`, \`1's\` and \`2's\` within *O(n)* complexity.
+
+**Code:**
+\`\`\`js
+class Solution {
+  public:
+      void sortColors(vector<int>& nums) {
+          if(nums.size() == 1) return;
+          int ct_0 = 0, ct_1 = 0, ct_2 = 0;
+          for(auto&it: nums){
+              if(it == 0) ct_0++;
+              else if(it == 1) ct_1++;
+              else ct_2++;
+          }
+          for(int i = 0; i < ct_0; i++) nums[i] = 0;
+          for(int i = 0; i < ct_1; i++) nums[ct_0 + i] = 1;
+          for(int i = 0; i < ct_2; i++) nums[ct_0 + ct_1 + i] = 2;
+      }
+};
+\`\`\`
+
+**Complexity:**
+Time complexity: \`O(2n)\`
+Space complexity: \`O(1)\`
+
+## Approach 3 <hr/>
+Dutch national flag algorithm is a three pointer approach where we keep three pointers i.e. \`low\`, \`mid\` and \`high\`. 
+
+where, the range
+- \`[0, low]\`: contains only 0's
+- \`[low, mid-1]\`: contains only 1's
+- \`[mid, high]\`: is unsorted (can contain anything out of 0's, 1's and 2's in any order)
+- \`[high+1, n]\`: contains only 2's
+
+The following image better demonstrate it:
+![Dutch national flag algorithm](https://i.postimg.cc/QdNw1zth/image.png)
+
+**Algorithm:**
+\`\`\`js
+If nums[mid] == 0:
+	swap(nums[low], nums[mid]);
+	low++; mid++;
+else if nums[mid] == 1:
+	mid++;
+else:
+	swap(nums[mid], nums[high])
+	high--;
+\`\`\`
+
+**Algorithm explanation:**
+1) initially, initialize \`lo=0, mid = 0, hi = 0\`,
+2) while \`mid <= hi\`, do following:
+	1) if the \`nums[mid] == 0\` then \`swap(nums[mid], nums[lo])\` and \`increment lo and mid by 1\`
+	2) else if \`nums[mid] == 1\` then just \`increment mid by 1\`
+	3) else \`nums[mid] == 2\` then \`swap(nums[mid], nums[hi])\` and \`decrement hi by 1\`
+3) done, you have sorted array now.
+
+**Note**: *you can better understand by the below dry run, I would also recommend trying by dry running yourself*
+
+So, now what to do with these pointers? Let's understand it better with an example.
+Let's say, our input is:
+**Input:** nums = [1,0,2,2,1,1,0]
+<img src="https://i.postimg.cc/gj24nxmp/image.png" width="100%" height="auto" alt="step 1"/>
+<img src="https://i.postimg.cc/G3TxSntq/image.png" width="100%" height="auto" alt="step 2"/>
+<img src="https://i.postimg.cc/zXSW9zrS/image.png" width="100%" height="auto" alt="step 3"/>
+<img src="https://i.postimg.cc/vT7gFzpH/image.png" width="100%" height="auto" alt="step 4"/>
+<img src="https://i.postimg.cc/Jhys4m9F/image.png" width="100%" height="auto" alt="step 5"/>
+<img src="https://i.postimg.cc/901mYN6T/image.png" width="100%" height="auto" alt="step 6"/>
+<img src="https://i.postimg.cc/dtMp5BsZ/image.png" width="100%" height="auto" alt="step 7"/>
+<img src="https://i.postimg.cc/TPRZrqjM/image.png" width="100%" height="auto" alt="step 8"/>
+<img src="https://i.postimg.cc/7P1nyM12/image.png" width="100%" height="auto" alt="step 9"/>
+
+finally, when mid > high the unsorted part i.e. \`[low, high]\` is sorted in just *O(n)* time complexity.
+
+**Code:**
+\`\`\`js
+class Solution {
+	public:
+	void  swap(int  &a, int  &b){
+		int t = a;
+		a = b;
+		b = t;
+	}
+	void sortColors(vector<int>&  nums) {
+		if(nums.size() == 1) return;
+		int lo = 0, mid = 0, hi = nums.size() - 1;
+		while(mid <= hi){
+			if(nums[mid] == 0){
+				swap(nums[mid], nums[lo]);
+				lo++; mid++;
+			}else  if(nums[mid] == 1){
+				mid++;
+			}else{
+				swap(nums[mid], nums[hi]);
+				hi--;
+			}
+		}
+	}
+};
+\`\`\`
+
+**Complexity:**
+Time complexity: \`O(n)\`
+Space complexity: \`O(1)\`
+
+### Your learnings <hr/>
+
+- Different approaches to solve the \`sort colors\` problem.
+- Dutch national flag algorithm.
+
+### Find question here:
+Question: <a href="https://leetcode.com/problems/sort-colors/description" target="_blank"><i>https://leetcode.com/problems/sort-colors/description</i></a>
+
+### References:
+striver's video: <a href="https://youtu.be/tp8JIuCXBaU" target="_blank"><i>https://youtu.be/tp8JIuCXBaU</i></a>
+
+I hope this experience helps you, Thanks for reading 😇!
+
+### Find me here:
+
+Email: <a href="mailto:vidhanshu7218@gmail.com" target="_blank"><i>vidhanshu7218@gmail.com</i></a>
+
+Github: <a href="https://github.com/vidhanshu" target="_blank"><i>@github.com/vidhanshu</i></a>
+
+Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.vercel.app</i></a>
     `.toString(),
   },
 ];

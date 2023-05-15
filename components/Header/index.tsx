@@ -15,15 +15,20 @@ import {
   SKILLS_TAG,
   WHAT_I_DO_TAG,
 } from "@/constants";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { useCallback, useEffect, useState } from "react";
 
+import Button from "../Button";
 import { HiBars2 } from "react-icons/hi2";
 import Link from "next/link";
 import { TfiClose } from "react-icons/tfi";
 import styles from "@/styles/components/nav.module.scss";
 import { useMediaQuery } from "react-responsive";
+import { useTheme } from "@/context/theme";
 
 function Header() {
+  const { theme, handleTheme } = useTheme();
+
   const [active, setActive] = useState<boolean>(false);
 
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -92,6 +97,30 @@ function Header() {
         </li>
         <li className={styles.nav_item}>
           <Link href={CONTACT_ME_TAG}>Contact /&gt;</Link>
+        </li>
+        <li className={styles.nav_item}>
+          <div
+            className={styles.toggleMode}
+            title={`change theme to ${theme === "dark" ? "light" : "dark"}`}
+          >
+            {theme === "dark" ? (
+              <FiSun
+                style={{
+                  cursor: "pointer",
+                }}
+                size={25}
+                onClick={() => handleTheme("light")}
+              />
+            ) : (
+              <FiMoon
+                style={{
+                  cursor: "pointer",
+                }}
+                size={25}
+                onClick={() => handleTheme("dark")}
+              />
+            )}
+          </div>
         </li>
       </ul>
 
@@ -183,6 +212,18 @@ function Header() {
             <Link href={CONTACT_ME_TAG} onClick={toggleNav}>
               Contact /&gt;
             </Link>
+          </li>
+          <div className={styles.seperator}></div>
+          <li className={styles.toggleTheme}>
+            <Button
+              size="large"
+              onClick={() => {
+                handleTheme((pre) => (pre === "dark" ? "light" : "dark"));
+              }}
+              title={`change theme to ${theme === "dark" ? "light" : "dark"}`}
+            >
+              <p>change theme</p>
+            </Button>
           </li>
         </ul>
       </div>

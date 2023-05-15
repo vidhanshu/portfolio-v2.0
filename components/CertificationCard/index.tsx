@@ -5,6 +5,7 @@
 import Button from "../Button";
 import { CertificationType } from "@/@types";
 import styles from "@/styles/components/certificationCard.module.scss";
+import { useTheme } from "@/context/theme";
 
 function CertificationCard({
   description,
@@ -15,18 +16,27 @@ function CertificationCard({
   certificate,
   project,
 }: CertificationType) {
+  const { theme } = useTheme();
+
   return (
     <div
       className={`${styles.container} card_hover_effect`}
       style={{
-        backgroundImage: `url(/assets/${icon})`,
+        backgroundImage: `url(/assets/${
+          theme === "dark" ? icon : icon.replace(".", "-light.")
+        })`,
       }}
     >
       <div className={styles.top}>
         <h1 className={styles.title}>{title}</h1>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/assets/${logo}`} alt={logo} />
+        <img
+          src={`/assets/${
+            theme === "dark" ? logo : logo.replace(".", "-light.")
+          }`}
+          alt={logo}
+        />
       </div>
 
       {/* eslint-disable-next-line @next/next/no-img-element */}

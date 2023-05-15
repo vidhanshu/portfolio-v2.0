@@ -11,6 +11,7 @@ import HeadTagForSEO from "./HeadTagForSEO";
 import Layout from "./Layout";
 import Navbar from "./Header";
 import NoSSR from "./NoSSR";
+import PageWrapperToGetThemes from "./PageWrapperToGetThemes";
 import SectionSeperator from "./SectionSeperator";
 import Tabs from "./Tabs";
 
@@ -27,4 +28,5 @@ export {
   FixedSocials,
   Layout,
   HeadTagForSEO,
+  PageWrapperToGetThemes,
 };

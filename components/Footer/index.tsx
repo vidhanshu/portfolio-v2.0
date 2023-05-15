@@ -105,10 +105,11 @@ function Footer() {
 
       <p className={`${styles.bottom} ${styles.desktop}`}>
         © Vidhanshu Borade | Designed and Developed with{" "}
-        <AiFillHeart size={15} /> Vidhanshu Borade
+        <AiFillHeart size={15} /> by Vidhanshu Borade
       </p>
       <p className={`${styles.bottom} ${styles.mobile}`}>
-        © Vidhanshu Borade | D&D with <AiFillHeart size={15} /> Vidhanshu Borade
+        © Vidhanshu Borade | D&D with <AiFillHeart size={15} /> by Vidhanshu
+        Borade
       </p>
     </div>
   );
