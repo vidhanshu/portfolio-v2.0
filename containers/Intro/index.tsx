@@ -3,8 +3,11 @@ import { Button } from "@/components";
 import Image from "next/image";
 import { StatsCardProps } from "@/@types";
 import styles from "@/styles/containers/intro.module.scss";
+import { useTheme } from "@/context/theme";
 
 function Intro() {
+  const { theme } = useTheme();
+
   return (
     <div className={`${styles.wrapper} container`}>
       <div className={styles.container}>
@@ -18,7 +21,8 @@ function Intro() {
             <p className={styles.description}>
               I&apos;m a MERN-stack developer. I build both for android & for
               web. Currently, I&apos;m more concentrating on client & personal
-              projects along with placement prep. I love to guide and support others.
+              projects along with placement prep. I love to guide and support
+              others.
             </p>
           </div>
           <div className={styles.stats}>
@@ -38,9 +42,11 @@ function Intro() {
         <div className={styles.right}>
           <Image
             alt="header image"
-            src={"/assets/header.png"}
-            width={418}
-            height={305}
+            src={`/assets/${
+              theme === "dark" ? "header.png" : "header-light.png"
+            }`}
+            width={theme === "dark" ? 418 : 380}
+            height={theme === "dark" ? 305 : 380}
           />
         </div>
       </div>

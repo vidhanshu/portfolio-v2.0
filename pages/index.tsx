@@ -31,87 +31,104 @@ import {
   HeadTagForSEO,
   Layout,
   NoSSR,
+  PageWrapperToGetThemes,
   SectionSeperator,
 } from "@/components";
 
+import Head from "next/head";
 import Link from "next/link";
+import { useTheme } from "@/context/theme";
 
-function index() {
+function Home() {
+  const { theme } = useTheme();
+
   return (
-    <>
-      <HeadTagForSEO
-        title="Vidhanshu Borade • Software Developer | Competitive Programmer |
+    <PageWrapperToGetThemes>
+      <>
+        <HeadTagForSEO
+          title="Vidhanshu Borade • Software Developer | Competitive Programmer |
           Freelancer | Student"
-        description="Vidhanshu Borade is a professional full-stack web and Android developer with extensive experience in designing software. Browse his portfolio website to learn more about his qualifications, courses, achievements, and experience."
-      />
+          description="Vidhanshu Borade is a professional full-stack web and Android developer with extensive experience in designing software. Browse his portfolio website to learn more about his qualifications, courses, achievements, and experience."
+        />
 
-      <Layout>
-        <Intro />
+        <Head>
+          <meta
+            name="theme-color"
+            content={theme === "dark" ? "#000" : "#fff"}
+          />
+        </Head>
 
-        <SectionSeperator id={ABOUT_ME_STRING} title="About me" />
+        <Layout>
+          <Intro />
 
-        <AboutMe />
+          <SectionSeperator id={ABOUT_ME_STRING} title="About me" />
 
-        <SectionSeperator id={WHAT_I_DO_STRING} title="What i do" />
+          <AboutMe />
 
-        <WhatIDo />
+          <SectionSeperator id={WHAT_I_DO_STRING} title="What i do" />
 
-        <SectionSeperator id={SKILLS_STRING} title="Skills" />
+          <WhatIDo />
 
-        <SkillsSection />
+          <SectionSeperator id={SKILLS_STRING} title="Skills" />
 
-        <SectionSeperator id={PROJECTS_STRING} title="Projects" />
+          <SkillsSection />
 
-        <NoSSR>
-          <Projects />
-        </NoSSR>
+          <SectionSeperator id={PROJECTS_STRING} title="Projects" />
 
-        <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
+          <NoSSR>
+            <Projects />
+          </NoSSR>
 
-        <Experience />
+          <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
 
-        <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
+          <Experience />
 
-        <Achievements />
+          <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
 
-        <SectionSeperator id={BLOGS_STRING} title="Blogs" />
+          <Achievements />
 
-        <NoSSR>
-          <MyBlogs />
+          <SectionSeperator id={BLOGS_STRING} title="Blogs" />
 
-          {/* more blogs button */}
-          <div
-            className={`container`}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Link href="/blogs">
-              <Button variant="secondary" size="large">
-                More blogs
-              </Button>
-            </Link>
-          </div>
-        </NoSSR>
+          <NoSSR>
+            <MyBlogs />
 
-        <SectionSeperator id={CODING_PROFILES_STRING} title="Coding Profiles" />
+            {/* more blogs button */}
+            <div
+              className={`container`}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Link href="/blogs">
+                <Button variant="secondary" size="large">
+                  More blogs
+                </Button>
+              </Link>
+            </div>
+          </NoSSR>
 
-        <CodingProfiles />
+          <SectionSeperator
+            id={CODING_PROFILES_STRING}
+            title="Coding Profiles"
+          />
 
-        <SectionSeperator id={CERTIFICATIONS_STRING} title="Certifications" />
+          <CodingProfiles />
 
-        <Certifications />
+          <SectionSeperator id={CERTIFICATIONS_STRING} title="Certifications" />
 
-        <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
+          <Certifications />
 
-        <ContactMe />
-      </Layout>
+          <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
 
-      <FixedSocials />
-    </>
+          <ContactMe />
+        </Layout>
+
+        <FixedSocials />
+      </>
+    </PageWrapperToGetThemes>
   );
 }
 
-export default index;
+export default Home;

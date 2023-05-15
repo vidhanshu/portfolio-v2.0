@@ -7,6 +7,7 @@ import { arrayShortner, stringShortner } from "@/utils";
 import Button from "../Button";
 import { CodingProfileType } from "@/@types";
 import styles from "@/styles/components/codingProfileCard.module.scss";
+import { useTheme } from "@/context/theme";
 
 function CodingProfileCard({
   description,
@@ -21,18 +22,26 @@ function CodingProfileCard({
   rating,
   stars,
 }: CodingProfileType) {
+  const { theme } = useTheme();
   return (
     <div
       className={`${styles.container} card_hover_effect`}
       style={{
-        backgroundImage: `url(/assets/${icon})`,
+        backgroundImage: `url(/assets/${
+          theme === "dark" ? icon : icon.replace(".", "-light.")
+        })`,
       }}
     >
       <div className={styles.top}>
         <div className={styles.header}>
           <h1 className={styles.title}>{title}</h1>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`/assets/${logo}`} alt="codechef.png" />
+          <img
+            src={`/assets/${
+              theme === "dark" ? logo : logo.replace(".", "-light.")
+            }`}
+            alt="codechef.png"
+          />
         </div>
 
         <p className={styles.description}>{stringShortner(description, 320)}</p>

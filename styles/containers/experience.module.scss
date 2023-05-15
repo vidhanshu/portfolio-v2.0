@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   ul li {
     list-style: circle !important;
     margin-left: 2rem;
   }
-  
+
   .timeline {
     position: relative;
     max-width: 1200px;
@@ -20,7 +20,7 @@
       width: 2px;
       height: 100%;
       left: 50%;
-      background: white;
+      background: var(--tertiary-border);
       z-index: -1;
     }
 

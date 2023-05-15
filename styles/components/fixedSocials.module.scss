@@ -26,9 +26,10 @@
     min-height: 250px;
     background-color: transparent;
     height: 0% !important;
+    transition: all 0.2s ease-in-out;
   }
   .active {
-    background-color: #fff;
+    background-color: var(--tertiary-border);
   }
 }
 

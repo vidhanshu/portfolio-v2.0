@@ -84,3 +84,8 @@ export interface FormDataType {
   email: string;
   message: string;
 }
+
+export interface ThemeContextType {
+  theme: "light" | "dark";
+  handleTheme: (theme: "light" | "dark") => void;
+}

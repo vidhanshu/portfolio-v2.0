@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000 !important;
 
   h4 {
     font-size: var(--text-m);
@@ -19,6 +20,16 @@
         color: var(--secondary-l);
       }
     }
+    .toggleMode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: var(--primary-text);
+      &:hover {
+        color: var(--secondary-l);
+      }
+    }
 
     @media screen and (min-width: 1400px) {
       display: flex;
@@ -26,6 +37,8 @@
   }
 
   .mobile_nav_container {
+    transition: all 0.2s ease-in-out 0s;
+
     z-index: 1000;
     width: 100%;
     height: 100%;
@@ -100,6 +113,14 @@
 
   .active_nav {
     right: 0px;
+  }
+
+  .toggleTheme {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 2rem;
+    font-size: var(--text-sm);
   }
 }
 

@@ -17,7 +17,7 @@ export const ACHIEVEMENTS: AchievementType[] = [
   {
     id: "2",
     rank: "First winner",
-    title: "Appathon'22 Winner",
+    title: "Appathon'23 Winner",
     date: "Feb 22, 2023",
     description:
       "My team named “ExpertEra” won the prize worth 12k @Appathob'22 in Feb'23. Our problem statement was, “Create a portal for students, where students can select the skills and the resources & mentors should be listed for that particular skill”. It was 24 hr hackathon conducted “@St. vincent p....",

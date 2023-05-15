@@ -1,5 +1,12 @@
 .blog {
   font-size: var(--text-r);
+
+  code {
+    background: var(--primary-l);
+    padding: 2px 4px;
+    border-radius: 2px;
+  }
+
   h1,
   h2,
   h3,
@@ -31,9 +38,12 @@
     }
   }
 
+  a {
+    color: var(--link-color);
+  }
+
   hr {
-    background: whites;
-    border: 0.1px solid rgba(var(--primary-text-rgb), 0.5);
+    border: 0.1px solid rgba(var(--primary-text-rgb), 0.2);
   }
 
   img {
@@ -90,5 +100,25 @@
     width: 100%;
     max-width: 500px;
     height: auto;
+  }
+}
+
+.otherBlogs {
+  .otherBlogsContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .otherBlog {
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: var(--text-xs);
+
+      a {
+        color: var (--secondary-text);
+      }
+    }
   }
 }
