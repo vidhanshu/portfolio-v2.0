@@ -2,9 +2,9 @@
 
 import { BLOGS, BLOGS_DETAILED } from "@/constants";
 import { BlogRawType, BlogType } from "@/@types";
+import { HeadTagForSEO, PageWrapperToGetThemes } from "@/components";
 import { useEffect, useState } from "react";
 
-import { PageWrapperToGetThemes } from "@/components";
 import RenderBlog from "@/components/RenderBlog";
 import { useRouter } from "next/router";
 
@@ -32,6 +32,12 @@ function Blog() {
   }, [asPath]);
   return (
     <PageWrapperToGetThemes>
+      <HeadTagForSEO
+        title={BlogExists ? BlogMeta.title : "Blog not found"}
+        description={
+          BlogExists ? BlogMeta.description : "Blog not found on this website"
+        }
+      />
       <RenderBlog
         BlogExists={BlogExists}
         BlogMeta={BlogMeta}

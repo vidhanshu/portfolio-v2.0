@@ -1,5 +1,8 @@
 import "@/styles/globals.scss";
 import "@/styles/layout.scss";
+import "react-toastify/dist/ReactToastify.css";
+
+import { ToastContainer, toast } from "react-toastify";
 
 import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
@@ -24,6 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <>
         <Component {...pageProps} />
         <Analytics />
+        <ToastContainer />
       </>
     </ThemeProvider>
   );

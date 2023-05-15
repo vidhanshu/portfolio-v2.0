@@ -51,13 +51,6 @@ function Home() {
           description="Vidhanshu Borade is a professional full-stack web and Android developer with extensive experience in designing software. Browse his portfolio website to learn more about his qualifications, courses, achievements, and experience."
         />
 
-        <Head>
-          <meta
-            name="theme-color"
-            content={theme === "dark" ? "#000" : "#fff"}
-          />
-        </Head>
-
         <Layout>
           <Intro />
 

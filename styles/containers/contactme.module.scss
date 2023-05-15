@@ -1,6 +1,11 @@
 .wrapper {
   min-height: fit-content !important;
 
+  .note {
+    font-size: var(--text-sm);
+    color: var(--primary-text);
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -81,7 +86,7 @@
           animation-iteration-count: infinite;
         }
 
-        form {
+        .form {
           display: flex;
           flex-direction: column;
           gap: var(--gap-r);
@@ -201,7 +206,7 @@
         height: fit-content;
         width: 100%;
 
-        form {
+        .form {
           max-width: auto;
           width: 100% !important;
           height: 75% !important;

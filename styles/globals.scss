@@ -226,3 +226,12 @@ button {
     font-size: 50%;
   }
 }
+
+.Toastify__toast-container {
+  font-size: var(--text-r);
+
+  @media screen and (max-width: 600px) {
+    width: fit-content !important;
+    margin: 0 auto !important;
+  }
+}

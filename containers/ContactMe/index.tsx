@@ -1,14 +1,58 @@
-import { ChangeEvent, useState } from "react";
-import { EMAIL_ID_REDIRECT_URL, MY_EMAIL_ID } from "@/constants";
+import { ChangeEvent, useCallback, useState } from "react";
+import { EMAIL_ID_REDIRECT_URL, EMAIL_REGEX, MY_EMAIL_ID } from "@/constants";
 import { MdAlternateEmail, MdLocationOn } from "react-icons/md";
 
 import { Button } from "@/components";
 import ContactFormSvg from "@/public/assets/ContactFormSvg";
 import { FormDataType } from "@/@types";
+import axios from "axios";
 import styles from "@/styles/containers/contactme.module.scss";
+import { toast } from "react-toastify";
 
 function ContactMe() {
   const [formData, setFormData] = useState<FormDataType>({} as FormDataType);
+  const [loading, setLoading] = useState(false);
+
+  const handleMail = useCallback(async () => {
+    try {
+      setLoading(true);
+      if (!formData.name || !formData.email || !formData.message) {
+        return toast.info("Please fill all the fields", {
+          theme: "light",
+          autoClose: 2000,
+        });
+      } else if (EMAIL_REGEX.test(formData.email) === false) {
+        return toast.info("Please enter a valid email", {
+          theme: "light",
+          autoClose: 2000,
+        });
+      }
+
+      await axios.post("/api/contact", {
+        email: formData.email.trim(),
+        name: formData.name.trim(),
+        message: formData.message.trim(),
+      });
+
+      toast.success("Message sent successfully", {
+        theme: "light",
+        autoClose: 2000,
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      toast.error("Something went wrong", {
+        theme: "light",
+        autoClose: 2000,
+      });
+    } finally {
+      setLoading(false);
+    }
+  }, [formData]);
 
   return (
     <div className={`container ${styles.wrapper}`}>
@@ -61,17 +105,11 @@ function ContactMe() {
               <ContactFormSvg />
             </div>
 
-            <form
-              action={`https://formsubmit.co/${MY_EMAIL_ID}`}
-              method="POST"
-              className={styles.form}
-              data-aos="fade-up"
-            >
+            <div className={styles.form} data-aos="fade-up">
               <input
                 name="name"
                 value={formData.name}
                 placeholder="Name"
-                required
                 onChange={({
                   target: { value: name },
                 }: ChangeEvent<HTMLInputElement>) =>
@@ -81,7 +119,6 @@ function ContactMe() {
               <input
                 name="email"
                 value={formData.email}
-                required
                 type="email"
                 placeholder="Email"
                 onChange={({
@@ -92,7 +129,6 @@ function ContactMe() {
               />
               <textarea
                 name="message"
-                required
                 rows={10}
                 value={formData.message}
                 placeholder="Message"
@@ -102,12 +138,20 @@ function ContactMe() {
                   setFormData({ ...formData, message })
                 }
               />
-              {/* tells the template type as table to formsubmit */}
-              <input type="hidden" name="_template" value="table" />
-              <Button size="large" variant="tertiary">
-                Send <span>-&gt;</span>
-              </Button>
-            </form>
+              <p className={styles.note}>
+                <i>Note</i>: your email and name will be collected and stored in
+                our database
+              </p>
+              {loading ? (
+                <Button size="large" variant="tertiary">
+                  Sending...
+                </Button>
+              ) : (
+                <Button onClick={handleMail} size="large" variant="tertiary">
+                  Send <span>-&gt;</span>
+                </Button>
+              )}
+            </div>
           </div>
         </div>
       </div>

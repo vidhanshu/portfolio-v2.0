@@ -45,8 +45,8 @@
   padding: 5px 20px;
   border-radius: var(--br-r);
   background: transparent;
-  color: #fff;
-  border: var(--bw-r) solid #fff;
+  color: var(--primary-text);
+  border: var(--bw-r) solid var(--secondary-border);
   min-width: 10rem;
 
   &:hover {
@@ -67,4 +67,11 @@
 .large {
   font-size: var(--text-m);
   width: fit-content;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: var(--disabled);
+  color: var(--disabled-text);
+  border: var(--bw-r) solid var(--disabled-border);
 }

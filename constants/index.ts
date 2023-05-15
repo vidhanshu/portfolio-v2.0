@@ -40,6 +40,9 @@ export const FB_URL = "https://www.facebook.com/vidhanshu.borade.18/";
 // relative link to the resume file
 export const RESUME_LOCAL_URL = "/files/vidhanshu_resume.pdf";
 
+//regex
+export const EMAIL_REGEX = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+
 export * from "./projects";
 export * from "./experiences";
 export * from "./achivements";
