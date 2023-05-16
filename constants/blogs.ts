@@ -476,7 +476,7 @@ Time complexity: \`O(nlogn)\`
 Space complexity: \`O(1)\`
 
 ## Approach 2 <hr/>
-The second approach that comes into mind is, since there are just 3 values in the array i.e. \`o's\`, \`1's\` and \`2's\` we can keep track of there counts in three different variables:
+The second approach that comes into mind is, since there are just 3 values in the array i.e. \`o's\`, \`1's\` and \`2's\` we can keep track of their counts in three different variables:
 - \`ct_0\`: count of number of 0's
 - \`ct_1\`: count of number of 1's
 - \`ct_2\`: count of number of 2's
@@ -537,7 +537,7 @@ else:
 \`\`\`
 
 **Algorithm explanation:**
-1) initially, initialize \`lo=0, mid = 0, hi = 0\`,
+1) initially, initialize \`lo = 0, mid = 0, hi = n - 1\`,
 2) while \`mid <= hi\`, do following:
 	1) if the \`nums[mid] == 0\` then \`swap(nums[mid], nums[lo])\` and \`increment lo and mid by 1\`
 	2) else if \`nums[mid] == 1\` then just \`increment mid by 1\`
@@ -603,7 +603,7 @@ Question: <a href="https://leetcode.com/problems/sort-colors/description" target
 ### References:
 striver's video: <a href="https://youtu.be/tp8JIuCXBaU" target="_blank"><i>https://youtu.be/tp8JIuCXBaU</i></a>
 
-I hope this experience helps you, Thanks for reading 😇!
+I hope this helps you, Thanks for reading 😇!
 
 ### Find me here:
 
