@@ -35,12 +35,12 @@ export const BLOGS: BlogType[] = [
     id: "3",
     subtitle: "interview blog 2",
     title: "Dphi React.js SDE Intern Interview experience - II",
-    date: "Sat Apr 22, 2023",
+    date: "Wed May 17, 2023",
     description:
       "As an aspiring artificial intelligence (AI) enthusiast, I decided to apply for an internship at AI Planet (formerly DPhi). AI Planet is a global ecosystem that aims to educate and empower individuals and organizations to build and utilize AI. In this blog, I want to share my interview experience at AI Planet in detail...",
     image: "interview-2.jpeg",
     tags: ["Interview", "HR", "JS", "HTML", "CSS", "TS", "React.js"],
-    time_to_read: "5 min read",
+    time_to_read: "3 min read",
   },
   {
     id: "4",
@@ -403,9 +403,9 @@ In conclusion, the technical interview process can be challenging, but it is an 
 
 ### Your learnings <hr/>
 
--   How to introduce yourself.
--   How to prepare for the frontend interview.
--   Before interview always brush-up your practical as well as theoretical concepts.
+-  How to introduce yourself.
+-  How to prepare for the frontend interview.
+-  Before interview always brush-up your practical as well as theoretical concepts.
 -  Todo and not-todo while interview.
 
 The link to the assignment I built  [My assignment](https://hackshow.vercel.app)
@@ -425,8 +425,55 @@ Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.v
     id: "3",
     name: "My Interview Experience at AI Planet",
     markdown: `
-# Will be added soon... 
-![](https://media.tenor.com/13VnwKt5qS0AAAAd/waiting.gif)  
+<img src="https://www.aihr.com/wp-content/uploads/Interview-guide.jpg" alt=""/>
+
+### Introduction:<hr/>
+In today's competitive job market, interviews serve as crucial milestones for job seekers. Recently, I had the opportunity to go through a comprehensive HR interview at **Ai Planet** for the position of **React.js Developer**. Led by the talented interviewer, <a href="https://www.linkedin.com/in/chanukyapatnaik">Mr. Chanukya Patnaik</a> Founder & CEO Aiplanet, the interview provided insights into my skills, experiences, and aspirations. In this blog post, I will recount my interview experience, highlight the questions asked, and reflect on the lessons learned along the way.
+
+**Question 1:  How much time does it take to build the assignment?**
+During the interview, I was questioned about the time required to complete an assignment. This question aimed to gauge my estimation skills and ability to plan tasks effectively. I emphasized the importance of thorough planning, considering project complexity and personal proficiency. By showcasing my experience in managing assignments efficiently, I expressed my commitment to meeting deadlines while maintaining a high standard of quality.
+
+**Question 2: Why did you schedule the interview late?**
+The interviewer wanted to know why did I scheduled the interview bit late, but I had a genuine reason for this question, which was due to ESE (End semester examination) going on in the college. So, make sure if you don't have any reason to schedule the interview late you should schedule the interview as soon as possible.
+
+**Question 3: Suppose you are an interviewer and you want to be extremely critical, review your assignment and identify areas of improvement.**
+The interview took an intriguing turn when I was asked to put myself in the shoes of an interviewer and critically review my own assignment. This question aimed to assess my ability to identify flaws and areas for improvement in my work. I approached the task with a self-reflective mindset, acknowledging that no project is perfect. By objectively analyzing my assignment, I highlighted areas where I could enhance code optimization, improve documentation, and refine user experience. This demonstrated my commitment to continuous learning and growth as a developer.
+
+**Question 4: What was your role and responsibility in your last internship?**
+To gauge my past experience, the interviewer inquired about my role and responsibilities during my previous internship. I enthusiastically described my involvement in a challenging React.js project, emphasizing my ability to collaborate with a multidisciplinary team, adhere to project milestones, and contribute to the successful delivery of the application. By showcasing my ability to adapt to different roles within a development team, I conveyed my versatility and strong work ethic.
+
+**Question 5: What made you get into CSE? What was the story behind it?**
+The interviewer was curious about the factors that influenced my decision to pursue Computer Science Engineering (CSE). This question allowed me to share my passion for problem-solving and my fascination with the world of technology from a young age. I narrated personal experiences that ignited my curiosity and how these experiences led me to choose CSE as my academic and professional path. By sharing my journey, I showcased my genuine enthusiasm for the field and my long-term commitment to it.
+
+**Question 6: Achievements and Extracurricular Activities – How many hackathons have you participated in?**
+The interview delved into my achievements and extracurricular activities, specifically focusing on my participation in hackathons. I enthusiastically shared my experience of participating in several hackathons, highlighting how they provided me with opportunities to collaborate, innovate, and enhance my problem-solving skills under pressure. I emphasized the valuable lessons I learned from each hackathon and how they honed my ability to deliver impactful solutions within tight deadlines.
+
+**Question 7: What's your vision in life? What do you want to do?**
+The interviewer sought to understand my long-term vision and aspirations. I expressed my desire to leverage technology to create positive social impact. I shared my vision of developing innovative applications that simplify complex processes and improve the lives of individuals worldwide. I highlighted my commitment to continuous learning, seeking opportunities to contribute to the ever-evolving tech industry, and becoming a catalyst for change through technology-driven solutions.
+
+**Question 8: What are your ambitions as an individual?**
+Building upon the previous question, I was asked about my personal ambitions. I spoke about my aspirations to become a respected industry professional known for my expertise in React.js development. I stressed the importance of cultivating a growth mindset and constantly pushing the boundaries of my skills. By expressing my ambitions, I conveyed my dedication to personal and professional development.
+
+**Question 9: Why do you want to join Ai Planet?**
+The interviewer probed my motivations for joining Ai Planet. I seized the opportunity to highlight the alignment between Ai Planet's mission, my passion for React.js development, and my desire to contribute to cutting-edge projects in the field of artificial intelligence. I emphasized the company's reputation, work culture, and commitment to innovation as factors that deeply resonated with my own values and career aspirations.
+
+**Question 10: What makes you happy when it comes to any package?**
+The interviewer inquired about my perspective on compensation packages. Here, I provided insights into my priorities beyond monetary rewards. While acknowledging the importance of fair compensation, I emphasized that job satisfaction, professional growth opportunities, and a supportive work environment held significant value for me. I conveyed my belief that a balanced package encompassing these elements would contribute to long-term happiness and fulfillment in my career.
+
+*Note: These questions were asked to me based on my resume, interests and past experience and this blog aims to share my experience with you.*
+
+**Conclusion:**
+The HR interview at Ai Planet, conducted by Chanukya Patnaik, provided me with a valuable opportunity to reflect on my skills, experiences, and aspirations. Through the thought-provoking questions, I gained deeper insights into my own journey as a React.js developer and the impact I aspire to create. This interview experience reinforced the importance of thorough preparation, self-reflection, and the ability to effectively communicate my motivations and ambitions. I am grateful for the chance to engage in this enriching interview process and look forward to contributing my skills to the innovative projects at Ai Planet.  
+
+I hope this experience helps you, Thanks for reading 😇!
+
+### Find me here:
+
+Email: <a href="mailto:vidhanshu7218@gmail.com" target="_blank"><i>vidhanshu7218@gmail.com</i></a>
+
+Github: <a href="https://github.com/vidhanshu" target="_blank"><i>@github.com/vidhanshu</i></a>
+
+Portfolio: <a href="https://vidhanshu.vercel.app" target="_blank"><i>vidhanshu.vercel.app</i></a>
     `.toString(),
   },
   {

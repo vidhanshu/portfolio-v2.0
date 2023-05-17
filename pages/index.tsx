@@ -37,11 +37,10 @@ import {
 
 import Head from "next/head";
 import Link from "next/link";
+import { useEffect } from "react";
 import { useTheme } from "@/context/theme";
 
 function Home() {
-  const { theme } = useTheme();
-
   return (
     <PageWrapperToGetThemes>
       <>
