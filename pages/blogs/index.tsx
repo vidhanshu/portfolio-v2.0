@@ -5,7 +5,7 @@ import {
   PageWrapperToGetThemes,
 } from "@/components";
 
-import Blog from "@/models/Blog";
+import Blog from "@/models/blog";
 import { BlogServerType } from "@/@types";
 import { MyBlogs } from "@/containers";
 import connectDB from "@/configs/db";

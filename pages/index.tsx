@@ -35,7 +35,7 @@ import {
   SectionSeperator,
 } from "@/components";
 
-import Blog from "@/models/Blog";
+import Blog from "@/models/blog";
 import { BlogServerType } from "@/@types";
 import Link from "next/link";
 import connectDB from "@/configs/db";
