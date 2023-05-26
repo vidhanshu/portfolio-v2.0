@@ -89,3 +89,17 @@ export interface ThemeContextType {
   theme: "light" | "dark";
   handleTheme: (theme: "light" | "dark") => void;
 }
+
+export type BlogServerType = Omit<BlogType, "id" | "date"> & {
+  createdAt: string;
+  _id: string;
+};
+
+export type FullBlogType = BlogServerType & {
+  markdown: string;
+};
+
+export type OtherBlogType = {
+  _id: string;
+  title: string;
+};

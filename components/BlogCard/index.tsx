@@ -3,7 +3,7 @@
  */
 
 import { AiOutlineLike } from "react-icons/ai";
-import { BlogType } from "@/@types";
+import { BlogServerType } from "@/@types";
 import { BsMedium } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,8 +11,7 @@ import { RxExternalLink } from "react-icons/rx";
 import styles from "@/styles/components/blogCard.module.scss";
 
 function BlogCard({
-  id,
-  date,
+  _id,
   description,
   image,
   link,
@@ -20,17 +19,19 @@ function BlogCard({
   tags,
   time_to_read,
   title,
-}: BlogType) {
+  createdAt,
+}: BlogServerType) {
   return (
     <div className={`${styles.container} card_hover_effect`}>
       {/* blog's left content */}
       <div className={styles.blog_left}>
-        <Link className={styles.blog_link} href={`/blogs/${id}`}>
+        <Link className={styles.blog_link} href={`/blogs/${_id}`}>
           <div className={styles.blog_left_top}>
             <p className={styles.subtitle}>{subtitle}</p>
             <h1 className={styles.title}>{title}</h1>
             <small className={styles.date}>
-              {date} . {time_to_read}
+              {new Date(createdAt).toLocaleDateString()} . {time_to_read} min to
+              read
             </small>
           </div>
 
@@ -62,10 +63,10 @@ function BlogCard({
 
       {/* right image */}
       <div className={styles.blog_right}>
-        <Link className={styles.img} href={`/blogs/${id}`}>
+        <Link className={styles.img} href={`/blogs/${_id}`}>
           <Image
             className={styles.img}
-            src={`/assets/${image}`}
+            src={image}
             width={541}
             height={304}
             alt="blog image"

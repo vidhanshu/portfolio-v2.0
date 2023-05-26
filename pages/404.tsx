@@ -1,20 +1,28 @@
-import { Button, Layout } from "@/components";
+import { Button, Layout, PageWrapperToGetThemes } from "@/components";
 
 import Image from "next/image";
-import Link from "next/link";
 import styles from "@/styles/pages/404.module.scss";
+import { useRouter } from "next/router";
 
 function NotFound() {
+  const router = useRouter();
   return (
-    <Layout>
-      <div className={`container ${styles.notFound}`}>
-        <Image src={"/assets/404.jpg"} width={500} height={500} alt="" />
-        <h1>404 Blog doesn&apos;t exists</h1>
-        <Link href="/">
-          <Button>Go Back !</Button>
-        </Link>
-      </div>
-    </Layout>
+    <PageWrapperToGetThemes>
+      <Layout>
+        <div className={`container ${styles.notFound}`}>
+          <Image src={"/assets/404.jpg"} width={500} height={500} alt="" />
+          <h1>404 Page not found</h1>
+          <Button
+            onClick={() => {
+              router.back();
+            }}
+            variant="tertiary"
+          >
+            Go Back !
+          </Button>
+        </div>
+      </Layout>
+    </PageWrapperToGetThemes>
   );
 }
 

@@ -1,50 +1,43 @@
 /* eslint-disable react/no-children-prop */
 
-import { BLOGS, BLOGS_DETAILED } from "@/constants";
-import { BlogRawType, BlogType } from "@/@types";
+import { FullBlogType, OtherBlogType } from "@/@types";
 import { HeadTagForSEO, PageWrapperToGetThemes } from "@/components";
-import { useEffect, useState } from "react";
 
+import Blog from "@/models/Blog";
 import RenderBlog from "@/components/RenderBlog";
-import { useRouter } from "next/router";
+import connectDB from "@/configs/db";
 
-function Blog() {
-  const { asPath } = useRouter();
-
-  const [BlogMeta, setBlogMeta] = useState<BlogType>({} as BlogType);
-  const [BlogRaw, setBlogRaw] = useState<BlogRawType>({} as BlogRawType);
-  const [BlogExists, setBlogExists] = useState<boolean>(true);
-
-  useEffect(() => {
-    const id = asPath.split("/")[2];
-    if (!id.includes("[")) {
-      const blogMeta = BLOGS.filter((e) => e.id === id);
-      const blogRaw = BLOGS_DETAILED.filter((e) => e.id === id);
-
-      if (blogMeta.length > 0 && blogRaw.length > 0) {
-        setBlogMeta(blogMeta[0]);
-        setBlogRaw(blogRaw[0]);
-        setBlogExists(true);
-      } else {
-        setBlogExists(false);
-      }
+export async function getServerSideProps(context: any) {
+  await connectDB();
+  const blog = await Blog.findById(context.params.id);
+  const otherBlogs = await Blog.find(
+    {},
+    {
+      title: 1,
     }
-  }, [asPath]);
+  ).limit(10);
+
+  return {
+    props: {
+      blog: JSON.parse(JSON.stringify(blog)),
+      otherBlogs: JSON.parse(JSON.stringify(otherBlogs)),
+      revalidate: 86400000,
+    },
+  };
+}
+
+type BlogByIdProps = {
+  blog: FullBlogType;
+  otherBlogs: OtherBlogType[];
+};
+
+function BlogById({ blog, otherBlogs }: BlogByIdProps) {
   return (
     <PageWrapperToGetThemes>
-      <HeadTagForSEO
-        title={BlogExists ? BlogMeta.title : "Blog not found"}
-        description={
-          BlogExists ? BlogMeta.description : "Blog not found on this website"
-        }
-      />
-      <RenderBlog
-        BlogExists={BlogExists}
-        BlogMeta={BlogMeta}
-        BlogRaw={BlogRaw}
-      />
+      <HeadTagForSEO title={blog.title} description={blog.description} />
+      <RenderBlog otherBlogs={otherBlogs} blog={blog} />
     </PageWrapperToGetThemes>
   );
 }
 
-export default Blog;
+export default BlogById;

@@ -46,4 +46,3 @@ export const EMAIL_REGEX = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
 export * from "./projects";
 export * from "./experiences";
 export * from "./achivements";
-export * from "./blogs";

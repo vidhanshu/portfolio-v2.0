@@ -1,13 +1,13 @@
-import { BLOGS } from "@/constants";
 import BlogCard from "@/components/BlogCard";
+import { BlogServerType } from "@/@types";
 import styles from "@/styles/containers/myblogs.module.scss";
 
-function MyBlogs() {
+function MyBlogs({ blogs }: { blogs: BlogServerType[] }) {
   return (
     <div className={`container`} data-aos="fade-up">
       <div className={`${styles.container}`}>
-        {BLOGS.map((data) => (
-          <BlogCard key={data.id} {...data} />
+        {blogs.map((data) => (
+          <BlogCard key={data._id} {...data} />
         ))}
       </div>
     </div>

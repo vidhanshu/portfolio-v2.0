@@ -35,12 +35,37 @@ import {
   SectionSeperator,
 } from "@/components";
 
-import Head from "next/head";
+import Blog from "@/models/Blog";
+import { BlogServerType } from "@/@types";
 import Link from "next/link";
-import { useEffect } from "react";
-import { useTheme } from "@/context/theme";
+import connectDB from "@/configs/db";
 
-function Home() {
+export async function getStaticProps() {
+  // connecting to db
+  await connectDB();
+  const blogs = await Blog.find(
+    {},
+    {
+      title: 1,
+      description: 1,
+      image: 1,
+      subtitle: 1,
+      time_to_read: 1,
+      tags: 1,
+      createdAt: 1,
+    }
+  )
+    .sort({ createdAt: -1 })
+    .limit(10);
+  return {
+    props: {
+      blogs: JSON.parse(JSON.stringify(blogs)),
+      revalidate: 86400000,
+    },
+  };
+}
+
+function Home({ blogs }: { blogs: BlogServerType[] }) {
   return (
     <PageWrapperToGetThemes>
       <>
@@ -82,7 +107,7 @@ function Home() {
           <SectionSeperator id={BLOGS_STRING} title="Blogs" />
 
           <NoSSR>
-            <MyBlogs />
+            <MyBlogs blogs={blogs} />
 
             {/* more blogs button */}
             <div
