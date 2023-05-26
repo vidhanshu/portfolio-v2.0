@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-import Blog from "../../../models/Blog";
+import Blog from "../../../models/blog";
 import connectDB from "@/configs/db";
 
 export default async function handler(
