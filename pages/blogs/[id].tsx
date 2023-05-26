@@ -3,7 +3,7 @@
 import { FullBlogType, OtherBlogType } from "@/@types";
 import { HeadTagForSEO, PageWrapperToGetThemes } from "@/components";
 
-import Blog from "@/models/Blog";
+import Blog from "@/models/blog";
 import RenderBlog from "@/components/RenderBlog";
 import connectDB from "@/configs/db";
 
