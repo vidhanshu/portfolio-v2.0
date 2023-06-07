@@ -1,14 +1,18 @@
-/* eslint-disable react/no-children-prop */
-
-import { FullBlogType, OtherBlogType } from "@/@types";
-import { HeadTagForSEO, PageWrapperToGetThemes } from "@/components";
-
 import Blog from "@/models/blog";
 import RenderBlog from "@/components/RenderBlog";
 import connectDB from "@/configs/db";
+import { FullBlogType, OtherBlogType } from "@/@types";
+import { HeadTagForSEO, PageWrapperToGetThemes } from "@/components";
+
+/* eslint-disable react/no-children-prop */
 
 export async function getServerSideProps(context: any) {
   await connectDB();
+  if (!context.params.id.match(/^[0-9a-fA-F]{24}$/)) {
+    return {
+      notFound: true,
+    };
+  }
   const blog = await Blog.findById(context.params.id);
   const otherBlogs = await Blog.find(
     {},
@@ -16,6 +20,12 @@ export async function getServerSideProps(context: any) {
       title: 1,
     }
   ).limit(10);
+
+  if (!blog) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {

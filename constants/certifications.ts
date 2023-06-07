@@ -1,5 +1,5 @@
-import { CertificationType } from "@/@types";
 import { GITHUB_URL } from ".";
+import { CertificationType } from "@/@types";
 
 export const CERIFICATIONS: CertificationType[] = [
   {
@@ -63,7 +63,8 @@ export const CERIFICATIONS: CertificationType[] = [
   {
     id: "6",
     title: "Learn Node.js",
-    description: "I completed my Basics of web course from Codedamn.",
+    description:
+      "I completed Node.js course from the Udemy instructor Andrew Mead.",
     date: "Dec, 2022",
     project: GITHUB_URL,
     icon: "udemy.png",
@@ -74,7 +75,7 @@ export const CERIFICATIONS: CertificationType[] = [
     id: "7",
     title: "Learn React.js",
     description:
-      "I completed my Basics of web course from Youtube codevolution channel.",
+      "I completed React.js course from Youtube codevolution channel.",
     date: "Dec, 2022",
     project: GITHUB_URL,
     icon: "utube.png",

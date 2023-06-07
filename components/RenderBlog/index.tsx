@@ -1,16 +1,17 @@
-/* eslint-disable react/no-children-prop */
-
-import { FullBlogType, OtherBlogType } from "@/@types";
-
 import HeadTagForSEO from "../HeadTagForSEO";
 import Layout from "../Layout";
 import Link from "next/link";
 import React from "react";
+import rehypeRaw from "rehype-raw";
+import styles from "@/styles/pages/blog.module.scss";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import rehypeRaw from "rehype-raw";
-import styles from "@/styles/pages/blog.module.scss";
+import { FullBlogType, OtherBlogType } from "@/@types";
+
+/* eslint-disable react/no-children-prop */
+
+
 
 type RenderBlogProps = {
   blog: FullBlogType;
@@ -25,8 +26,8 @@ function RenderBlog({ blog, otherBlogs }: RenderBlogProps) {
           <h1>{blog.title}</h1>
           <hr />
           <p>
-            {blog.createdAt}&nbsp;&nbsp;<b>.</b>&nbsp;&nbsp;
-            {blog.time_to_read}
+            {new Date(blog.createdAt).toLocaleDateString()}&nbsp;&nbsp;<b>.</b>&nbsp;&nbsp;
+            {blog.time_to_read} min to read
           </p>
           <div className={styles.tags}>
             {blog.tags?.map((e, _) => (

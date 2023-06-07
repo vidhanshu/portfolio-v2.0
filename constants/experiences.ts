@@ -19,7 +19,7 @@ export const EXPERIENCE: ExperienceType[] = [
     title: "Core team member",
     company: "GDSC GHRCE",
     description:
-      "I promoted to core team as a Technical team member where my task is to help lead in organising the events and guiding the community.",
+      "I promoted to core team as a Technical team member where my task is to help lead in organizing the events and guiding the community.",
     from: "May 22",
     to: "current",
     link: "https://gdsc-ghrce.vercel.app",
@@ -48,5 +48,16 @@ export const EXPERIENCE: ExperienceType[] = [
     logo: "po.png",
     certificate:
       "https://drive.google.com/file/d/1_F5Siv2jw9E7nUloZ9xHvAYFwitCUGlI/view?usp=sharing",
+  },
+  {
+    id: "5",
+    title: "Front end intern",
+    company: "AiPlanet",
+    description:
+      "I'm working as a full-time frontend intern @ AiPlanet, where my job is develop the frontend of the website.",
+    from: "june 23",
+    to: "current",
+    link: "https://aiplanet.com",
+    logo: "dphi.png",
   },
 ];
