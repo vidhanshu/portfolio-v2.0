@@ -19,7 +19,7 @@ function generateSiteMap(blogs: BlogServerType[]) {
        .map(({ _id }) => {
          return `
        <url>
-           <loc>${`https://vidhanshu.software/${_id}`}</loc>
+           <loc>${`https://vidhanshu.software/blogs/${_id}`}</loc>
        </url>
      `;
        })
