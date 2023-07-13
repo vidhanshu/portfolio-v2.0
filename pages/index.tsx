@@ -1,5 +1,3 @@
-import "aos/dist/aos.css";
-
 import {
   ABOUT_ME_STRING,
   ACHIEVEMENTS_STRING,

@@ -1,5 +1,3 @@
-import "aos/dist/aos.css";
-
 import { EMAIL_ID_REDIRECT_URL, RESUME_LOCAL_URL } from "@/constants";
 
 import { Button } from "@/components";

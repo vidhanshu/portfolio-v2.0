@@ -1,9 +1,6 @@
 /**
  * @description SectionSeperator component, provides seperator for all the sections in the landing page
  */
-
-import "aos/dist/aos.css"
-
 import { sectionSeperatorProps } from "@/@types/props";
 import styles from "@/styles/components/sectionSeperator.module.scss";
 
