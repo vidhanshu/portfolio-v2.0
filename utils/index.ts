@@ -11,3 +11,11 @@ export const arrayShortner = (arr: any[], length: number): any[] => {
   }
   return arr;
 };
+
+export const FormattedDate = (d: string | Date): string => {
+  const date = new Date(d);
+  const day = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+};

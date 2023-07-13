@@ -14,10 +14,10 @@ interface TreeLeafProps {
 }
 export default function TreeBranch({ title, children }: TreeLeafProps) {
   return (
-    <li data-aos="fade-up">
-      <span data-aos="fade-up">{title}</span>
+    <li  >
+      <span  >{title}</span>
 
-      <ul data-aos="fade-up">{children}</ul>
+      <ul  >{children}</ul>
     </li>
   );
 }

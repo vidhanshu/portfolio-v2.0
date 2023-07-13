@@ -1,15 +1,18 @@
+import { useTheme } from "@/context/theme";
 import Head from "next/head";
 import React from "react";
 
 type HeadTagForSEOProps = {
   title: string;
   description: string;
+  keywords?: string;
 };
-function HeadTagForSEO({ title, description }: HeadTagForSEOProps) {
+function HeadTagForSEO({ title, description, keywords }: HeadTagForSEOProps) {
+  const { theme } = useTheme();
   return (
     <Head>
       <title>{title}</title>
-      <meta name="theme-color" content={"#000"} />
+      <meta name="theme-color" content={theme === "dark" ? "#000" : "#fff"} />
 
       {/* open graph tags */}
       <meta property="og:title" content={title} />
@@ -37,7 +40,11 @@ function HeadTagForSEO({ title, description }: HeadTagForSEOProps) {
       {/* keywords */}
       <meta
         name="keywords"
-        content="Vidhanshu Borade, Vidhanshu, portfolio, borade, Full-Stack Web Developer, Android Developer, Programming, Software Design, Qualifications, Courses, Achievements, Experience, Freelancer, Student, Competitive Programmer, Competitive, Programming"
+        content={
+          keywords
+            ? keywords
+            : "Vidhanshu Borade, Vidhanshu, portfolio, borade, Full-Stack Web Developer, Android Developer, Programming, Software Design, Qualifications, Courses, Achievements, Experience, Freelancer, Student, Competitive Programmer, Competitive, Programming"
+        }
       />
     </Head>
   );

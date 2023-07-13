@@ -4,7 +4,7 @@ import styles from "@/styles/containers/achievements.module.scss";
 
 function Achievements() {
   return (
-    <div className={`container`} data-aos="fade-up">
+    <div className={`container`}>
       <div className={`${styles.container}`}>
         {ACHIEVEMENTS.map((data) => (
           <AchievementCard key={data.id} {...data} />

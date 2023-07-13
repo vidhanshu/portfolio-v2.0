@@ -29,7 +29,7 @@ export const MY_EMAIL_ID = "vidhanshu7218@gmail.com"; // this is my email id
 export const EMAIL_ID_REDIRECT_URL = "mailto:vidhanshu7218@gmail.com"; // link to my GitHub profile
 export const GITHUB_URL = "https://github.com/vidhanshu"; // link to my GitHub profile
 export const LINKEDIN_URL =
-  "https://www.linkedin.com/in/vidhanshu-borade-325741210/"; // url of my linkedin profile
+  "https://www.linkedin.com/in/vidhanshu"; // url of my linkedin profile
 export const INSTAGRAM_URL = "https://www.instagram.com/vidhanshu_borade"; // link of instagram account
 export const OLD_PORTFOLIO_URL = "https://vidhanshu-portfolio.vercel.app"; // the url of my old portfolio
 export const WHATS_APP_LINK = "https://wa.link/gn88ir";

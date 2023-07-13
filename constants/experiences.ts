@@ -9,7 +9,7 @@ export const EXPERIENCE: ExperienceType[] = [
       "I joined GDSC GHRCE (Google developer students clubs) as an executive team member. Where my role was to help the core team to conduct the events and promote the google technologies",
     from: "Aug 20",
     to: "May 22",
-    link: "hhttps://gdsc-ghrce.vercel.app",
+    link: "https://gdsc-ghrce.vercel.app",
     logo: "gdsc_logo.png",
     certificate:
       "https://drive.google.com/file/d/1n0DXYnBI-ivjV65i9O8zbVvE4s5_Cngx/view?usp=sharing",
@@ -52,7 +52,7 @@ export const EXPERIENCE: ExperienceType[] = [
   {
     id: "5",
     title: "Front end intern",
-    company: "AiPlanet",
+    company: "AI Planet",
     description:
       "I'm working as a full-time frontend intern @ AiPlanet, where my job is develop the frontend of the website.",
     from: "june 23",

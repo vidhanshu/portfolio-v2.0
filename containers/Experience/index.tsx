@@ -8,7 +8,7 @@ import styles from "@/styles/containers/experience.module.scss";
 
 function Experience() {
   return (
-    <div className={`container ${styles.wrapper}`} data-aos="fade-up">
+    <div className={`container ${styles.wrapper}`}>
       <div className={styles.timeline}>
         {EXPERIENCE.map(
           (
@@ -48,6 +48,9 @@ function Experience() {
                       width={45}
                       height={38}
                       alt={logo}
+                      style={{
+                        objectFit: "contain",
+                      }}
                     />
                   </div>
                   <small className={styles.duration}>

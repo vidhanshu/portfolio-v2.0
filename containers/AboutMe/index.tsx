@@ -11,10 +11,10 @@ function AboutMe() {
     <div className={`${styles.wrapper} container`}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <h1 className={styles.title} data-aos="fade-up">
+          <h1 className={styles.title}>
             I can give the Best that you always wanted.
           </h1>
-          <p className={styles.description} data-aos="fade-up">
+          <p className={styles.description}>
             Hello Geeks, I&apos;m Vidhanshu Borade! I hold a deep interest &
             knowledge in Programming, especially in designing software. I am
             currently a professional full-stack web developer and full-stack
@@ -23,15 +23,15 @@ function AboutMe() {
           </p>
           <div className={styles.qualities}>
             <ul>
-              <li data-aos="fade-up">Problem Solving</li>
-              <li data-aos="fade-up">Highly Motivated</li>
+              <li>Problem Solving</li>
+              <li>Highly Motivated</li>
             </ul>
             <ul>
-              <li data-aos="fade-up">Creative Ideas</li>
-              <li data-aos="fade-up">High Quality</li>
+              <li>Creative Ideas</li>
+              <li>High Quality</li>
             </ul>
           </div>
-          <div className={styles.btn_grp} data-aos="fade-up">
+          <div className={styles.btn_grp}>
             <a href={EMAIL_ID_REDIRECT_URL} target="_blank">
               <Button variant="secondary" size="large">
                 Hire me
@@ -43,7 +43,7 @@ function AboutMe() {
             </a>
           </div>
         </div>
-        <div className={styles.right} data-aos="fade-up">
+        <div className={styles.right}>
           <Image
             className={styles.img}
             alt="my profile image"

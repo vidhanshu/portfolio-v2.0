@@ -8,10 +8,9 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FullBlogType, OtherBlogType } from "@/@types";
+import { FormattedDate } from "@/utils";
 
 /* eslint-disable react/no-children-prop */
-
-
 
 type RenderBlogProps = {
   blog: FullBlogType;
@@ -20,17 +19,17 @@ type RenderBlogProps = {
 function RenderBlog({ blog, otherBlogs }: RenderBlogProps) {
   return (
     <Layout>
-      <HeadTagForSEO title={blog.title} description={blog.description} />
+      <HeadTagForSEO title={blog?.title} description={blog?.description} />
       <div className={`container ${styles.blog} blog-hai-yeh`}>
         <div className={styles.metaData}>
-          <h1>{blog.title}</h1>
+          <h1>{blog?.title}</h1>
           <hr />
           <p>
-            {new Date(blog.createdAt).toLocaleDateString()}&nbsp;&nbsp;<b>.</b>&nbsp;&nbsp;
-            {blog.time_to_read} min to read
+            {FormattedDate(blog?.createdAt)}&nbsp;&nbsp;<b>.</b>&nbsp;&nbsp;
+            {blog?.time_to_read} min to read
           </p>
           <div className={styles.tags}>
-            {blog.tags?.map((e, _) => (
+            {blog?.tags?.map((e, _) => (
               <div className={styles.tag} key={_}>
                 {e}
               </div>
@@ -59,7 +58,7 @@ function RenderBlog({ blog, otherBlogs }: RenderBlogProps) {
               },
             }}
           >
-            {blog.markdown}
+            {blog?.markdown}
           </ReactMarkdown>
         </div>
       </div>
@@ -70,8 +69,8 @@ function RenderBlog({ blog, otherBlogs }: RenderBlogProps) {
           <h1>More blogs</h1>
           <div className={styles.otherBlogsContainer}>
             {otherBlogs
-              .filter((e) => e._id !== blog._id)
-              .map((e, _) => (
+              ?.filter((e) => e._id !== blog?._id)
+              ?.map((e, _) => (
                 <Link
                   className={`${styles.otherBlogLink} card_hover_effect`}
                   href={`/blogs/${e._id}`}

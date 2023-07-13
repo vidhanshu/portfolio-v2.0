@@ -8,7 +8,7 @@ import TreeLeaf from "./TreeLeaf";
 
 export default function DevelopmentSkillsTree() {
   return (
-    <ul data-aos="fade-up">
+    <ul>
       {/* web development skills */}
       <TreeBranch title="Website">
         <TreeBranch title="Frontend">

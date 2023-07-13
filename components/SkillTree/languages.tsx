@@ -8,7 +8,7 @@ import TreeLeaf from "./TreeLeaf";
 
 export default function LanguageSkillsTree() {
   return (
-    <ul data-aos="fade-up">
+    <ul  >
       {/* languages I use for web development */}
       <TreeBranch title="Website">
         <TreeLeaf title="JS" />

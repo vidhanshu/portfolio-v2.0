@@ -5,7 +5,7 @@ import styles from "@/styles/containers/projects.module.scss";
 
 function Projects() {
   return (
-    <div className={`container`} data-aos="fade-up">
+    <div className={`container`}>
       <div className={`${styles.wrapper}`}>
         <Tabs
           tabs={["All", "Web", "Android", "UI/UX", "CLI"]}

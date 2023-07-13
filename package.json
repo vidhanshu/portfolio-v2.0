@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.0",
-    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "mongoose": "^7.1.1",
     "next": "13.3.0",

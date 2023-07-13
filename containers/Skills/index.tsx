@@ -11,11 +11,11 @@ export default function SkillsSection() {
     <div className={`${styles.skillsContainer} container`}>
       <div className={styles.skillsWrapper}>
 
-        <div className={styles.skillsContent} data-aos="fade-up">
+        <div className={styles.skillsContent}>
           {/* this tree is for the develpment/techstack related skills */}
-          <ul className={styles.skillsTree} data-aos="fade-up">
-            <li data-aos="fade-up">
-              <span className={styles.skillsTreeRoot} data-aos="fade-up">
+          <ul className={styles.skillsTree}>
+            <li>
+              <span className={styles.skillsTreeRoot}>
                 Development
               </span>
 
@@ -24,9 +24,9 @@ export default function SkillsSection() {
           </ul>
 
           {/* tree will display what languages I know */}
-          <ul className={styles.skillsTree} data-aos="fade-up">
-            <li data-aos="fade-up">
-              <span className={styles.skillsTreeRoot} data-aos="fade-up">
+          <ul className={styles.skillsTree}>
+            <li>
+              <span className={styles.skillsTreeRoot}>
                 Languages
               </span>
 
@@ -35,9 +35,9 @@ export default function SkillsSection() {
           </ul>
 
           {/* this tree will show what tools I use */}
-          <ul className={styles.skillsTree} data-aos="fade-up">
-            <li data-aos="fade-up">
-              <span className={styles.skillsTreeRoot} data-aos="fade-up">
+          <ul className={styles.skillsTree}>
+            <li>
+              <span className={styles.skillsTreeRoot}>
                 Tools
               </span>
 

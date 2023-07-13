@@ -9,7 +9,7 @@ import styles from "@/styles/components/sectionSeperator.module.scss";
 
 function SectionSeperator({ title, id }: sectionSeperatorProps) {
   return (
-    <div className={styles.section_seperator} data-aos="fade-up" id={id}>
+    <div className={styles.section_seperator}   id={id}>
       <div className={styles.line} />
       <p className={styles.section_title}>{title}</p>
       <div className={styles.line} />

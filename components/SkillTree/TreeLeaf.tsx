@@ -14,7 +14,7 @@ interface TreeLeafProps {
 export default function TreeLeaf({ title }: TreeLeafProps) {
   return (
     <li>
-      <span data-aos="fade-up">{title}</span>
+      <span  >{title}</span>
     </li>
   );
 }

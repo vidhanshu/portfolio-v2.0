@@ -42,11 +42,9 @@ function Intro() {
         <div className={styles.right}>
           <Image
             alt="header image"
-            src={`/assets/${
-              theme === "dark" ? "header.png" : "header-light.png"
-            }`}
-            width={theme === "dark" ? 418 : 380}
-            height={theme === "dark" ? 305 : 380}
+            src={"/assets/header.png"}
+            width={380}
+            height={380}
           />
         </div>
       </div>

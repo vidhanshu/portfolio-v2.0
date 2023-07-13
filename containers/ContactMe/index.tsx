@@ -59,18 +59,18 @@ function ContactMe() {
       <div className={styles.container}>
         {/* left information */}
         <div className={styles.left}>
-          <h1 className={styles.title} data-aos="fade-up">
+          <h1 className={styles.title}>
             Drop me a message!
           </h1>
 
-          <p className={styles.description} data-aos="fade-up">
+          <p className={styles.description}>
             You can contact me using below details! <br />
             <span className={styles.seperator}>Or</span>
             <br />
             Just fill that form and hit that send button
           </p>
 
-          <div className={styles.contact_info} data-aos="fade-up">
+          <div className={styles.contact_info}>
             {/* address */}
             <div className={styles.info}>
               <span className={styles.bullet}>
@@ -82,7 +82,7 @@ function ContactMe() {
             </div>
 
             {/* email */}
-            <div className={styles.info} data-aos="fade-up">
+            <div className={styles.info}>
               <span className={styles.bullet}>
                 <MdAlternateEmail size={25} />
               </span>
@@ -101,11 +101,11 @@ function ContactMe() {
 
         <div className={styles.right}>
           <div className={styles.form_container}>
-            <div data-aos="fade-left">
+            <div>
               <ContactFormSvg />
             </div>
 
-            <div className={styles.form} data-aos="fade-up">
+            <div className={styles.form}>
               <input
                 name="name"
                 value={formData.name}
