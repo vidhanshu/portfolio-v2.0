@@ -19,9 +19,7 @@ function Layout({ children }: LayoutProps) {
 
   return (
     <>
-      <NoSSR>
-        <Navbar />
-      </NoSSR>
+      <Navbar />
       <main>{children}</main>
       <Footer />
     </>

@@ -2,9 +2,8 @@
  * @description This file contains all the props that are used in the project
  */
 
-import { HtmlHTMLAttributes } from "react";
-
-export interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "tertiary";
   size?: "small" | "medium" | "large";
 }

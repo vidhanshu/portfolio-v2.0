@@ -70,8 +70,13 @@
 }
 
 .disabled {
-  cursor: not-allowed;
-  background: var(--disabled);
-  color: var(--disabled-text);
-  border: var(--bw-r) solid var(--disabled-border);
+  cursor: not-allowed !important;
+
+  &:active {
+    transform: none !important;
+  }
+
+  &:hover {
+    background: transparent !important;
+  }
 }

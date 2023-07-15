@@ -59,9 +59,7 @@ function ContactMe() {
       <div className={styles.container}>
         {/* left information */}
         <div className={styles.left}>
-          <h1 className={styles.title}>
-            Drop me a message!
-          </h1>
+          <h1 className={styles.title}>Drop me a message!</h1>
 
           <p className={styles.description}>
             You can contact me using below details! <br />
@@ -143,7 +141,7 @@ function ContactMe() {
                 our database
               </p>
               {loading ? (
-                <Button size="large" variant="tertiary">
+                <Button disabled={loading} size="large" variant="tertiary">
                   Sending...
                 </Button>
               ) : (

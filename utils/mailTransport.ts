@@ -74,7 +74,7 @@ export const contactFormHtmlEmailTemplate = ({
     </head>
     <body>
         <div class="root">
-            <img src="https://vidhanshu.vercel.app/_next/image?url=%2Fassets%2Fheader-light.png&w=384&q=75" width="100" height="100"/>
+            <img src="https://vidhanshu.vercel.app/_next/image?url=%2Fassets%2Fheader.png&w=384&q=75" width="100" height="100"/>
 
             <div>
                 <p>Hi <a href="mailto:${email}">${name}</a>!</p>

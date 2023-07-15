@@ -3,11 +3,8 @@ import { Button } from "@/components";
 import Image from "next/image";
 import { StatsCardProps } from "@/@types";
 import styles from "@/styles/containers/intro.module.scss";
-import { useTheme } from "@/context/theme";
 
 function Intro() {
-  const { theme } = useTheme();
-
   return (
     <div className={`${styles.wrapper} container`}>
       <div className={styles.container}>
