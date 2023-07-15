@@ -2,12 +2,11 @@
  * @description CodingProfileCard, provides card for each coding profile
  */
 
-import { arrayShortner, stringShortner } from "@/utils";
-
 import Button from "../Button";
 import { CodingProfileType } from "@/@types";
 import styles from "@/styles/components/codingProfileCard.module.scss";
 import { useTheme } from "@/context/theme";
+import { arrayShortner, stringShortner } from "@/utils";
 
 function CodingProfileCard({
   description,

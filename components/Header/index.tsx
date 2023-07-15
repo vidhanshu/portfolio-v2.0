@@ -2,6 +2,16 @@
  * @description Header component, provides header of the landing page contains navigation bar, and header content
  */
 
+import { FiMoon, FiSun } from "react-icons/fi";
+import { useCallback, useEffect, useState } from "react";
+import { HiBars2 } from "react-icons/hi2";
+import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
+import { TfiClose } from "react-icons/tfi";
+
+import Button from "../Button";
+import styles from "@/styles/components/nav.module.scss";
+import { useTheme } from "@/context/theme";
 import {
   ABOUT_ME_TAG,
   ACHIEVEMENTS_TAG,
@@ -15,16 +25,6 @@ import {
   SKILLS_TAG,
   WHAT_I_DO_TAG,
 } from "@/constants";
-import { FiMoon, FiSun } from "react-icons/fi";
-import { useCallback, useEffect, useState } from "react";
-
-import Button from "../Button";
-import { HiBars2 } from "react-icons/hi2";
-import Link from "next/link";
-import { TfiClose } from "react-icons/tfi";
-import styles from "@/styles/components/nav.module.scss";
-import { useMediaQuery } from "react-responsive";
-import { useTheme } from "@/context/theme";
 
 function Header() {
   const { theme, handleTheme } = useTheme();

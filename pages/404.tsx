@@ -1,4 +1,6 @@
-import { Button, Layout, PageWrapperToGetThemes } from "@/components";
+import Button from "@/components/Button";
+import Layout from "@/components/Layout";
+import PageWrapperToGetThemes from "@/components/PageWrapperToGetThemes";
 
 import Image from "next/image";
 import styles from "@/styles/pages/404.module.scss";

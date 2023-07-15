@@ -1,10 +1,11 @@
-import Bullet from "@/public/assets/Bullet";
-import { Button } from "@/components";
-import { EXPERIENCE } from "@/constants";
 import Image from "next/image";
 import { RxExternalLink } from "react-icons/rx";
-import { stringShortner } from "@/utils";
+
+import Bullet from "@/public/assets/Bullet";
+import Button from "@/components/Button";
+import { EXPERIENCE } from "@/constants";
 import styles from "@/styles/containers/experience.module.scss";
+import { stringShortner } from "@/utils";
 
 function Experience() {
   return (

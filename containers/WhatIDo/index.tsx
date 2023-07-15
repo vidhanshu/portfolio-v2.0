@@ -1,4 +1,4 @@
-import { Button } from "@/components";
+import Button from "@/components/Button";
 import { EMAIL_ID_REDIRECT_URL } from "@/constants";
 import WhatIDoSvg from "@/public/assets/WhatIDoSvg";
 import styles from "@/styles/containers/whatIDo.module.scss";

@@ -1,3 +1,8 @@
+import { useEffect, useState } from "react";
+import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+
 import {
   EMAIL_ID_REDIRECT_URL,
   FB_URL,
@@ -6,11 +11,6 @@ import {
   LEETCODE_URL,
   LINKEDIN_URL,
 } from "@/constants";
-import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { useEffect, useState } from "react";
-
-import { MdOutlineAlternateEmail } from "react-icons/md";
-import { SiLeetcode } from "react-icons/si";
 import styles from "@/styles/components/fixedSocials.module.scss";
 
 function FixedSocials() {

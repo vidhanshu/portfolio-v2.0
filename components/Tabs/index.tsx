@@ -2,10 +2,11 @@
  * @description: Tabs component, provides tabs for projects and blogs like sections
  */
 
+import { useState } from "react";
+
 import ProjectCard from "../ProjectCard";
 import { TabsProps } from "@/@types";
 import styles from "@/styles/components/tabs.module.scss";
-import { useState } from "react";
 
 function Tabs({ data, tabs }: TabsProps) {
   const [active, setActive] = useState(0);

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ABOUT_ME_STRING,
   ACHIEVEMENTS_STRING,
@@ -10,33 +11,29 @@ import {
   SKILLS_STRING,
   WHAT_I_DO_STRING,
 } from "@/constants";
-import {
-  AboutMe,
-  Achievements,
-  Certifications,
-  CodingProfiles,
-  ContactMe,
-  Experience,
-  Intro,
-  MyBlogs,
-  Projects,
-  SkillsSection,
-  WhatIDo,
-} from "@/containers";
-import {
-  Button,
-  FixedSocials,
-  HeadTagForSEO,
-  Layout,
-  NoSSR,
-  PageWrapperToGetThemes,
-  SectionSeperator,
-} from "@/components";
+
+import Button from "@/components/Button";
+import HeadTagForSEO from "@/components/HeadTagForSEO";
+import Layout from "@/components/Layout";
+import NoSSR from "@/components/NoSSR";
+import PageWrapperToGetThemes from "@/components/PageWrapperToGetThemes";
+import SectionSeperator from "@/components/SectionSeperator";
+import FixedSocials from "@/components/FixedSocials";
 
 import Blog from "@/models/blog";
-import { BlogServerType } from "@/@types";
-import Link from "next/link";
 import connectDB from "@/configs/db";
+import { BlogServerType } from "@/@types";
+import AboutMe from "@/containers/AboutMe";
+import Achievements from "@/containers/Achievements";
+import Certifications from "@/containers/Certifications";
+import CodingProfiles from "@/containers/CodingProfiles";
+import ContactMe from "@/containers/ContactMe";
+import Experience from "@/containers/Experience";
+import Intro from "@/containers/Intro";
+import MyBlogs from "@/containers/MyBlogs";
+import Projects from "@/containers/Projects";
+import SkillsSection from "@/containers/Skills";
+import WhatIDo from "@/containers/WhatIDo";
 
 export async function getStaticProps() {
   // connecting to db

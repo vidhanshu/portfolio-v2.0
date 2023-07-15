@@ -1,8 +1,8 @@
-import { EMAIL_ID_REDIRECT_URL, RESUME_LOCAL_URL } from "@/constants";
-
-import { Button } from "@/components";
 import Image from "next/image";
+
+import Button from "@/components/Button";
 import styles from "@/styles/containers/aboutme.module.scss";
+import { EMAIL_ID_REDIRECT_URL, RESUME_LOCAL_URL } from "@/constants";
 
 function AboutMe() {
   return (

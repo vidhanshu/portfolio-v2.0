@@ -1,14 +1,11 @@
-import {
-  HeadTagForSEO,
-  Layout,
-  NoSSR,
-  PageWrapperToGetThemes,
-} from "@/components";
-
 import Blog from "@/models/blog";
 import { BlogServerType } from "@/@types";
-import { MyBlogs } from "@/containers";
+import MyBlogs from "@/containers/MyBlogs";
 import connectDB from "@/configs/db";
+import HeadTagForSEO from "@/components/HeadTagForSEO";
+import Layout from "@/components/Layout";
+import NoSSR from "@/components/NoSSR";
+import PageWrapperToGetThemes from "@/components/PageWrapperToGetThemes";
 
 export async function getStaticProps() {
   await connectDB();

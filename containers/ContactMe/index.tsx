@@ -1,13 +1,13 @@
 import { ChangeEvent, useCallback, useState } from "react";
-import { EMAIL_ID_REDIRECT_URL, EMAIL_REGEX, MY_EMAIL_ID } from "@/constants";
+import { toast } from "react-toastify";
+import axios from "axios";
 import { MdAlternateEmail, MdLocationOn } from "react-icons/md";
 
-import { Button } from "@/components";
+import { EMAIL_ID_REDIRECT_URL, EMAIL_REGEX, MY_EMAIL_ID } from "@/constants";
+import Button from "@/components/Button";
 import ContactFormSvg from "@/public/assets/ContactFormSvg";
 import { FormDataType } from "@/@types";
-import axios from "axios";
 import styles from "@/styles/containers/contactme.module.scss";
-import { toast } from "react-toastify";
 
 function ContactMe() {
   const [formData, setFormData] = useState<FormDataType>({} as FormDataType);

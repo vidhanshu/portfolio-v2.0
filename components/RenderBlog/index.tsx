@@ -1,14 +1,15 @@
-import HeadTagForSEO from "../HeadTagForSEO";
-import Layout from "../Layout";
 import Link from "next/link";
 import React from "react";
 import rehypeRaw from "rehype-raw";
-import styles from "@/styles/pages/blog.module.scss";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+
+import HeadTagForSEO from "../HeadTagForSEO";
+import Layout from "../Layout";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { FullBlogType, OtherBlogType } from "@/@types";
 import { FormattedDate } from "@/utils";
+import styles from "@/styles/pages/blog.module.scss";
+import { nord } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 /* eslint-disable react/no-children-prop */
 

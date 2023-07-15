@@ -2,10 +2,11 @@
  * @description AchievementCard component, provides card for each achievement
  */
 
-import { AchievementType } from "@/@types";
-import Button from "../Button";
 import Image from "next/image";
 import { IoNewspaperOutline } from "react-icons/io5";
+
+import Button from "../Button";
+import { AchievementType } from "@/@types";
 import styles from "@/styles/components/achievementCard.module.scss";
 
 function AchievementCard({

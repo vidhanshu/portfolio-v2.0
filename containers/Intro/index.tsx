@@ -1,6 +1,7 @@
-import { BsMouse } from "react-icons/bs";
-import { Button } from "@/components";
 import Image from "next/image";
+import { BsMouse } from "react-icons/bs";
+
+import Button from "@/components/Button";
 import { StatsCardProps } from "@/@types";
 import styles from "@/styles/containers/intro.module.scss";
 
@@ -42,6 +43,7 @@ function Intro() {
             src={"/assets/header.png"}
             width={380}
             height={380}
+            priority
           />
         </div>
       </div>

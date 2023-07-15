@@ -3,14 +3,14 @@
  */
 
 import { CiGlobe, CiLock, CiMobile1 } from "react-icons/ci";
-import { arrayShortner, stringShortner } from "@/utils";
-
 import { AiFillGithub } from "react-icons/ai";
 import { BsTerminal } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
-import { ProjectCardProps } from "@/@types/props";
 import { RxExternalLink } from "react-icons/rx";
+
+import { ProjectCardProps } from "@/@types/props";
 import styles from "@/styles/components/projectCard.module.scss";
+import { arrayShortner, stringShortner } from "@/utils";
 
 function ProjectCard({
   description,

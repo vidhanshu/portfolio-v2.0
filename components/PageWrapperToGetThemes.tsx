@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+
 import { useTheme } from "@/context/theme";
 
 function PageWrapperToGetThemes({ children }: { children: React.ReactNode }) {

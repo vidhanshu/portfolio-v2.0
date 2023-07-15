@@ -2,7 +2,8 @@ import Blog from "@/models/blog";
 import RenderBlog from "@/components/RenderBlog";
 import connectDB from "@/configs/db";
 import { FullBlogType, OtherBlogType } from "@/@types";
-import { HeadTagForSEO, PageWrapperToGetThemes } from "@/components";
+import HeadTagForSEO from "@/components/HeadTagForSEO";
+import PageWrapperToGetThemes from "@/components/PageWrapperToGetThemes";
 
 /* eslint-disable react/no-children-prop */
 export const getStaticPaths = async () => {
@@ -14,13 +15,13 @@ export const getStaticPaths = async () => {
     }));
     return {
       paths,
-      fallback: true,
+      fallback: false,
     };
   } catch (error) {
-    console.log(error)
+    console.log(error);
     return {
       paths: [],
-      fallback: true,
+      fallback: false,
     };
   }
 };
@@ -50,7 +51,7 @@ export const getStaticProps = async (context: any) => {
       },
     };
   } catch (error) {
-    console.log(error)
+    console.log(error);
     return {
       notFound: true,
     };

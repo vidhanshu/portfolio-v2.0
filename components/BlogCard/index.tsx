@@ -2,13 +2,14 @@
  * @description BlogCard component, provides card for each blog
  */
 
-import { AiOutlineLike } from "react-icons/ai";
-import { BlogServerType } from "@/@types";
-import { BsMedium } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlineLike } from "react-icons/ai";
+import { BsMedium } from "react-icons/bs";
 import { RxExternalLink } from "react-icons/rx";
+
 import styles from "@/styles/components/blogCard.module.scss";
+import { BlogServerType } from "@/@types";
 
 function BlogCard({
   _id,

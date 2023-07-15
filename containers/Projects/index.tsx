@@ -1,4 +1,5 @@
-import { Button, Tabs } from "@/components";
+import Button from "@/components/Button";
+import Tabs from "@/components/Tabs";
 import { GITHUB_URL, PROJECTS } from "@/constants";
 
 import styles from "@/styles/containers/projects.module.scss";

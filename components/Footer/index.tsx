@@ -1,3 +1,9 @@
+import Link from "next/link";
+import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { AiFillHeart } from "react-icons/ai";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
+
 import {
   ABOUT_ME_TAG,
   ACHIEVEMENTS_TAG,
@@ -16,12 +22,6 @@ import {
   SKILLS_TAG,
   WHAT_I_DO_TAG,
 } from "@/constants";
-import { FiFacebook, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-
-import { AiFillHeart } from "react-icons/ai";
-import Link from "next/link";
-import { MdOutlineAlternateEmail } from "react-icons/md";
-import { SiLeetcode } from "react-icons/si";
 import styles from "@/styles/components/footer.module.scss";
 
 function Footer() {

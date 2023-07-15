@@ -1,6 +1,7 @@
-import { Footer, Navbar, NoSSR } from ".";
-
 import { useEffect } from "react";
+
+import Footer from "./Footer";
+import Navbar from "./Header";
 import { useTheme } from "@/context/theme";
 
 type LayoutProps = {

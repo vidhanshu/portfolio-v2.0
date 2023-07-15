@@ -1,6 +1,7 @@
-import { useTheme } from "@/context/theme";
 import Head from "next/head";
 import React from "react";
+
+import { useTheme } from "@/context/theme";
 
 type HeadTagForSEOProps = {
   title: string;
