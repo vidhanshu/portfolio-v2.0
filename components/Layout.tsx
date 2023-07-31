@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Footer from "./Footer";
 import Navbar from "./Header";
 import { useTheme } from "@/context/theme";
+import NoSSR from "./NoSSR";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -20,7 +21,9 @@ function Layout({ children }: LayoutProps) {
 
   return (
     <>
-      <Navbar />
+      <NoSSR>
+        <Navbar />
+      </NoSSR>
       <main>{children}</main>
       <Footer />
     </>
