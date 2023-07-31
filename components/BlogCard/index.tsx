@@ -34,9 +34,9 @@ function BlogCard({
               {new Date(createdAt).toLocaleDateString()} . {time_to_read} min to
               read
             </small>
-          </div>
 
-          <p className={styles.description}>{description}</p>
+            <p className={styles.description}>{description}</p>
+          </div>
 
           <div className={styles.tags}>
             {tags.map((tag, index) => (

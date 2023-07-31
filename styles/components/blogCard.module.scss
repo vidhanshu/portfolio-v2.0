@@ -9,14 +9,17 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
+    
     .blog_link {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-
+    
     .blog_left_top {
       margin-bottom: 1rem;
-
+      
       .subtitle {
         font-size: var(--text-r);
         font-family: "fira code", monospace;
@@ -33,9 +36,10 @@
     }
   }
   .description {
-    font-size: var(--text-sm);
+    margin-top: 2rem;
+    font-size: var(--text-r);
   }
-
+  
   .tags {
     display: flex;
     gap: var(--gap-sm);
@@ -44,7 +48,7 @@
 
     .tag {
       font-size: var(--text-sm);
-      color: rgba(var(--primary-text-rgb), 0.5);
+      color: rgba(var(--primary-text-rgb), 0.8);
     }
   }
 
