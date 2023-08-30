@@ -4,6 +4,7 @@ import connectDB from "@/configs/db";
 import { FullBlogType, OtherBlogType } from "@/@types";
 import HeadTagForSEO from "@/components/HeadTagForSEO";
 import PageWrapperToGetThemes from "@/components/PageWrapperToGetThemes";
+import { poppins } from "@/utils/fonts";
 
 /* eslint-disable react/no-children-prop */
 export const getStaticPaths = async () => {
@@ -65,10 +66,12 @@ type BlogByIdProps = {
 
 function BlogById({ blog, otherBlogs }: BlogByIdProps) {
   return (
-    <PageWrapperToGetThemes>
-      <HeadTagForSEO title={blog?.title} description={blog?.description} />
-      <RenderBlog otherBlogs={otherBlogs} blog={blog} />
-    </PageWrapperToGetThemes>
+    <div className={poppins.className}>
+      <PageWrapperToGetThemes>
+        <HeadTagForSEO title={blog?.title} description={blog?.description} />
+        <RenderBlog otherBlogs={otherBlogs} blog={blog} />
+      </PageWrapperToGetThemes>
+    </div>
   );
 }
 

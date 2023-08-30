@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Poppins } from "next/font/google";
 import {
   ABOUT_ME_STRING,
   ACHIEVEMENTS_STRING,
@@ -34,6 +35,7 @@ import MyBlogs from "@/containers/MyBlogs";
 import Projects from "@/containers/Projects";
 import SkillsSection from "@/containers/Skills";
 import WhatIDo from "@/containers/WhatIDo";
+import { poppins } from "@/utils/fonts";
 
 export async function getStaticProps() {
   // connecting to db
@@ -70,84 +72,89 @@ export async function getStaticProps() {
 
 function Home({ blogs }: { blogs: BlogServerType[] }) {
   return (
-    <PageWrapperToGetThemes>
-      <>
-        <HeadTagForSEO
-          title="Vidhanshu Borade • Software Developer | Competitive Programmer |
+    <div className={poppins.className}>
+      <PageWrapperToGetThemes>
+        <>
+          <HeadTagForSEO
+            title="Vidhanshu Borade • Software Developer | Competitive Programmer |
           Freelancer | Student"
-          description="Vidhanshu Borade is a professional full-stack web and Android developer with extensive experience in designing software. Browse his portfolio website to learn more about his qualifications, courses, achievements, and experience."
-        />
-
-        <Layout>
-          <Intro />
-
-          <SectionSeperator id={ABOUT_ME_STRING} title="About me" />
-
-          <AboutMe />
-
-          <SectionSeperator id={WHAT_I_DO_STRING} title="What i do" />
-
-          <WhatIDo />
-
-          <SectionSeperator id={SKILLS_STRING} title="Skills" />
-
-          <SkillsSection />
-
-          <SectionSeperator id={PROJECTS_STRING} title="Projects" />
-
-          <NoSSR>
-            <Projects />
-          </NoSSR>
-
-          <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
-
-          <Experience />
-
-          <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
-
-          <Achievements />
-
-          <SectionSeperator id={BLOGS_STRING} title="Blogs" />
-
-          <NoSSR>
-            <MyBlogs blogs={blogs} />
-
-            {/* more blogs button */}
-            <div
-              className={`container`}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Link href="/blogs">
-                <Button variant="secondary" size="large">
-                  More blogs
-                </Button>
-              </Link>
-            </div>
-          </NoSSR>
-
-          <SectionSeperator
-            id={CODING_PROFILES_STRING}
-            title="Coding Profiles"
+            description="Vidhanshu Borade is a professional full-stack web and Android developer with extensive experience in designing software. Browse his portfolio website to learn more about his qualifications, courses, achievements, and experience."
           />
 
-          <CodingProfiles />
+          <Layout>
+            <Intro />
 
-          <SectionSeperator id={CERTIFICATIONS_STRING} title="Certifications" />
+            <SectionSeperator id={ABOUT_ME_STRING} title="About me" />
 
-          <Certifications />
+            <AboutMe />
 
-          <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
+            <SectionSeperator id={WHAT_I_DO_STRING} title="What i do" />
 
-          <ContactMe />
-        </Layout>
+            <WhatIDo />
 
-        <FixedSocials />
-      </>
-    </PageWrapperToGetThemes>
+            <SectionSeperator id={SKILLS_STRING} title="Skills" />
+
+            <SkillsSection />
+
+            <SectionSeperator id={PROJECTS_STRING} title="Projects" />
+
+            <NoSSR>
+              <Projects />
+            </NoSSR>
+
+            <SectionSeperator id={EXPERIENCE_STRING} title="Experience" />
+
+            <Experience />
+
+            <SectionSeperator id={ACHIEVEMENTS_STRING} title="Achievements" />
+
+            <Achievements />
+
+            <SectionSeperator id={BLOGS_STRING} title="Blogs" />
+
+            <NoSSR>
+              <MyBlogs blogs={blogs} />
+
+              {/* more blogs button */}
+              <div
+                className={`container`}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Link href="/blogs">
+                  <Button variant="secondary" size="large">
+                    More blogs
+                  </Button>
+                </Link>
+              </div>
+            </NoSSR>
+
+            <SectionSeperator
+              id={CODING_PROFILES_STRING}
+              title="Coding Profiles"
+            />
+
+            <CodingProfiles />
+
+            <SectionSeperator
+              id={CERTIFICATIONS_STRING}
+              title="Certifications"
+            />
+
+            <Certifications />
+
+            <SectionSeperator id={CONTACT_ME_STRING} title="Contact me" />
+
+            <ContactMe />
+          </Layout>
+
+          <FixedSocials />
+        </>
+      </PageWrapperToGetThemes>
+    </div>
   );
 }
 

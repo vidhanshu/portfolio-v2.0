@@ -4,10 +4,11 @@ import {
   ToolSkillsTree,
 } from "@/components/SkillTree";
 import styles from "@/styles/containers/skills.module.scss";
+import { firaCode } from "@/utils/fonts";
 
 export default function SkillsSection() {
   return (
-    <div className={`${styles.skillsContainer} container`}>
+    <div className={`${styles.skillsContainer} container ${firaCode.className}`}>
       <div className={styles.skillsWrapper}>
         <div className={styles.skillsContent}>
           {/* this tree is for the develpment/techstack related skills */}

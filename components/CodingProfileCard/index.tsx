@@ -7,6 +7,7 @@ import { CodingProfileType } from "@/@types";
 import styles from "@/styles/components/codingProfileCard.module.scss";
 import { useTheme } from "@/context/theme";
 import { arrayShortner, stringShortner } from "@/utils";
+import { firaCode } from "@/utils/fonts";
 
 function CodingProfileCard({
   description,
@@ -52,11 +53,11 @@ function CodingProfileCard({
 
           <div className={styles.key_val}>
             {arrayShortner(languages_used, 3).map((lang) => (
-              <p key={lang} className={styles.val}>
+              <p key={lang} className={`${styles.val} ${firaCode.className}`}>
                 {lang}
               </p>
             ))}
-            <p className={styles.val}>...</p>
+            <p className={`${styles.val} ${firaCode.className}`}>...</p>
           </div>
         </div>
 
@@ -64,19 +65,19 @@ function CodingProfileCard({
         {rating && (
           <div className={styles.key_val}>
             <p className={styles.key}>Rating:</p>
-            <p className={styles.val}>{rating}+</p>
+            <p className={`${styles.val} ${firaCode.className}`}>{rating}+</p>
           </div>
         )}
         {stars && (
           <div className={styles.key_val}>
             <p className={styles.key}>Stars:</p>
-            <p className={styles.val}>{stars}</p>
+            <p className={`${styles.val} ${firaCode.className}`}>{stars}</p>
           </div>
         )}
         {problem_solved && (
           <div className={styles.key_val}>
             <p className={styles.key}>Problems solved:</p>
-            <p className={styles.val}>{problem_solved}+</p>
+            <p className={`${styles.val} ${firaCode.className}`}>{problem_solved}+</p>
           </div>
         )}
 
@@ -84,13 +85,13 @@ function CodingProfileCard({
         {forks && (
           <div className={styles.key_val}>
             <p className={styles.key}>Forks:</p>
-            <p className={styles.val}>{forks}+</p>
+            <p className={`${styles.val} ${firaCode.className}`}>{forks}+</p>
           </div>
         )}
         {contributions && (
           <div className={styles.key_val}>
             <p className={styles.key}>Contributions:</p>
-            <p className={styles.val}>{contributions}+</p>
+            <p className={`${styles.val} ${firaCode.className}`}>{contributions}+</p>
           </div>
         )}
       </div>

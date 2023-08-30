@@ -8,6 +8,7 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import Button from "../Button";
 import { AchievementType } from "@/@types";
 import styles from "@/styles/components/achievementCard.module.scss";
+import { firaCode } from "@/utils/fonts";
 
 function AchievementCard({
   date,
@@ -32,7 +33,7 @@ function AchievementCard({
         <div className={`${styles.right_content}`}>
           <div className={styles.right_content_top}>
             <div>
-              <p className={styles.rank}>{rank}</p>
+              <p className={`${styles.rank} ${firaCode.className}`}>{rank}</p>
               <h1 className={styles.title}>{title}</h1>
               <small className={styles.date}>{date}</small>
             </div>

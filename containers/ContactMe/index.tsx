@@ -8,6 +8,7 @@ import Button from "@/components/Button";
 import ContactFormSvg from "@/public/assets/ContactFormSvg";
 import { FormDataType } from "@/@types";
 import styles from "@/styles/containers/contactme.module.scss";
+import { firaCode, poppins } from "@/utils/fonts";
 
 function ContactMe() {
   const [formData, setFormData] = useState<FormDataType>({} as FormDataType);
@@ -146,7 +147,7 @@ function ContactMe() {
                 </Button>
               ) : (
                 <Button onClick={handleMail} size="large" variant="tertiary">
-                  Send <span>-&gt;</span>
+                  Send <span className={firaCode.className}>-&gt;</span>
                 </Button>
               )}
             </div>

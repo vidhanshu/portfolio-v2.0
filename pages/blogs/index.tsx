@@ -6,6 +6,7 @@ import HeadTagForSEO from "@/components/HeadTagForSEO";
 import Layout from "@/components/Layout";
 import NoSSR from "@/components/NoSSR";
 import PageWrapperToGetThemes from "@/components/PageWrapperToGetThemes";
+import { poppins } from "@/utils/fonts";
 
 export async function getStaticProps() {
   await connectDB();
@@ -33,17 +34,19 @@ export async function getStaticProps() {
 
 function Blogs({ blogs }: { blogs: BlogServerType[] }) {
   return (
-    <PageWrapperToGetThemes>
-      <Layout>
-        <HeadTagForSEO
-          title="Blogs"
-          description="Blogs written by vidhanshu borade"
-        />
-        <NoSSR>
-          <MyBlogs blogs={blogs} />
-        </NoSSR>
-      </Layout>
-    </PageWrapperToGetThemes>
+    <div className={poppins.className}>
+      <PageWrapperToGetThemes>
+        <Layout>
+          <HeadTagForSEO
+            title="Blogs"
+            description="Blogs written by vidhanshu borade"
+          />
+          <NoSSR>
+            <MyBlogs blogs={blogs} />
+          </NoSSR>
+        </Layout>
+      </PageWrapperToGetThemes>
+    </div>
   );
 }
 

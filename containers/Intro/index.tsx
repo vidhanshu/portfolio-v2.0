@@ -4,6 +4,7 @@ import { BsMouse } from "react-icons/bs";
 import Button from "@/components/Button";
 import { StatsCardProps } from "@/@types";
 import styles from "@/styles/containers/intro.module.scss";
+import { firaCode } from "@/utils/fonts";
 
 function Intro() {
   return (
@@ -11,7 +12,7 @@ function Intro() {
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.content}>
-            <p className={styles.greeting}>Hi There, I am -&gt;</p>
+            <p className={`${styles.greeting} ${firaCode.className}`}>Hi There, I am -&gt;</p>
             <h1 className={styles.name}>Vidhanshu Borade.</h1>
             <h3 className={styles.subtitle}>
               I build stuffs for web & android.

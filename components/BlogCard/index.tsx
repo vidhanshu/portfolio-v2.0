@@ -10,6 +10,7 @@ import { RxExternalLink } from "react-icons/rx";
 
 import styles from "@/styles/components/blogCard.module.scss";
 import { BlogServerType } from "@/@types";
+import { firaCode } from "@/utils/fonts";
 
 function BlogCard({
   _id,
@@ -28,7 +29,7 @@ function BlogCard({
       <div className={styles.blog_left}>
         <Link className={styles.blog_link} href={`/blogs/${_id}`}>
           <div className={styles.blog_left_top}>
-            <p className={styles.subtitle}>{subtitle}</p>
+            <p className={`${styles.subtitle} ${firaCode.className}`}>{subtitle}</p>
             <h1 className={styles.title}>{title}</h1>
             <small className={styles.date}>
               {new Date(createdAt).toLocaleDateString()} . {time_to_read} min to
